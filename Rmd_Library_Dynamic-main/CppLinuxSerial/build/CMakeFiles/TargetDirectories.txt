@@ -1,0 +1,13 @@
+/home/octo/myactuator/Rmd_Library_Dynamic-main/CppLinuxSerial/build/CMakeFiles/edit_cache.dir
+/home/octo/myactuator/Rmd_Library_Dynamic-main/CppLinuxSerial/build/CMakeFiles/rebuild_cache.dir
+/home/octo/myactuator/Rmd_Library_Dynamic-main/CppLinuxSerial/build/CMakeFiles/list_install_components.dir
+/home/octo/myactuator/Rmd_Library_Dynamic-main/CppLinuxSerial/build/CMakeFiles/install.dir
+/home/octo/myactuator/Rmd_Library_Dynamic-main/CppLinuxSerial/build/CMakeFiles/install/local.dir
+/home/octo/myactuator/Rmd_Library_Dynamic-main/CppLinuxSerial/build/CMakeFiles/install/strip.dir
+/home/octo/myactuator/Rmd_Library_Dynamic-main/CppLinuxSerial/build/src/CMakeFiles/CppLinuxSerial.dir
+/home/octo/myactuator/Rmd_Library_Dynamic-main/CppLinuxSerial/build/src/CMakeFiles/edit_cache.dir
+/home/octo/myactuator/Rmd_Library_Dynamic-main/CppLinuxSerial/build/src/CMakeFiles/rebuild_cache.dir
+/home/octo/myactuator/Rmd_Library_Dynamic-main/CppLinuxSerial/build/src/CMakeFiles/list_install_components.dir
+/home/octo/myactuator/Rmd_Library_Dynamic-main/CppLinuxSerial/build/src/CMakeFiles/install.dir
+/home/octo/myactuator/Rmd_Library_Dynamic-main/CppLinuxSerial/build/src/CMakeFiles/install/local.dir
+/home/octo/myactuator/Rmd_Library_Dynamic-main/CppLinuxSerial/build/src/CMakeFiles/install/strip.dir
