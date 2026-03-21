@@ -1,4 +1,4 @@
-# Install script for directory: /home/octo/Github/myactuator/rmd_wrapper_lib
+# Install script for directory: /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -55,8 +55,8 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
     endif()
   endforeach()
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES
-    "/home/octo/Github/myactuator/rmd_wrapper_lib/build/librmd.so.1.0.0"
-    "/home/octo/Github/myactuator/rmd_wrapper_lib/build/librmd.so.1"
+    "/home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build/librmd.so.1.0.0"
+    "/home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build/librmd.so.1"
     )
   foreach(file
       "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/librmd.so.1.0.0"
@@ -78,7 +78,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/librmd.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/octo/Github/myactuator/rmd_wrapper_lib/build/librmd.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build/librmd.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/librmd.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/librmd.so")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -88,12 +88,12 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/octo/Github/myactuator/rmd_wrapper_lib/include/")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/include/")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/octo/Github/myactuator/rmd_wrapper_lib/build/example/cmake_install.cmake")
+  include("/home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build/example/cmake_install.cmake")
 
 endif()
 
@@ -105,5 +105,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/octo/Github/myactuator/rmd_wrapper_lib/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

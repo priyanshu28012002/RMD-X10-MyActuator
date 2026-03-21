@@ -54,10 +54,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/octo/Github/myactuator/rmd_wrapper_lib
+CMAKE_SOURCE_DIR = /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/octo/Github/myactuator/rmd_wrapper_lib/build
+CMAKE_BINARY_DIR = /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -86,6 +86,8 @@ example/all: example/CMakeFiles/x10_apiTest.dir/all
 example/all: example/CMakeFiles/crc16Test.dir/all
 example/all: example/CMakeFiles/lowHighBitTest.dir/all
 example/all: example/CMakeFiles/myActuatorTest.dir/all
+example/all: example/CMakeFiles/MyActuatorTest.dir/all
+example/all: example/CMakeFiles/test_motor.dir/all
 example/all: example/CMakeFiles/joy_to_cmd_node.dir/all
 example/all: example/CMakeFiles/cmd_vel_to_motor_speed_node.dir/all
 example/all: example/CMakeFiles/actuator_controler_node.dir/all
@@ -104,6 +106,8 @@ example/clean: example/CMakeFiles/x10_apiTest.dir/clean
 example/clean: example/CMakeFiles/crc16Test.dir/clean
 example/clean: example/CMakeFiles/lowHighBitTest.dir/clean
 example/clean: example/CMakeFiles/myActuatorTest.dir/clean
+example/clean: example/CMakeFiles/MyActuatorTest.dir/clean
+example/clean: example/CMakeFiles/test_motor.dir/clean
 example/clean: example/CMakeFiles/joy_to_cmd_node.dir/clean
 example/clean: example/CMakeFiles/cmd_vel_to_motor_speed_node.dir/clean
 example/clean: example/CMakeFiles/actuator_controler_node.dir/clean
@@ -116,14 +120,14 @@ example/clean: example/CMakeFiles/actuator_controler_node.dir/clean
 CMakeFiles/rmd.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rmd.dir/build.make CMakeFiles/rmd.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rmd.dir/build.make CMakeFiles/rmd.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/octo/Github/myactuator/rmd_wrapper_lib/build/CMakeFiles --progress-num=13,14,15,16,17,18 "Built target rmd"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build/CMakeFiles --progress-num=15,16,17,18,19,20,21,22,23,24,25 "Built target rmd"
 .PHONY : CMakeFiles/rmd.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/rmd.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/octo/Github/myactuator/rmd_wrapper_lib/build/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build/CMakeFiles 11
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/rmd.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/octo/Github/myactuator/rmd_wrapper_lib/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build/CMakeFiles 0
 .PHONY : CMakeFiles/rmd.dir/rule
 
 # Convenience name for target.
@@ -142,14 +146,14 @@ CMakeFiles/rmd.dir/clean:
 example/CMakeFiles/uninstall.dir/all: example/CMakeFiles/test_uninstall.dir/all
 	$(MAKE) $(MAKESILENT) -f example/CMakeFiles/uninstall.dir/build.make example/CMakeFiles/uninstall.dir/depend
 	$(MAKE) $(MAKESILENT) -f example/CMakeFiles/uninstall.dir/build.make example/CMakeFiles/uninstall.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/octo/Github/myactuator/rmd_wrapper_lib/build/CMakeFiles --progress-num= "Built target uninstall"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build/CMakeFiles --progress-num= "Built target uninstall"
 .PHONY : example/CMakeFiles/uninstall.dir/all
 
 # Build rule for subdir invocation for target.
 example/CMakeFiles/uninstall.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/octo/Github/myactuator/rmd_wrapper_lib/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 example/CMakeFiles/uninstall.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/octo/Github/myactuator/rmd_wrapper_lib/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build/CMakeFiles 0
 .PHONY : example/CMakeFiles/uninstall.dir/rule
 
 # Convenience name for target.
@@ -168,14 +172,14 @@ example/CMakeFiles/uninstall.dir/clean:
 example/CMakeFiles/test_uninstall.dir/all:
 	$(MAKE) $(MAKESILENT) -f example/CMakeFiles/test_uninstall.dir/build.make example/CMakeFiles/test_uninstall.dir/depend
 	$(MAKE) $(MAKESILENT) -f example/CMakeFiles/test_uninstall.dir/build.make example/CMakeFiles/test_uninstall.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/octo/Github/myactuator/rmd_wrapper_lib/build/CMakeFiles --progress-num= "Built target test_uninstall"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build/CMakeFiles --progress-num= "Built target test_uninstall"
 .PHONY : example/CMakeFiles/test_uninstall.dir/all
 
 # Build rule for subdir invocation for target.
 example/CMakeFiles/test_uninstall.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/octo/Github/myactuator/rmd_wrapper_lib/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 example/CMakeFiles/test_uninstall.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/octo/Github/myactuator/rmd_wrapper_lib/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build/CMakeFiles 0
 .PHONY : example/CMakeFiles/test_uninstall.dir/rule
 
 # Convenience name for target.
@@ -194,14 +198,14 @@ example/CMakeFiles/test_uninstall.dir/clean:
 example/CMakeFiles/serialCommTest.dir/all: CMakeFiles/rmd.dir/all
 	$(MAKE) $(MAKESILENT) -f example/CMakeFiles/serialCommTest.dir/build.make example/CMakeFiles/serialCommTest.dir/depend
 	$(MAKE) $(MAKESILENT) -f example/CMakeFiles/serialCommTest.dir/build.make example/CMakeFiles/serialCommTest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/octo/Github/myactuator/rmd_wrapper_lib/build/CMakeFiles --progress-num=19,20 "Built target serialCommTest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build/CMakeFiles --progress-num=26,27 "Built target serialCommTest"
 .PHONY : example/CMakeFiles/serialCommTest.dir/all
 
 # Build rule for subdir invocation for target.
 example/CMakeFiles/serialCommTest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/octo/Github/myactuator/rmd_wrapper_lib/build/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build/CMakeFiles 13
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 example/CMakeFiles/serialCommTest.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/octo/Github/myactuator/rmd_wrapper_lib/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build/CMakeFiles 0
 .PHONY : example/CMakeFiles/serialCommTest.dir/rule
 
 # Convenience name for target.
@@ -220,14 +224,14 @@ example/CMakeFiles/serialCommTest.dir/clean:
 example/CMakeFiles/serialPortTest.dir/all: CMakeFiles/rmd.dir/all
 	$(MAKE) $(MAKESILENT) -f example/CMakeFiles/serialPortTest.dir/build.make example/CMakeFiles/serialPortTest.dir/depend
 	$(MAKE) $(MAKESILENT) -f example/CMakeFiles/serialPortTest.dir/build.make example/CMakeFiles/serialPortTest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/octo/Github/myactuator/rmd_wrapper_lib/build/CMakeFiles --progress-num=21,22 "Built target serialPortTest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build/CMakeFiles --progress-num=28,29 "Built target serialPortTest"
 .PHONY : example/CMakeFiles/serialPortTest.dir/all
 
 # Build rule for subdir invocation for target.
 example/CMakeFiles/serialPortTest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/octo/Github/myactuator/rmd_wrapper_lib/build/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build/CMakeFiles 13
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 example/CMakeFiles/serialPortTest.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/octo/Github/myactuator/rmd_wrapper_lib/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build/CMakeFiles 0
 .PHONY : example/CMakeFiles/serialPortTest.dir/rule
 
 # Convenience name for target.
@@ -246,14 +250,14 @@ example/CMakeFiles/serialPortTest.dir/clean:
 example/CMakeFiles/x10_apiTest.dir/all: CMakeFiles/rmd.dir/all
 	$(MAKE) $(MAKESILENT) -f example/CMakeFiles/x10_apiTest.dir/build.make example/CMakeFiles/x10_apiTest.dir/depend
 	$(MAKE) $(MAKESILENT) -f example/CMakeFiles/x10_apiTest.dir/build.make example/CMakeFiles/x10_apiTest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/octo/Github/myactuator/rmd_wrapper_lib/build/CMakeFiles --progress-num=23,24 "Built target x10_apiTest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build/CMakeFiles --progress-num=32,33 "Built target x10_apiTest"
 .PHONY : example/CMakeFiles/x10_apiTest.dir/all
 
 # Build rule for subdir invocation for target.
 example/CMakeFiles/x10_apiTest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/octo/Github/myactuator/rmd_wrapper_lib/build/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build/CMakeFiles 13
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 example/CMakeFiles/x10_apiTest.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/octo/Github/myactuator/rmd_wrapper_lib/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build/CMakeFiles 0
 .PHONY : example/CMakeFiles/x10_apiTest.dir/rule
 
 # Convenience name for target.
@@ -272,14 +276,14 @@ example/CMakeFiles/x10_apiTest.dir/clean:
 example/CMakeFiles/crc16Test.dir/all: CMakeFiles/rmd.dir/all
 	$(MAKE) $(MAKESILENT) -f example/CMakeFiles/crc16Test.dir/build.make example/CMakeFiles/crc16Test.dir/depend
 	$(MAKE) $(MAKESILENT) -f example/CMakeFiles/crc16Test.dir/build.make example/CMakeFiles/crc16Test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/octo/Github/myactuator/rmd_wrapper_lib/build/CMakeFiles --progress-num=5,6 "Built target crc16Test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build/CMakeFiles --progress-num=7,8 "Built target crc16Test"
 .PHONY : example/CMakeFiles/crc16Test.dir/all
 
 # Build rule for subdir invocation for target.
 example/CMakeFiles/crc16Test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/octo/Github/myactuator/rmd_wrapper_lib/build/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build/CMakeFiles 13
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 example/CMakeFiles/crc16Test.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/octo/Github/myactuator/rmd_wrapper_lib/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build/CMakeFiles 0
 .PHONY : example/CMakeFiles/crc16Test.dir/rule
 
 # Convenience name for target.
@@ -298,14 +302,14 @@ example/CMakeFiles/crc16Test.dir/clean:
 example/CMakeFiles/lowHighBitTest.dir/all: CMakeFiles/rmd.dir/all
 	$(MAKE) $(MAKESILENT) -f example/CMakeFiles/lowHighBitTest.dir/build.make example/CMakeFiles/lowHighBitTest.dir/depend
 	$(MAKE) $(MAKESILENT) -f example/CMakeFiles/lowHighBitTest.dir/build.make example/CMakeFiles/lowHighBitTest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/octo/Github/myactuator/rmd_wrapper_lib/build/CMakeFiles --progress-num=9,10 "Built target lowHighBitTest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build/CMakeFiles --progress-num=11,12 "Built target lowHighBitTest"
 .PHONY : example/CMakeFiles/lowHighBitTest.dir/all
 
 # Build rule for subdir invocation for target.
 example/CMakeFiles/lowHighBitTest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/octo/Github/myactuator/rmd_wrapper_lib/build/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build/CMakeFiles 13
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 example/CMakeFiles/lowHighBitTest.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/octo/Github/myactuator/rmd_wrapper_lib/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build/CMakeFiles 0
 .PHONY : example/CMakeFiles/lowHighBitTest.dir/rule
 
 # Convenience name for target.
@@ -324,14 +328,14 @@ example/CMakeFiles/lowHighBitTest.dir/clean:
 example/CMakeFiles/myActuatorTest.dir/all: CMakeFiles/rmd.dir/all
 	$(MAKE) $(MAKESILENT) -f example/CMakeFiles/myActuatorTest.dir/build.make example/CMakeFiles/myActuatorTest.dir/depend
 	$(MAKE) $(MAKESILENT) -f example/CMakeFiles/myActuatorTest.dir/build.make example/CMakeFiles/myActuatorTest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/octo/Github/myactuator/rmd_wrapper_lib/build/CMakeFiles --progress-num=11,12 "Built target myActuatorTest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build/CMakeFiles --progress-num=13,14 "Built target myActuatorTest"
 .PHONY : example/CMakeFiles/myActuatorTest.dir/all
 
 # Build rule for subdir invocation for target.
 example/CMakeFiles/myActuatorTest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/octo/Github/myactuator/rmd_wrapper_lib/build/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build/CMakeFiles 13
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 example/CMakeFiles/myActuatorTest.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/octo/Github/myactuator/rmd_wrapper_lib/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build/CMakeFiles 0
 .PHONY : example/CMakeFiles/myActuatorTest.dir/rule
 
 # Convenience name for target.
@@ -344,20 +348,72 @@ example/CMakeFiles/myActuatorTest.dir/clean:
 .PHONY : example/CMakeFiles/myActuatorTest.dir/clean
 
 #=============================================================================
+# Target rules for target example/CMakeFiles/MyActuatorTest.dir
+
+# All Build rule for target.
+example/CMakeFiles/MyActuatorTest.dir/all: CMakeFiles/rmd.dir/all
+	$(MAKE) $(MAKESILENT) -f example/CMakeFiles/MyActuatorTest.dir/build.make example/CMakeFiles/MyActuatorTest.dir/depend
+	$(MAKE) $(MAKESILENT) -f example/CMakeFiles/MyActuatorTest.dir/build.make example/CMakeFiles/MyActuatorTest.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build/CMakeFiles --progress-num=1,2 "Built target MyActuatorTest"
+.PHONY : example/CMakeFiles/MyActuatorTest.dir/all
+
+# Build rule for subdir invocation for target.
+example/CMakeFiles/MyActuatorTest.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build/CMakeFiles 13
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 example/CMakeFiles/MyActuatorTest.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build/CMakeFiles 0
+.PHONY : example/CMakeFiles/MyActuatorTest.dir/rule
+
+# Convenience name for target.
+MyActuatorTest: example/CMakeFiles/MyActuatorTest.dir/rule
+.PHONY : MyActuatorTest
+
+# clean rule for target.
+example/CMakeFiles/MyActuatorTest.dir/clean:
+	$(MAKE) $(MAKESILENT) -f example/CMakeFiles/MyActuatorTest.dir/build.make example/CMakeFiles/MyActuatorTest.dir/clean
+.PHONY : example/CMakeFiles/MyActuatorTest.dir/clean
+
+#=============================================================================
+# Target rules for target example/CMakeFiles/test_motor.dir
+
+# All Build rule for target.
+example/CMakeFiles/test_motor.dir/all: CMakeFiles/rmd.dir/all
+	$(MAKE) $(MAKESILENT) -f example/CMakeFiles/test_motor.dir/build.make example/CMakeFiles/test_motor.dir/depend
+	$(MAKE) $(MAKESILENT) -f example/CMakeFiles/test_motor.dir/build.make example/CMakeFiles/test_motor.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build/CMakeFiles --progress-num=30,31 "Built target test_motor"
+.PHONY : example/CMakeFiles/test_motor.dir/all
+
+# Build rule for subdir invocation for target.
+example/CMakeFiles/test_motor.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build/CMakeFiles 13
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 example/CMakeFiles/test_motor.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build/CMakeFiles 0
+.PHONY : example/CMakeFiles/test_motor.dir/rule
+
+# Convenience name for target.
+test_motor: example/CMakeFiles/test_motor.dir/rule
+.PHONY : test_motor
+
+# clean rule for target.
+example/CMakeFiles/test_motor.dir/clean:
+	$(MAKE) $(MAKESILENT) -f example/CMakeFiles/test_motor.dir/build.make example/CMakeFiles/test_motor.dir/clean
+.PHONY : example/CMakeFiles/test_motor.dir/clean
+
+#=============================================================================
 # Target rules for target example/CMakeFiles/joy_to_cmd_node.dir
 
 # All Build rule for target.
 example/CMakeFiles/joy_to_cmd_node.dir/all:
 	$(MAKE) $(MAKESILENT) -f example/CMakeFiles/joy_to_cmd_node.dir/build.make example/CMakeFiles/joy_to_cmd_node.dir/depend
 	$(MAKE) $(MAKESILENT) -f example/CMakeFiles/joy_to_cmd_node.dir/build.make example/CMakeFiles/joy_to_cmd_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/octo/Github/myactuator/rmd_wrapper_lib/build/CMakeFiles --progress-num=7,8 "Built target joy_to_cmd_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build/CMakeFiles --progress-num=9,10 "Built target joy_to_cmd_node"
 .PHONY : example/CMakeFiles/joy_to_cmd_node.dir/all
 
 # Build rule for subdir invocation for target.
 example/CMakeFiles/joy_to_cmd_node.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/octo/Github/myactuator/rmd_wrapper_lib/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 example/CMakeFiles/joy_to_cmd_node.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/octo/Github/myactuator/rmd_wrapper_lib/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build/CMakeFiles 0
 .PHONY : example/CMakeFiles/joy_to_cmd_node.dir/rule
 
 # Convenience name for target.
@@ -376,14 +432,14 @@ example/CMakeFiles/joy_to_cmd_node.dir/clean:
 example/CMakeFiles/cmd_vel_to_motor_speed_node.dir/all:
 	$(MAKE) $(MAKESILENT) -f example/CMakeFiles/cmd_vel_to_motor_speed_node.dir/build.make example/CMakeFiles/cmd_vel_to_motor_speed_node.dir/depend
 	$(MAKE) $(MAKESILENT) -f example/CMakeFiles/cmd_vel_to_motor_speed_node.dir/build.make example/CMakeFiles/cmd_vel_to_motor_speed_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/octo/Github/myactuator/rmd_wrapper_lib/build/CMakeFiles --progress-num=3,4 "Built target cmd_vel_to_motor_speed_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build/CMakeFiles --progress-num=5,6 "Built target cmd_vel_to_motor_speed_node"
 .PHONY : example/CMakeFiles/cmd_vel_to_motor_speed_node.dir/all
 
 # Build rule for subdir invocation for target.
 example/CMakeFiles/cmd_vel_to_motor_speed_node.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/octo/Github/myactuator/rmd_wrapper_lib/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 example/CMakeFiles/cmd_vel_to_motor_speed_node.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/octo/Github/myactuator/rmd_wrapper_lib/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build/CMakeFiles 0
 .PHONY : example/CMakeFiles/cmd_vel_to_motor_speed_node.dir/rule
 
 # Convenience name for target.
@@ -402,14 +458,14 @@ example/CMakeFiles/cmd_vel_to_motor_speed_node.dir/clean:
 example/CMakeFiles/actuator_controler_node.dir/all: CMakeFiles/rmd.dir/all
 	$(MAKE) $(MAKESILENT) -f example/CMakeFiles/actuator_controler_node.dir/build.make example/CMakeFiles/actuator_controler_node.dir/depend
 	$(MAKE) $(MAKESILENT) -f example/CMakeFiles/actuator_controler_node.dir/build.make example/CMakeFiles/actuator_controler_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/octo/Github/myactuator/rmd_wrapper_lib/build/CMakeFiles --progress-num=1,2 "Built target actuator_controler_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build/CMakeFiles --progress-num=3,4 "Built target actuator_controler_node"
 .PHONY : example/CMakeFiles/actuator_controler_node.dir/all
 
 # Build rule for subdir invocation for target.
 example/CMakeFiles/actuator_controler_node.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/octo/Github/myactuator/rmd_wrapper_lib/build/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build/CMakeFiles 13
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 example/CMakeFiles/actuator_controler_node.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/octo/Github/myactuator/rmd_wrapper_lib/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build/CMakeFiles 0
 .PHONY : example/CMakeFiles/actuator_controler_node.dir/rule
 
 # Convenience name for target.

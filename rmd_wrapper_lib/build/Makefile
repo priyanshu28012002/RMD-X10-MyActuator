@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/octo/Github/myactuator/rmd_wrapper_lib
+CMAKE_SOURCE_DIR = /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/octo/Github/myactuator/rmd_wrapper_lib/build
+CMAKE_BINARY_DIR = /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,9 +132,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/octo/Github/myactuator/rmd_wrapper_lib/build/CMakeFiles /home/octo/Github/myactuator/rmd_wrapper_lib/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build/CMakeFiles /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/octo/Github/myactuator/rmd_wrapper_lib/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -279,6 +279,32 @@ myActuatorTest/fast:
 .PHONY : myActuatorTest/fast
 
 #=============================================================================
+# Target rules for targets named MyActuatorTest
+
+# Build rule for target.
+MyActuatorTest: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MyActuatorTest
+.PHONY : MyActuatorTest
+
+# fast build rule for target.
+MyActuatorTest/fast:
+	$(MAKE) $(MAKESILENT) -f example/CMakeFiles/MyActuatorTest.dir/build.make example/CMakeFiles/MyActuatorTest.dir/build
+.PHONY : MyActuatorTest/fast
+
+#=============================================================================
+# Target rules for targets named test_motor
+
+# Build rule for target.
+test_motor: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_motor
+.PHONY : test_motor
+
+# fast build rule for target.
+test_motor/fast:
+	$(MAKE) $(MAKESILENT) -f example/CMakeFiles/test_motor.dir/build.make example/CMakeFiles/test_motor.dir/build
+.PHONY : test_motor/fast
+
+#=============================================================================
 # Target rules for targets named joy_to_cmd_node
 
 # Build rule for target.
@@ -316,6 +342,126 @@ actuator_controler_node: cmake_check_build_system
 actuator_controler_node/fast:
 	$(MAKE) $(MAKESILENT) -f example/CMakeFiles/actuator_controler_node.dir/build.make example/CMakeFiles/actuator_controler_node.dir/build
 .PHONY : actuator_controler_node/fast
+
+src/CommandExecuter.o: src/CommandExecuter.cpp.o
+.PHONY : src/CommandExecuter.o
+
+# target to build an object file
+src/CommandExecuter.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rmd.dir/build.make CMakeFiles/rmd.dir/src/CommandExecuter.cpp.o
+.PHONY : src/CommandExecuter.cpp.o
+
+src/CommandExecuter.i: src/CommandExecuter.cpp.i
+.PHONY : src/CommandExecuter.i
+
+# target to preprocess a source file
+src/CommandExecuter.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rmd.dir/build.make CMakeFiles/rmd.dir/src/CommandExecuter.cpp.i
+.PHONY : src/CommandExecuter.cpp.i
+
+src/CommandExecuter.s: src/CommandExecuter.cpp.s
+.PHONY : src/CommandExecuter.s
+
+# target to generate assembly for a file
+src/CommandExecuter.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rmd.dir/build.make CMakeFiles/rmd.dir/src/CommandExecuter.cpp.s
+.PHONY : src/CommandExecuter.cpp.s
+
+src/CommandScheduler.o: src/CommandScheduler.cpp.o
+.PHONY : src/CommandScheduler.o
+
+# target to build an object file
+src/CommandScheduler.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rmd.dir/build.make CMakeFiles/rmd.dir/src/CommandScheduler.cpp.o
+.PHONY : src/CommandScheduler.cpp.o
+
+src/CommandScheduler.i: src/CommandScheduler.cpp.i
+.PHONY : src/CommandScheduler.i
+
+# target to preprocess a source file
+src/CommandScheduler.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rmd.dir/build.make CMakeFiles/rmd.dir/src/CommandScheduler.cpp.i
+.PHONY : src/CommandScheduler.cpp.i
+
+src/CommandScheduler.s: src/CommandScheduler.cpp.s
+.PHONY : src/CommandScheduler.s
+
+# target to generate assembly for a file
+src/CommandScheduler.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rmd.dir/build.make CMakeFiles/rmd.dir/src/CommandScheduler.cpp.s
+.PHONY : src/CommandScheduler.cpp.s
+
+src/Motor.o: src/Motor.cpp.o
+.PHONY : src/Motor.o
+
+# target to build an object file
+src/Motor.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rmd.dir/build.make CMakeFiles/rmd.dir/src/Motor.cpp.o
+.PHONY : src/Motor.cpp.o
+
+src/Motor.i: src/Motor.cpp.i
+.PHONY : src/Motor.i
+
+# target to preprocess a source file
+src/Motor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rmd.dir/build.make CMakeFiles/rmd.dir/src/Motor.cpp.i
+.PHONY : src/Motor.cpp.i
+
+src/Motor.s: src/Motor.cpp.s
+.PHONY : src/Motor.s
+
+# target to generate assembly for a file
+src/Motor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rmd.dir/build.make CMakeFiles/rmd.dir/src/Motor.cpp.s
+.PHONY : src/Motor.cpp.s
+
+src/MotorManager.o: src/MotorManager.cpp.o
+.PHONY : src/MotorManager.o
+
+# target to build an object file
+src/MotorManager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rmd.dir/build.make CMakeFiles/rmd.dir/src/MotorManager.cpp.o
+.PHONY : src/MotorManager.cpp.o
+
+src/MotorManager.i: src/MotorManager.cpp.i
+.PHONY : src/MotorManager.i
+
+# target to preprocess a source file
+src/MotorManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rmd.dir/build.make CMakeFiles/rmd.dir/src/MotorManager.cpp.i
+.PHONY : src/MotorManager.cpp.i
+
+src/MotorManager.s: src/MotorManager.cpp.s
+.PHONY : src/MotorManager.s
+
+# target to generate assembly for a file
+src/MotorManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rmd.dir/build.make CMakeFiles/rmd.dir/src/MotorManager.cpp.s
+.PHONY : src/MotorManager.cpp.s
+
+src/MyActuator.o: src/MyActuator.cpp.o
+.PHONY : src/MyActuator.o
+
+# target to build an object file
+src/MyActuator.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rmd.dir/build.make CMakeFiles/rmd.dir/src/MyActuator.cpp.o
+.PHONY : src/MyActuator.cpp.o
+
+src/MyActuator.i: src/MyActuator.cpp.i
+.PHONY : src/MyActuator.i
+
+# target to preprocess a source file
+src/MyActuator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rmd.dir/build.make CMakeFiles/rmd.dir/src/MyActuator.cpp.i
+.PHONY : src/MyActuator.cpp.i
+
+src/MyActuator.s: src/MyActuator.cpp.s
+.PHONY : src/MyActuator.s
+
+# target to generate assembly for a file
+src/MyActuator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rmd.dir/build.make CMakeFiles/rmd.dir/src/MyActuator.cpp.s
+.PHONY : src/MyActuator.cpp.s
 
 src/SerialComm.o: src/SerialComm.cpp.o
 .PHONY : src/SerialComm.o
@@ -451,6 +597,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test_uninstall"
 	@echo "... uninstall"
+	@echo "... MyActuatorTest"
 	@echo "... actuator_controler_node"
 	@echo "... cmd_vel_to_motor_speed_node"
 	@echo "... crc16Test"
@@ -460,7 +607,23 @@ help:
 	@echo "... rmd"
 	@echo "... serialCommTest"
 	@echo "... serialPortTest"
+	@echo "... test_motor"
 	@echo "... x10_apiTest"
+	@echo "... src/CommandExecuter.o"
+	@echo "... src/CommandExecuter.i"
+	@echo "... src/CommandExecuter.s"
+	@echo "... src/CommandScheduler.o"
+	@echo "... src/CommandScheduler.i"
+	@echo "... src/CommandScheduler.s"
+	@echo "... src/Motor.o"
+	@echo "... src/Motor.i"
+	@echo "... src/Motor.s"
+	@echo "... src/MotorManager.o"
+	@echo "... src/MotorManager.i"
+	@echo "... src/MotorManager.s"
+	@echo "... src/MyActuator.o"
+	@echo "... src/MyActuator.i"
+	@echo "... src/MyActuator.s"
 	@echo "... src/SerialComm.o"
 	@echo "... src/SerialComm.i"
 	@echo "... src/SerialComm.s"

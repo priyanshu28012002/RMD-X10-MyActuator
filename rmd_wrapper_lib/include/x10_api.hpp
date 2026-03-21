@@ -12,9 +12,12 @@ protected:
     X10ApiBase x10_api_base_;
 
 private:
+std::string port_;
     /* data */
 public:
-    X10ApiSerial(/* args */);
+// Default Port /dev/ttlUSB0;
+     X10ApiSerial();
+     X10ApiSerial(std::string port);
     ~X10ApiSerial();
 
     void get_port_address(std::string &port);

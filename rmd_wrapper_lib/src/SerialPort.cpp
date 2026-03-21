@@ -31,6 +31,8 @@
             readBufferSize_B_ = defaultReadBufferSize_B_;
             readBuffer_.reserve(readBufferSize_B_);
             state_ = State::CLOSED;
+            std::cout << "SerialPort Constructor" << std::endl;
+
         }
 
         SerialPort::SerialPort(const std::string &device, BaudRate baudRate) : SerialPort()
@@ -38,6 +40,8 @@
             device_ = device;
             baudRateType_ = BaudRateType::STANDARD;
             baudRateStandard_ = baudRate;
+                        std::cout << "SerialPort Constructor" << std::endl;
+
         }
 
         SerialPort::SerialPort(const std::string &device, speed_t baudRate) : SerialPort()
@@ -45,6 +49,8 @@
             device_ = device;
             baudRateType_ = BaudRateType::CUSTOM;
             baudRateCustom_ = baudRate;
+            std::cout << "SerialPort Constructor" << std::endl;
+
         }
 
         SerialPort::SerialPort(const std::string &device, BaudRate baudRate, NumDataBits numDataBits, Parity parity, NumStopBits numStopBits) : SerialPort()
@@ -55,6 +61,8 @@
             numDataBits_ = numDataBits;
             parity_ = parity;
             numStopBits_ = numStopBits;
+            std::cout << "SerialPort Constructor" << std::endl;
+
         }
 
         SerialPort::SerialPort(const std::string &device, BaudRate baudRate, NumDataBits numDataBits, Parity parity, NumStopBits numStopBits,
@@ -68,6 +76,8 @@
             numStopBits_ = numStopBits;
             hardwareFlowControl_ = hardwareFlowControl;
             softwareFlowControl_ = softwareFlowControl;
+            std::cout << "SerialPort Constructor" << std::endl;
+
         }
 
         SerialPort::~SerialPort()
@@ -81,6 +91,8 @@
                 // We can't do anything about this!
                 // But we don't want to throw within destructor, so swallow
             }
+            std::cout << "SerialPort Deconstructor" << std::endl;
+
         }
 
         void SerialPort::SetDevice(const std::string &device)

@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/test_motor.dir/src/test_motor.cpp.o -o test_motor  -Wl,-rpath,/home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build ../librmd.so.1.0.0 

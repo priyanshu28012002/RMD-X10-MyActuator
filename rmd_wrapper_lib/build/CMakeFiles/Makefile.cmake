@@ -640,6 +640,8 @@ set(CMAKE_DEPEND_INFO_FILES
   "example/CMakeFiles/crc16Test.dir/DependInfo.cmake"
   "example/CMakeFiles/lowHighBitTest.dir/DependInfo.cmake"
   "example/CMakeFiles/myActuatorTest.dir/DependInfo.cmake"
+  "example/CMakeFiles/MyActuatorTest.dir/DependInfo.cmake"
+  "example/CMakeFiles/test_motor.dir/DependInfo.cmake"
   "example/CMakeFiles/joy_to_cmd_node.dir/DependInfo.cmake"
   "example/CMakeFiles/cmd_vel_to_motor_speed_node.dir/DependInfo.cmake"
   "example/CMakeFiles/actuator_controler_node.dir/DependInfo.cmake"

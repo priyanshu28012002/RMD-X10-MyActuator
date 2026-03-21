@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/crc16Test.dir/src/crc16Test.cpp.o -o crc16Test  -Wl,-rpath,/home/octo/Github/myactuator/rmd_wrapper_lib/build ../librmd.so.1.0.0 
+/usr/bin/c++ CMakeFiles/crc16Test.dir/src/crc16Test.cpp.o -o crc16Test  -Wl,-rpath,/home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build ../librmd.so.1.0.0 

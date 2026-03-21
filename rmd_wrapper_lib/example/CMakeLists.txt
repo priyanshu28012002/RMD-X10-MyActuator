@@ -12,6 +12,8 @@ add_executable( x10_apiTest src/x10_api_test.cpp)
 add_executable( crc16Test src/crc16Test.cpp)
 add_executable( lowHighBitTest src/lowHighBitTest.cpp)
 add_executable( myActuatorTest src/myActuatorTest.cpp)
+add_executable( MyActuatorTest src/MyActuatorTest.cpp)
+add_executable( test_motor src/test_motor.cpp)
 
 target_link_libraries(myActuatorTest PRIVATE rmd)
 target_link_libraries(lowHighBitTest PRIVATE rmd)
@@ -19,6 +21,11 @@ target_link_libraries(crc16Test PRIVATE rmd)
 target_link_libraries(serialCommTest PRIVATE rmd)
 target_link_libraries(serialPortTest PRIVATE rmd)
 target_link_libraries(x10_apiTest PRIVATE rmd)
+target_link_libraries(MyActuatorTest PRIVATE rmd)
+target_link_libraries(test_motor PRIVATE rmd)
+
+
+
 
 # ros2
 add_executable(joy_to_cmd_node src/ros2_joy_to_cmd_vel.cpp)

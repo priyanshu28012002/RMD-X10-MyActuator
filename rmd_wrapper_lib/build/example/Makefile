@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/octo/Github/myactuator/rmd_wrapper_lib
+CMAKE_SOURCE_DIR = /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/octo/Github/myactuator/rmd_wrapper_lib/build
+CMAKE_BINARY_DIR = /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,14 +132,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/octo/Github/myactuator/rmd_wrapper_lib/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/octo/Github/myactuator/rmd_wrapper_lib/build/CMakeFiles /home/octo/Github/myactuator/rmd_wrapper_lib/build/example//CMakeFiles/progress.marks
-	cd /home/octo/Github/myactuator/rmd_wrapper_lib/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 example/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/octo/Github/myactuator/rmd_wrapper_lib/build/CMakeFiles 0
+	cd /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build/CMakeFiles /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build/example//CMakeFiles/progress.marks
+	cd /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 example/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/octo/Github/myactuator/rmd_wrapper_lib/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 example/clean
+	cd /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 example/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,22 +148,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/octo/Github/myactuator/rmd_wrapper_lib/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 example/preinstall
+	cd /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 example/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/octo/Github/myactuator/rmd_wrapper_lib/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 example/preinstall
+	cd /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 example/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/octo/Github/myactuator/rmd_wrapper_lib/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 example/CMakeFiles/uninstall.dir/rule:
-	cd /home/octo/Github/myactuator/rmd_wrapper_lib/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 example/CMakeFiles/uninstall.dir/rule
+	cd /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 example/CMakeFiles/uninstall.dir/rule
 .PHONY : example/CMakeFiles/uninstall.dir/rule
 
 # Convenience name for target.
@@ -172,12 +172,12 @@ uninstall: example/CMakeFiles/uninstall.dir/rule
 
 # fast build rule for target.
 uninstall/fast:
-	cd /home/octo/Github/myactuator/rmd_wrapper_lib/build && $(MAKE) $(MAKESILENT) -f example/CMakeFiles/uninstall.dir/build.make example/CMakeFiles/uninstall.dir/build
+	cd /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build && $(MAKE) $(MAKESILENT) -f example/CMakeFiles/uninstall.dir/build.make example/CMakeFiles/uninstall.dir/build
 .PHONY : uninstall/fast
 
 # Convenience name for target.
 example/CMakeFiles/test_uninstall.dir/rule:
-	cd /home/octo/Github/myactuator/rmd_wrapper_lib/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 example/CMakeFiles/test_uninstall.dir/rule
+	cd /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 example/CMakeFiles/test_uninstall.dir/rule
 .PHONY : example/CMakeFiles/test_uninstall.dir/rule
 
 # Convenience name for target.
@@ -186,12 +186,12 @@ test_uninstall: example/CMakeFiles/test_uninstall.dir/rule
 
 # fast build rule for target.
 test_uninstall/fast:
-	cd /home/octo/Github/myactuator/rmd_wrapper_lib/build && $(MAKE) $(MAKESILENT) -f example/CMakeFiles/test_uninstall.dir/build.make example/CMakeFiles/test_uninstall.dir/build
+	cd /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build && $(MAKE) $(MAKESILENT) -f example/CMakeFiles/test_uninstall.dir/build.make example/CMakeFiles/test_uninstall.dir/build
 .PHONY : test_uninstall/fast
 
 # Convenience name for target.
 example/CMakeFiles/serialCommTest.dir/rule:
-	cd /home/octo/Github/myactuator/rmd_wrapper_lib/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 example/CMakeFiles/serialCommTest.dir/rule
+	cd /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 example/CMakeFiles/serialCommTest.dir/rule
 .PHONY : example/CMakeFiles/serialCommTest.dir/rule
 
 # Convenience name for target.
@@ -200,12 +200,12 @@ serialCommTest: example/CMakeFiles/serialCommTest.dir/rule
 
 # fast build rule for target.
 serialCommTest/fast:
-	cd /home/octo/Github/myactuator/rmd_wrapper_lib/build && $(MAKE) $(MAKESILENT) -f example/CMakeFiles/serialCommTest.dir/build.make example/CMakeFiles/serialCommTest.dir/build
+	cd /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build && $(MAKE) $(MAKESILENT) -f example/CMakeFiles/serialCommTest.dir/build.make example/CMakeFiles/serialCommTest.dir/build
 .PHONY : serialCommTest/fast
 
 # Convenience name for target.
 example/CMakeFiles/serialPortTest.dir/rule:
-	cd /home/octo/Github/myactuator/rmd_wrapper_lib/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 example/CMakeFiles/serialPortTest.dir/rule
+	cd /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 example/CMakeFiles/serialPortTest.dir/rule
 .PHONY : example/CMakeFiles/serialPortTest.dir/rule
 
 # Convenience name for target.
@@ -214,12 +214,12 @@ serialPortTest: example/CMakeFiles/serialPortTest.dir/rule
 
 # fast build rule for target.
 serialPortTest/fast:
-	cd /home/octo/Github/myactuator/rmd_wrapper_lib/build && $(MAKE) $(MAKESILENT) -f example/CMakeFiles/serialPortTest.dir/build.make example/CMakeFiles/serialPortTest.dir/build
+	cd /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build && $(MAKE) $(MAKESILENT) -f example/CMakeFiles/serialPortTest.dir/build.make example/CMakeFiles/serialPortTest.dir/build
 .PHONY : serialPortTest/fast
 
 # Convenience name for target.
 example/CMakeFiles/x10_apiTest.dir/rule:
-	cd /home/octo/Github/myactuator/rmd_wrapper_lib/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 example/CMakeFiles/x10_apiTest.dir/rule
+	cd /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 example/CMakeFiles/x10_apiTest.dir/rule
 .PHONY : example/CMakeFiles/x10_apiTest.dir/rule
 
 # Convenience name for target.
@@ -228,12 +228,12 @@ x10_apiTest: example/CMakeFiles/x10_apiTest.dir/rule
 
 # fast build rule for target.
 x10_apiTest/fast:
-	cd /home/octo/Github/myactuator/rmd_wrapper_lib/build && $(MAKE) $(MAKESILENT) -f example/CMakeFiles/x10_apiTest.dir/build.make example/CMakeFiles/x10_apiTest.dir/build
+	cd /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build && $(MAKE) $(MAKESILENT) -f example/CMakeFiles/x10_apiTest.dir/build.make example/CMakeFiles/x10_apiTest.dir/build
 .PHONY : x10_apiTest/fast
 
 # Convenience name for target.
 example/CMakeFiles/crc16Test.dir/rule:
-	cd /home/octo/Github/myactuator/rmd_wrapper_lib/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 example/CMakeFiles/crc16Test.dir/rule
+	cd /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 example/CMakeFiles/crc16Test.dir/rule
 .PHONY : example/CMakeFiles/crc16Test.dir/rule
 
 # Convenience name for target.
@@ -242,12 +242,12 @@ crc16Test: example/CMakeFiles/crc16Test.dir/rule
 
 # fast build rule for target.
 crc16Test/fast:
-	cd /home/octo/Github/myactuator/rmd_wrapper_lib/build && $(MAKE) $(MAKESILENT) -f example/CMakeFiles/crc16Test.dir/build.make example/CMakeFiles/crc16Test.dir/build
+	cd /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build && $(MAKE) $(MAKESILENT) -f example/CMakeFiles/crc16Test.dir/build.make example/CMakeFiles/crc16Test.dir/build
 .PHONY : crc16Test/fast
 
 # Convenience name for target.
 example/CMakeFiles/lowHighBitTest.dir/rule:
-	cd /home/octo/Github/myactuator/rmd_wrapper_lib/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 example/CMakeFiles/lowHighBitTest.dir/rule
+	cd /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 example/CMakeFiles/lowHighBitTest.dir/rule
 .PHONY : example/CMakeFiles/lowHighBitTest.dir/rule
 
 # Convenience name for target.
@@ -256,12 +256,12 @@ lowHighBitTest: example/CMakeFiles/lowHighBitTest.dir/rule
 
 # fast build rule for target.
 lowHighBitTest/fast:
-	cd /home/octo/Github/myactuator/rmd_wrapper_lib/build && $(MAKE) $(MAKESILENT) -f example/CMakeFiles/lowHighBitTest.dir/build.make example/CMakeFiles/lowHighBitTest.dir/build
+	cd /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build && $(MAKE) $(MAKESILENT) -f example/CMakeFiles/lowHighBitTest.dir/build.make example/CMakeFiles/lowHighBitTest.dir/build
 .PHONY : lowHighBitTest/fast
 
 # Convenience name for target.
 example/CMakeFiles/myActuatorTest.dir/rule:
-	cd /home/octo/Github/myactuator/rmd_wrapper_lib/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 example/CMakeFiles/myActuatorTest.dir/rule
+	cd /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 example/CMakeFiles/myActuatorTest.dir/rule
 .PHONY : example/CMakeFiles/myActuatorTest.dir/rule
 
 # Convenience name for target.
@@ -270,12 +270,40 @@ myActuatorTest: example/CMakeFiles/myActuatorTest.dir/rule
 
 # fast build rule for target.
 myActuatorTest/fast:
-	cd /home/octo/Github/myactuator/rmd_wrapper_lib/build && $(MAKE) $(MAKESILENT) -f example/CMakeFiles/myActuatorTest.dir/build.make example/CMakeFiles/myActuatorTest.dir/build
+	cd /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build && $(MAKE) $(MAKESILENT) -f example/CMakeFiles/myActuatorTest.dir/build.make example/CMakeFiles/myActuatorTest.dir/build
 .PHONY : myActuatorTest/fast
 
 # Convenience name for target.
+example/CMakeFiles/MyActuatorTest.dir/rule:
+	cd /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 example/CMakeFiles/MyActuatorTest.dir/rule
+.PHONY : example/CMakeFiles/MyActuatorTest.dir/rule
+
+# Convenience name for target.
+MyActuatorTest: example/CMakeFiles/MyActuatorTest.dir/rule
+.PHONY : MyActuatorTest
+
+# fast build rule for target.
+MyActuatorTest/fast:
+	cd /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build && $(MAKE) $(MAKESILENT) -f example/CMakeFiles/MyActuatorTest.dir/build.make example/CMakeFiles/MyActuatorTest.dir/build
+.PHONY : MyActuatorTest/fast
+
+# Convenience name for target.
+example/CMakeFiles/test_motor.dir/rule:
+	cd /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 example/CMakeFiles/test_motor.dir/rule
+.PHONY : example/CMakeFiles/test_motor.dir/rule
+
+# Convenience name for target.
+test_motor: example/CMakeFiles/test_motor.dir/rule
+.PHONY : test_motor
+
+# fast build rule for target.
+test_motor/fast:
+	cd /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build && $(MAKE) $(MAKESILENT) -f example/CMakeFiles/test_motor.dir/build.make example/CMakeFiles/test_motor.dir/build
+.PHONY : test_motor/fast
+
+# Convenience name for target.
 example/CMakeFiles/joy_to_cmd_node.dir/rule:
-	cd /home/octo/Github/myactuator/rmd_wrapper_lib/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 example/CMakeFiles/joy_to_cmd_node.dir/rule
+	cd /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 example/CMakeFiles/joy_to_cmd_node.dir/rule
 .PHONY : example/CMakeFiles/joy_to_cmd_node.dir/rule
 
 # Convenience name for target.
@@ -284,12 +312,12 @@ joy_to_cmd_node: example/CMakeFiles/joy_to_cmd_node.dir/rule
 
 # fast build rule for target.
 joy_to_cmd_node/fast:
-	cd /home/octo/Github/myactuator/rmd_wrapper_lib/build && $(MAKE) $(MAKESILENT) -f example/CMakeFiles/joy_to_cmd_node.dir/build.make example/CMakeFiles/joy_to_cmd_node.dir/build
+	cd /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build && $(MAKE) $(MAKESILENT) -f example/CMakeFiles/joy_to_cmd_node.dir/build.make example/CMakeFiles/joy_to_cmd_node.dir/build
 .PHONY : joy_to_cmd_node/fast
 
 # Convenience name for target.
 example/CMakeFiles/cmd_vel_to_motor_speed_node.dir/rule:
-	cd /home/octo/Github/myactuator/rmd_wrapper_lib/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 example/CMakeFiles/cmd_vel_to_motor_speed_node.dir/rule
+	cd /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 example/CMakeFiles/cmd_vel_to_motor_speed_node.dir/rule
 .PHONY : example/CMakeFiles/cmd_vel_to_motor_speed_node.dir/rule
 
 # Convenience name for target.
@@ -298,12 +326,12 @@ cmd_vel_to_motor_speed_node: example/CMakeFiles/cmd_vel_to_motor_speed_node.dir/
 
 # fast build rule for target.
 cmd_vel_to_motor_speed_node/fast:
-	cd /home/octo/Github/myactuator/rmd_wrapper_lib/build && $(MAKE) $(MAKESILENT) -f example/CMakeFiles/cmd_vel_to_motor_speed_node.dir/build.make example/CMakeFiles/cmd_vel_to_motor_speed_node.dir/build
+	cd /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build && $(MAKE) $(MAKESILENT) -f example/CMakeFiles/cmd_vel_to_motor_speed_node.dir/build.make example/CMakeFiles/cmd_vel_to_motor_speed_node.dir/build
 .PHONY : cmd_vel_to_motor_speed_node/fast
 
 # Convenience name for target.
 example/CMakeFiles/actuator_controler_node.dir/rule:
-	cd /home/octo/Github/myactuator/rmd_wrapper_lib/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 example/CMakeFiles/actuator_controler_node.dir/rule
+	cd /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 example/CMakeFiles/actuator_controler_node.dir/rule
 .PHONY : example/CMakeFiles/actuator_controler_node.dir/rule
 
 # Convenience name for target.
@@ -312,15 +340,39 @@ actuator_controler_node: example/CMakeFiles/actuator_controler_node.dir/rule
 
 # fast build rule for target.
 actuator_controler_node/fast:
-	cd /home/octo/Github/myactuator/rmd_wrapper_lib/build && $(MAKE) $(MAKESILENT) -f example/CMakeFiles/actuator_controler_node.dir/build.make example/CMakeFiles/actuator_controler_node.dir/build
+	cd /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build && $(MAKE) $(MAKESILENT) -f example/CMakeFiles/actuator_controler_node.dir/build.make example/CMakeFiles/actuator_controler_node.dir/build
 .PHONY : actuator_controler_node/fast
+
+src/MyActuatorTest.o: src/MyActuatorTest.cpp.o
+.PHONY : src/MyActuatorTest.o
+
+# target to build an object file
+src/MyActuatorTest.cpp.o:
+	cd /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build && $(MAKE) $(MAKESILENT) -f example/CMakeFiles/MyActuatorTest.dir/build.make example/CMakeFiles/MyActuatorTest.dir/src/MyActuatorTest.cpp.o
+.PHONY : src/MyActuatorTest.cpp.o
+
+src/MyActuatorTest.i: src/MyActuatorTest.cpp.i
+.PHONY : src/MyActuatorTest.i
+
+# target to preprocess a source file
+src/MyActuatorTest.cpp.i:
+	cd /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build && $(MAKE) $(MAKESILENT) -f example/CMakeFiles/MyActuatorTest.dir/build.make example/CMakeFiles/MyActuatorTest.dir/src/MyActuatorTest.cpp.i
+.PHONY : src/MyActuatorTest.cpp.i
+
+src/MyActuatorTest.s: src/MyActuatorTest.cpp.s
+.PHONY : src/MyActuatorTest.s
+
+# target to generate assembly for a file
+src/MyActuatorTest.cpp.s:
+	cd /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build && $(MAKE) $(MAKESILENT) -f example/CMakeFiles/MyActuatorTest.dir/build.make example/CMakeFiles/MyActuatorTest.dir/src/MyActuatorTest.cpp.s
+.PHONY : src/MyActuatorTest.cpp.s
 
 src/crc16Test.o: src/crc16Test.cpp.o
 .PHONY : src/crc16Test.o
 
 # target to build an object file
 src/crc16Test.cpp.o:
-	cd /home/octo/Github/myactuator/rmd_wrapper_lib/build && $(MAKE) $(MAKESILENT) -f example/CMakeFiles/crc16Test.dir/build.make example/CMakeFiles/crc16Test.dir/src/crc16Test.cpp.o
+	cd /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build && $(MAKE) $(MAKESILENT) -f example/CMakeFiles/crc16Test.dir/build.make example/CMakeFiles/crc16Test.dir/src/crc16Test.cpp.o
 .PHONY : src/crc16Test.cpp.o
 
 src/crc16Test.i: src/crc16Test.cpp.i
@@ -328,7 +380,7 @@ src/crc16Test.i: src/crc16Test.cpp.i
 
 # target to preprocess a source file
 src/crc16Test.cpp.i:
-	cd /home/octo/Github/myactuator/rmd_wrapper_lib/build && $(MAKE) $(MAKESILENT) -f example/CMakeFiles/crc16Test.dir/build.make example/CMakeFiles/crc16Test.dir/src/crc16Test.cpp.i
+	cd /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build && $(MAKE) $(MAKESILENT) -f example/CMakeFiles/crc16Test.dir/build.make example/CMakeFiles/crc16Test.dir/src/crc16Test.cpp.i
 .PHONY : src/crc16Test.cpp.i
 
 src/crc16Test.s: src/crc16Test.cpp.s
@@ -336,7 +388,7 @@ src/crc16Test.s: src/crc16Test.cpp.s
 
 # target to generate assembly for a file
 src/crc16Test.cpp.s:
-	cd /home/octo/Github/myactuator/rmd_wrapper_lib/build && $(MAKE) $(MAKESILENT) -f example/CMakeFiles/crc16Test.dir/build.make example/CMakeFiles/crc16Test.dir/src/crc16Test.cpp.s
+	cd /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build && $(MAKE) $(MAKESILENT) -f example/CMakeFiles/crc16Test.dir/build.make example/CMakeFiles/crc16Test.dir/src/crc16Test.cpp.s
 .PHONY : src/crc16Test.cpp.s
 
 src/lowHighBitTest.o: src/lowHighBitTest.cpp.o
@@ -344,7 +396,7 @@ src/lowHighBitTest.o: src/lowHighBitTest.cpp.o
 
 # target to build an object file
 src/lowHighBitTest.cpp.o:
-	cd /home/octo/Github/myactuator/rmd_wrapper_lib/build && $(MAKE) $(MAKESILENT) -f example/CMakeFiles/lowHighBitTest.dir/build.make example/CMakeFiles/lowHighBitTest.dir/src/lowHighBitTest.cpp.o
+	cd /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build && $(MAKE) $(MAKESILENT) -f example/CMakeFiles/lowHighBitTest.dir/build.make example/CMakeFiles/lowHighBitTest.dir/src/lowHighBitTest.cpp.o
 .PHONY : src/lowHighBitTest.cpp.o
 
 src/lowHighBitTest.i: src/lowHighBitTest.cpp.i
@@ -352,7 +404,7 @@ src/lowHighBitTest.i: src/lowHighBitTest.cpp.i
 
 # target to preprocess a source file
 src/lowHighBitTest.cpp.i:
-	cd /home/octo/Github/myactuator/rmd_wrapper_lib/build && $(MAKE) $(MAKESILENT) -f example/CMakeFiles/lowHighBitTest.dir/build.make example/CMakeFiles/lowHighBitTest.dir/src/lowHighBitTest.cpp.i
+	cd /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build && $(MAKE) $(MAKESILENT) -f example/CMakeFiles/lowHighBitTest.dir/build.make example/CMakeFiles/lowHighBitTest.dir/src/lowHighBitTest.cpp.i
 .PHONY : src/lowHighBitTest.cpp.i
 
 src/lowHighBitTest.s: src/lowHighBitTest.cpp.s
@@ -360,7 +412,7 @@ src/lowHighBitTest.s: src/lowHighBitTest.cpp.s
 
 # target to generate assembly for a file
 src/lowHighBitTest.cpp.s:
-	cd /home/octo/Github/myactuator/rmd_wrapper_lib/build && $(MAKE) $(MAKESILENT) -f example/CMakeFiles/lowHighBitTest.dir/build.make example/CMakeFiles/lowHighBitTest.dir/src/lowHighBitTest.cpp.s
+	cd /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build && $(MAKE) $(MAKESILENT) -f example/CMakeFiles/lowHighBitTest.dir/build.make example/CMakeFiles/lowHighBitTest.dir/src/lowHighBitTest.cpp.s
 .PHONY : src/lowHighBitTest.cpp.s
 
 src/myActuatorTest.o: src/myActuatorTest.cpp.o
@@ -368,7 +420,7 @@ src/myActuatorTest.o: src/myActuatorTest.cpp.o
 
 # target to build an object file
 src/myActuatorTest.cpp.o:
-	cd /home/octo/Github/myactuator/rmd_wrapper_lib/build && $(MAKE) $(MAKESILENT) -f example/CMakeFiles/myActuatorTest.dir/build.make example/CMakeFiles/myActuatorTest.dir/src/myActuatorTest.cpp.o
+	cd /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build && $(MAKE) $(MAKESILENT) -f example/CMakeFiles/myActuatorTest.dir/build.make example/CMakeFiles/myActuatorTest.dir/src/myActuatorTest.cpp.o
 .PHONY : src/myActuatorTest.cpp.o
 
 src/myActuatorTest.i: src/myActuatorTest.cpp.i
@@ -376,7 +428,7 @@ src/myActuatorTest.i: src/myActuatorTest.cpp.i
 
 # target to preprocess a source file
 src/myActuatorTest.cpp.i:
-	cd /home/octo/Github/myactuator/rmd_wrapper_lib/build && $(MAKE) $(MAKESILENT) -f example/CMakeFiles/myActuatorTest.dir/build.make example/CMakeFiles/myActuatorTest.dir/src/myActuatorTest.cpp.i
+	cd /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build && $(MAKE) $(MAKESILENT) -f example/CMakeFiles/myActuatorTest.dir/build.make example/CMakeFiles/myActuatorTest.dir/src/myActuatorTest.cpp.i
 .PHONY : src/myActuatorTest.cpp.i
 
 src/myActuatorTest.s: src/myActuatorTest.cpp.s
@@ -384,7 +436,7 @@ src/myActuatorTest.s: src/myActuatorTest.cpp.s
 
 # target to generate assembly for a file
 src/myActuatorTest.cpp.s:
-	cd /home/octo/Github/myactuator/rmd_wrapper_lib/build && $(MAKE) $(MAKESILENT) -f example/CMakeFiles/myActuatorTest.dir/build.make example/CMakeFiles/myActuatorTest.dir/src/myActuatorTest.cpp.s
+	cd /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build && $(MAKE) $(MAKESILENT) -f example/CMakeFiles/myActuatorTest.dir/build.make example/CMakeFiles/myActuatorTest.dir/src/myActuatorTest.cpp.s
 .PHONY : src/myActuatorTest.cpp.s
 
 src/ros2_actuator_controler.o: src/ros2_actuator_controler.cpp.o
@@ -392,7 +444,7 @@ src/ros2_actuator_controler.o: src/ros2_actuator_controler.cpp.o
 
 # target to build an object file
 src/ros2_actuator_controler.cpp.o:
-	cd /home/octo/Github/myactuator/rmd_wrapper_lib/build && $(MAKE) $(MAKESILENT) -f example/CMakeFiles/actuator_controler_node.dir/build.make example/CMakeFiles/actuator_controler_node.dir/src/ros2_actuator_controler.cpp.o
+	cd /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build && $(MAKE) $(MAKESILENT) -f example/CMakeFiles/actuator_controler_node.dir/build.make example/CMakeFiles/actuator_controler_node.dir/src/ros2_actuator_controler.cpp.o
 .PHONY : src/ros2_actuator_controler.cpp.o
 
 src/ros2_actuator_controler.i: src/ros2_actuator_controler.cpp.i
@@ -400,7 +452,7 @@ src/ros2_actuator_controler.i: src/ros2_actuator_controler.cpp.i
 
 # target to preprocess a source file
 src/ros2_actuator_controler.cpp.i:
-	cd /home/octo/Github/myactuator/rmd_wrapper_lib/build && $(MAKE) $(MAKESILENT) -f example/CMakeFiles/actuator_controler_node.dir/build.make example/CMakeFiles/actuator_controler_node.dir/src/ros2_actuator_controler.cpp.i
+	cd /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build && $(MAKE) $(MAKESILENT) -f example/CMakeFiles/actuator_controler_node.dir/build.make example/CMakeFiles/actuator_controler_node.dir/src/ros2_actuator_controler.cpp.i
 .PHONY : src/ros2_actuator_controler.cpp.i
 
 src/ros2_actuator_controler.s: src/ros2_actuator_controler.cpp.s
@@ -408,7 +460,7 @@ src/ros2_actuator_controler.s: src/ros2_actuator_controler.cpp.s
 
 # target to generate assembly for a file
 src/ros2_actuator_controler.cpp.s:
-	cd /home/octo/Github/myactuator/rmd_wrapper_lib/build && $(MAKE) $(MAKESILENT) -f example/CMakeFiles/actuator_controler_node.dir/build.make example/CMakeFiles/actuator_controler_node.dir/src/ros2_actuator_controler.cpp.s
+	cd /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build && $(MAKE) $(MAKESILENT) -f example/CMakeFiles/actuator_controler_node.dir/build.make example/CMakeFiles/actuator_controler_node.dir/src/ros2_actuator_controler.cpp.s
 .PHONY : src/ros2_actuator_controler.cpp.s
 
 src/ros2_cmd_vel_to_motor_speed.o: src/ros2_cmd_vel_to_motor_speed.cpp.o
@@ -416,7 +468,7 @@ src/ros2_cmd_vel_to_motor_speed.o: src/ros2_cmd_vel_to_motor_speed.cpp.o
 
 # target to build an object file
 src/ros2_cmd_vel_to_motor_speed.cpp.o:
-	cd /home/octo/Github/myactuator/rmd_wrapper_lib/build && $(MAKE) $(MAKESILENT) -f example/CMakeFiles/cmd_vel_to_motor_speed_node.dir/build.make example/CMakeFiles/cmd_vel_to_motor_speed_node.dir/src/ros2_cmd_vel_to_motor_speed.cpp.o
+	cd /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build && $(MAKE) $(MAKESILENT) -f example/CMakeFiles/cmd_vel_to_motor_speed_node.dir/build.make example/CMakeFiles/cmd_vel_to_motor_speed_node.dir/src/ros2_cmd_vel_to_motor_speed.cpp.o
 .PHONY : src/ros2_cmd_vel_to_motor_speed.cpp.o
 
 src/ros2_cmd_vel_to_motor_speed.i: src/ros2_cmd_vel_to_motor_speed.cpp.i
@@ -424,7 +476,7 @@ src/ros2_cmd_vel_to_motor_speed.i: src/ros2_cmd_vel_to_motor_speed.cpp.i
 
 # target to preprocess a source file
 src/ros2_cmd_vel_to_motor_speed.cpp.i:
-	cd /home/octo/Github/myactuator/rmd_wrapper_lib/build && $(MAKE) $(MAKESILENT) -f example/CMakeFiles/cmd_vel_to_motor_speed_node.dir/build.make example/CMakeFiles/cmd_vel_to_motor_speed_node.dir/src/ros2_cmd_vel_to_motor_speed.cpp.i
+	cd /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build && $(MAKE) $(MAKESILENT) -f example/CMakeFiles/cmd_vel_to_motor_speed_node.dir/build.make example/CMakeFiles/cmd_vel_to_motor_speed_node.dir/src/ros2_cmd_vel_to_motor_speed.cpp.i
 .PHONY : src/ros2_cmd_vel_to_motor_speed.cpp.i
 
 src/ros2_cmd_vel_to_motor_speed.s: src/ros2_cmd_vel_to_motor_speed.cpp.s
@@ -432,7 +484,7 @@ src/ros2_cmd_vel_to_motor_speed.s: src/ros2_cmd_vel_to_motor_speed.cpp.s
 
 # target to generate assembly for a file
 src/ros2_cmd_vel_to_motor_speed.cpp.s:
-	cd /home/octo/Github/myactuator/rmd_wrapper_lib/build && $(MAKE) $(MAKESILENT) -f example/CMakeFiles/cmd_vel_to_motor_speed_node.dir/build.make example/CMakeFiles/cmd_vel_to_motor_speed_node.dir/src/ros2_cmd_vel_to_motor_speed.cpp.s
+	cd /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build && $(MAKE) $(MAKESILENT) -f example/CMakeFiles/cmd_vel_to_motor_speed_node.dir/build.make example/CMakeFiles/cmd_vel_to_motor_speed_node.dir/src/ros2_cmd_vel_to_motor_speed.cpp.s
 .PHONY : src/ros2_cmd_vel_to_motor_speed.cpp.s
 
 src/ros2_joy_to_cmd_vel.o: src/ros2_joy_to_cmd_vel.cpp.o
@@ -440,7 +492,7 @@ src/ros2_joy_to_cmd_vel.o: src/ros2_joy_to_cmd_vel.cpp.o
 
 # target to build an object file
 src/ros2_joy_to_cmd_vel.cpp.o:
-	cd /home/octo/Github/myactuator/rmd_wrapper_lib/build && $(MAKE) $(MAKESILENT) -f example/CMakeFiles/joy_to_cmd_node.dir/build.make example/CMakeFiles/joy_to_cmd_node.dir/src/ros2_joy_to_cmd_vel.cpp.o
+	cd /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build && $(MAKE) $(MAKESILENT) -f example/CMakeFiles/joy_to_cmd_node.dir/build.make example/CMakeFiles/joy_to_cmd_node.dir/src/ros2_joy_to_cmd_vel.cpp.o
 .PHONY : src/ros2_joy_to_cmd_vel.cpp.o
 
 src/ros2_joy_to_cmd_vel.i: src/ros2_joy_to_cmd_vel.cpp.i
@@ -448,7 +500,7 @@ src/ros2_joy_to_cmd_vel.i: src/ros2_joy_to_cmd_vel.cpp.i
 
 # target to preprocess a source file
 src/ros2_joy_to_cmd_vel.cpp.i:
-	cd /home/octo/Github/myactuator/rmd_wrapper_lib/build && $(MAKE) $(MAKESILENT) -f example/CMakeFiles/joy_to_cmd_node.dir/build.make example/CMakeFiles/joy_to_cmd_node.dir/src/ros2_joy_to_cmd_vel.cpp.i
+	cd /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build && $(MAKE) $(MAKESILENT) -f example/CMakeFiles/joy_to_cmd_node.dir/build.make example/CMakeFiles/joy_to_cmd_node.dir/src/ros2_joy_to_cmd_vel.cpp.i
 .PHONY : src/ros2_joy_to_cmd_vel.cpp.i
 
 src/ros2_joy_to_cmd_vel.s: src/ros2_joy_to_cmd_vel.cpp.s
@@ -456,7 +508,7 @@ src/ros2_joy_to_cmd_vel.s: src/ros2_joy_to_cmd_vel.cpp.s
 
 # target to generate assembly for a file
 src/ros2_joy_to_cmd_vel.cpp.s:
-	cd /home/octo/Github/myactuator/rmd_wrapper_lib/build && $(MAKE) $(MAKESILENT) -f example/CMakeFiles/joy_to_cmd_node.dir/build.make example/CMakeFiles/joy_to_cmd_node.dir/src/ros2_joy_to_cmd_vel.cpp.s
+	cd /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build && $(MAKE) $(MAKESILENT) -f example/CMakeFiles/joy_to_cmd_node.dir/build.make example/CMakeFiles/joy_to_cmd_node.dir/src/ros2_joy_to_cmd_vel.cpp.s
 .PHONY : src/ros2_joy_to_cmd_vel.cpp.s
 
 src/serialCommTest.o: src/serialCommTest.cpp.o
@@ -464,7 +516,7 @@ src/serialCommTest.o: src/serialCommTest.cpp.o
 
 # target to build an object file
 src/serialCommTest.cpp.o:
-	cd /home/octo/Github/myactuator/rmd_wrapper_lib/build && $(MAKE) $(MAKESILENT) -f example/CMakeFiles/serialCommTest.dir/build.make example/CMakeFiles/serialCommTest.dir/src/serialCommTest.cpp.o
+	cd /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build && $(MAKE) $(MAKESILENT) -f example/CMakeFiles/serialCommTest.dir/build.make example/CMakeFiles/serialCommTest.dir/src/serialCommTest.cpp.o
 .PHONY : src/serialCommTest.cpp.o
 
 src/serialCommTest.i: src/serialCommTest.cpp.i
@@ -472,7 +524,7 @@ src/serialCommTest.i: src/serialCommTest.cpp.i
 
 # target to preprocess a source file
 src/serialCommTest.cpp.i:
-	cd /home/octo/Github/myactuator/rmd_wrapper_lib/build && $(MAKE) $(MAKESILENT) -f example/CMakeFiles/serialCommTest.dir/build.make example/CMakeFiles/serialCommTest.dir/src/serialCommTest.cpp.i
+	cd /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build && $(MAKE) $(MAKESILENT) -f example/CMakeFiles/serialCommTest.dir/build.make example/CMakeFiles/serialCommTest.dir/src/serialCommTest.cpp.i
 .PHONY : src/serialCommTest.cpp.i
 
 src/serialCommTest.s: src/serialCommTest.cpp.s
@@ -480,7 +532,7 @@ src/serialCommTest.s: src/serialCommTest.cpp.s
 
 # target to generate assembly for a file
 src/serialCommTest.cpp.s:
-	cd /home/octo/Github/myactuator/rmd_wrapper_lib/build && $(MAKE) $(MAKESILENT) -f example/CMakeFiles/serialCommTest.dir/build.make example/CMakeFiles/serialCommTest.dir/src/serialCommTest.cpp.s
+	cd /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build && $(MAKE) $(MAKESILENT) -f example/CMakeFiles/serialCommTest.dir/build.make example/CMakeFiles/serialCommTest.dir/src/serialCommTest.cpp.s
 .PHONY : src/serialCommTest.cpp.s
 
 src/serialPortTest.o: src/serialPortTest.cpp.o
@@ -488,7 +540,7 @@ src/serialPortTest.o: src/serialPortTest.cpp.o
 
 # target to build an object file
 src/serialPortTest.cpp.o:
-	cd /home/octo/Github/myactuator/rmd_wrapper_lib/build && $(MAKE) $(MAKESILENT) -f example/CMakeFiles/serialPortTest.dir/build.make example/CMakeFiles/serialPortTest.dir/src/serialPortTest.cpp.o
+	cd /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build && $(MAKE) $(MAKESILENT) -f example/CMakeFiles/serialPortTest.dir/build.make example/CMakeFiles/serialPortTest.dir/src/serialPortTest.cpp.o
 .PHONY : src/serialPortTest.cpp.o
 
 src/serialPortTest.i: src/serialPortTest.cpp.i
@@ -496,7 +548,7 @@ src/serialPortTest.i: src/serialPortTest.cpp.i
 
 # target to preprocess a source file
 src/serialPortTest.cpp.i:
-	cd /home/octo/Github/myactuator/rmd_wrapper_lib/build && $(MAKE) $(MAKESILENT) -f example/CMakeFiles/serialPortTest.dir/build.make example/CMakeFiles/serialPortTest.dir/src/serialPortTest.cpp.i
+	cd /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build && $(MAKE) $(MAKESILENT) -f example/CMakeFiles/serialPortTest.dir/build.make example/CMakeFiles/serialPortTest.dir/src/serialPortTest.cpp.i
 .PHONY : src/serialPortTest.cpp.i
 
 src/serialPortTest.s: src/serialPortTest.cpp.s
@@ -504,15 +556,39 @@ src/serialPortTest.s: src/serialPortTest.cpp.s
 
 # target to generate assembly for a file
 src/serialPortTest.cpp.s:
-	cd /home/octo/Github/myactuator/rmd_wrapper_lib/build && $(MAKE) $(MAKESILENT) -f example/CMakeFiles/serialPortTest.dir/build.make example/CMakeFiles/serialPortTest.dir/src/serialPortTest.cpp.s
+	cd /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build && $(MAKE) $(MAKESILENT) -f example/CMakeFiles/serialPortTest.dir/build.make example/CMakeFiles/serialPortTest.dir/src/serialPortTest.cpp.s
 .PHONY : src/serialPortTest.cpp.s
+
+src/test_motor.o: src/test_motor.cpp.o
+.PHONY : src/test_motor.o
+
+# target to build an object file
+src/test_motor.cpp.o:
+	cd /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build && $(MAKE) $(MAKESILENT) -f example/CMakeFiles/test_motor.dir/build.make example/CMakeFiles/test_motor.dir/src/test_motor.cpp.o
+.PHONY : src/test_motor.cpp.o
+
+src/test_motor.i: src/test_motor.cpp.i
+.PHONY : src/test_motor.i
+
+# target to preprocess a source file
+src/test_motor.cpp.i:
+	cd /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build && $(MAKE) $(MAKESILENT) -f example/CMakeFiles/test_motor.dir/build.make example/CMakeFiles/test_motor.dir/src/test_motor.cpp.i
+.PHONY : src/test_motor.cpp.i
+
+src/test_motor.s: src/test_motor.cpp.s
+.PHONY : src/test_motor.s
+
+# target to generate assembly for a file
+src/test_motor.cpp.s:
+	cd /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build && $(MAKE) $(MAKESILENT) -f example/CMakeFiles/test_motor.dir/build.make example/CMakeFiles/test_motor.dir/src/test_motor.cpp.s
+.PHONY : src/test_motor.cpp.s
 
 src/x10_api_test.o: src/x10_api_test.cpp.o
 .PHONY : src/x10_api_test.o
 
 # target to build an object file
 src/x10_api_test.cpp.o:
-	cd /home/octo/Github/myactuator/rmd_wrapper_lib/build && $(MAKE) $(MAKESILENT) -f example/CMakeFiles/x10_apiTest.dir/build.make example/CMakeFiles/x10_apiTest.dir/src/x10_api_test.cpp.o
+	cd /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build && $(MAKE) $(MAKESILENT) -f example/CMakeFiles/x10_apiTest.dir/build.make example/CMakeFiles/x10_apiTest.dir/src/x10_api_test.cpp.o
 .PHONY : src/x10_api_test.cpp.o
 
 src/x10_api_test.i: src/x10_api_test.cpp.i
@@ -520,7 +596,7 @@ src/x10_api_test.i: src/x10_api_test.cpp.i
 
 # target to preprocess a source file
 src/x10_api_test.cpp.i:
-	cd /home/octo/Github/myactuator/rmd_wrapper_lib/build && $(MAKE) $(MAKESILENT) -f example/CMakeFiles/x10_apiTest.dir/build.make example/CMakeFiles/x10_apiTest.dir/src/x10_api_test.cpp.i
+	cd /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build && $(MAKE) $(MAKESILENT) -f example/CMakeFiles/x10_apiTest.dir/build.make example/CMakeFiles/x10_apiTest.dir/src/x10_api_test.cpp.i
 .PHONY : src/x10_api_test.cpp.i
 
 src/x10_api_test.s: src/x10_api_test.cpp.s
@@ -528,7 +604,7 @@ src/x10_api_test.s: src/x10_api_test.cpp.s
 
 # target to generate assembly for a file
 src/x10_api_test.cpp.s:
-	cd /home/octo/Github/myactuator/rmd_wrapper_lib/build && $(MAKE) $(MAKESILENT) -f example/CMakeFiles/x10_apiTest.dir/build.make example/CMakeFiles/x10_apiTest.dir/src/x10_api_test.cpp.s
+	cd /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build && $(MAKE) $(MAKESILENT) -f example/CMakeFiles/x10_apiTest.dir/build.make example/CMakeFiles/x10_apiTest.dir/src/x10_api_test.cpp.s
 .PHONY : src/x10_api_test.cpp.s
 
 # Help Target
@@ -545,6 +621,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test_uninstall"
 	@echo "... uninstall"
+	@echo "... MyActuatorTest"
 	@echo "... actuator_controler_node"
 	@echo "... cmd_vel_to_motor_speed_node"
 	@echo "... crc16Test"
@@ -553,7 +630,11 @@ help:
 	@echo "... myActuatorTest"
 	@echo "... serialCommTest"
 	@echo "... serialPortTest"
+	@echo "... test_motor"
 	@echo "... x10_apiTest"
+	@echo "... src/MyActuatorTest.o"
+	@echo "... src/MyActuatorTest.i"
+	@echo "... src/MyActuatorTest.s"
 	@echo "... src/crc16Test.o"
 	@echo "... src/crc16Test.i"
 	@echo "... src/crc16Test.s"
@@ -578,6 +659,9 @@ help:
 	@echo "... src/serialPortTest.o"
 	@echo "... src/serialPortTest.i"
 	@echo "... src/serialPortTest.s"
+	@echo "... src/test_motor.o"
+	@echo "... src/test_motor.i"
+	@echo "... src/test_motor.s"
 	@echo "... src/x10_api_test.o"
 	@echo "... src/x10_api_test.i"
 	@echo "... src/x10_api_test.s"
@@ -592,6 +676,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/octo/Github/myactuator/rmd_wrapper_lib/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -1,16 +1,18 @@
-#include <x10_api.hpp>
+#include "x10_api.hpp"
 
-
-
-X10ApiSerial::X10ApiSerial(/* args */)
+X10ApiSerial::X10ApiSerial()
 {
     std::cout << "Constructor X10ApiSerial\n";
+}
 
+X10ApiSerial::X10ApiSerial(std::string port):port_(port)
+{
+    std::cout << "Constructor X10ApiSerial "<<port<<"\n";
 }
 
 X10ApiSerial::~X10ApiSerial()
-{        std::cout << "Disconstructor X10ApiSerial\n";
-
+{
+    std::cout << "Disconstructor X10ApiSerial\n";
 }
 
 void X10ApiSerial::get_port_address(std::string &port)
@@ -29,7 +31,7 @@ void X10ApiSerial::rmdX10_shut_down()
     x10_api_base_.rmdX10_shut_down();
 }
 
-    /****************Implemented***************/
+/****************Implemented***************/
 int8_t X10ApiSerial::Motor_read_pid(uint8_t id_, uint8_t *data_arr)
 {
     return x10_api_base_.Motor_read_pid(id_, data_arr);
@@ -50,7 +52,7 @@ int8_t X10ApiSerial::Motor_read_accel(uint8_t id_, int32_t &get_accel)
     return x10_api_base_.Motor_read_accel(id_, get_accel);
 }
 
-int8_t X10ApiSerial::Write_accel_ALL(uint8_t id, uint8_t index, uint32_t accel)                                                            // 2.5
+int8_t X10ApiSerial::Write_accel_ALL(uint8_t id, uint8_t index, uint32_t accel) // 2.5
 {
     return x10_api_base_.Write_accel_ALL(id, index, accel);
 }
@@ -162,35 +164,35 @@ void X10ApiSerial::Motor_reset(uint8_t id)
     x10_api_base_.Motor_reset(id);
 }
 
-int8_t X10ApiSerial::Motor_runtime(uint8_t id, uint32_t &runTime)                                                                          // 2.29
+int8_t X10ApiSerial::Motor_runtime(uint8_t id, uint32_t &runTime) // 2.29
 {
     return x10_api_base_.Motor_runtime(id, runTime);
 }
-int8_t X10ApiSerial::Motor_edition(uint8_t id, uint32_t &sysDate)                                                                          // 2.30
+int8_t X10ApiSerial::Motor_edition(uint8_t id, uint32_t &sysDate) // 2.30
 {
     return x10_api_base_.Motor_edition(id, sysDate);
 }
-int8_t X10ApiSerial::Motor_comm_protect(uint8_t id, uint32_t commProtect)                                                                  // 2.31
+int8_t X10ApiSerial::Motor_comm_protect(uint8_t id, uint32_t commProtect) // 2.31
 {
     return x10_api_base_.Motor_comm_protect(id, commProtect);
 }
-void   X10ApiSerial::Motor_baudrate(uint8_t id, uint8_t baudrate)                                                                            // 2.32
+void X10ApiSerial::Motor_baudrate(uint8_t id, uint8_t baudrate) // 2.32
 {
     return x10_api_base_.Motor_baudrate(id, baudrate);
 }
-int8_t X10ApiSerial::Motor_model(uint8_t id, uint8_t *data_arr)                                                                            // 2.33
+int8_t X10ApiSerial::Motor_model(uint8_t id, uint8_t *data_arr) // 2.33
 {
     return x10_api_base_.Motor_model(id, data_arr);
 }
-int8_t X10ApiSerial::Motor_function(uint8_t id, uint8_t index, uint32_t Value)                                                             // 2.34
+int8_t X10ApiSerial::Motor_function(uint8_t id, uint8_t index, uint32_t Value) // 2.34
 {
     return x10_api_base_.Motor_function(id, index, Value);
 }
-int8_t X10ApiSerial::set_Motor_id(uint8_t id, uint8_t newID)                                                                               // 7.0a
+int8_t X10ApiSerial::set_Motor_id(uint8_t id, uint8_t newID) // 7.0a
 {
     return x10_api_base_.set_Motor_id(id, newID);
 }
-int8_t X10ApiSerial::get_Motor_id(uint8_t id, uint16_t &getID)                                                                             // 7.0b
+int8_t X10ApiSerial::get_Motor_id(uint8_t id, uint16_t &getID) // 7.0b
 {
     return x10_api_base_.get_Motor_id(id, getID);
 }

@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -Drmd_EXPORTS
 
-CXX_INCLUDES = -I/home/octo/Github/myactuator/rmd_wrapper_lib/include
+CXX_INCLUDES = -I/home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/include
 
 CXX_FLAGS = -fPIC -std=gnu++20
 
