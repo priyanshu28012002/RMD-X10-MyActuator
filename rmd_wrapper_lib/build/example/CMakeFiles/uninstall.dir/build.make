@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib
+CMAKE_SOURCE_DIR = /home/octobot/Github/RMD-X10-MyActuator/rmd_wrapper_lib
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build
+CMAKE_BINARY_DIR = /home/octobot/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build
 
 # Utility rule file for uninstall.
 
@@ -74,10 +74,10 @@ example/CMakeFiles/uninstall.dir/build: uninstall
 .PHONY : example/CMakeFiles/uninstall.dir/build
 
 example/CMakeFiles/uninstall.dir/clean:
-	cd /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build/example && $(CMAKE_COMMAND) -P CMakeFiles/uninstall.dir/cmake_clean.cmake
+	cd /home/octobot/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build/example && $(CMAKE_COMMAND) -P CMakeFiles/uninstall.dir/cmake_clean.cmake
 .PHONY : example/CMakeFiles/uninstall.dir/clean
 
 example/CMakeFiles/uninstall.dir/depend:
-	cd /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/example /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build/example /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build/example/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/octobot/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/octobot/Github/RMD-X10-MyActuator/rmd_wrapper_lib /home/octobot/Github/RMD-X10-MyActuator/rmd_wrapper_lib/example /home/octobot/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build /home/octobot/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build/example /home/octobot/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build/example/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : example/CMakeFiles/uninstall.dir/depend
 

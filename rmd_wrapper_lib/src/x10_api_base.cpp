@@ -2,7 +2,7 @@
 
 #include "x10_reg.hpp"
 #include "crc16.hpp"
-#include "SerialCom.hpp"
+#include "SerialComm.hpp"
 
 
 X10ApiBase::X10ApiBase()

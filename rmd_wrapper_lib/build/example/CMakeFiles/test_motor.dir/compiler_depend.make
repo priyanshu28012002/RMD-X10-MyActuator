@@ -281,8 +281,8 @@ example/CMakeFiles/test_motor.dir/src/test_motor.cpp.o: ../example/src/test_moto
   ../include/x10_api_base.hpp \
   ../include/x10_reg.hpp \
   ../include/crc16.hpp \
-  /usr/local/include/SerialCom.hpp \
-  /usr/local/include/SerialPort.hpp \
+  ../include/SerialComm.hpp \
+  ../include/SerialPort.hpp \
   /usr/include/c++/11/fstream \
   /usr/include/c++/11/istream \
   /usr/include/c++/11/bits/istream.tcc \
@@ -315,14 +315,12 @@ example/CMakeFiles/test_motor.dir/src/test_motor.cpp.o: ../example/src/test_moto
   /usr/include/x86_64-linux-gnu/bits/stat.h \
   /usr/include/x86_64-linux-gnu/bits/struct_stat.h \
   /usr/include/c++/11/stdlib.h \
-  /usr/local/include/Exception.hpp \
+  ../include/Exception.hpp \
   /usr/include/c++/11/iostream \
   ../include/CommandExecuter.hpp
 
 
 /usr/include/c++/11/iostream:
-
-/usr/local/include/Exception.hpp:
 
 /usr/include/c++/11/stdlib.h:
 
@@ -364,9 +362,11 @@ example/CMakeFiles/test_motor.dir/src/test_motor.cpp.o: ../example/src/test_moto
 
 /usr/include/c++/11/fstream:
 
-/usr/local/include/SerialCom.hpp:
+../include/SerialComm.hpp:
 
 ../include/crc16.hpp:
+
+../include/SerialPort.hpp:
 
 ../include/x10_api_base.hpp:
 
@@ -668,6 +668,8 @@ example/CMakeFiles/test_motor.dir/src/test_motor.cpp.o: ../example/src/test_moto
 
 /usr/include/c++/11/ext/string_conversions.h:
 
+../include/Exception.hpp:
+
 /usr/include/x86_64-linux-gnu/bits/posix2_lim.h:
 
 /usr/include/asm-generic/bitsperlong.h:
@@ -777,8 +779,6 @@ example/CMakeFiles/test_motor.dir/src/test_motor.cpp.o: ../example/src/test_moto
 /usr/include/c++/11/ext/aligned_buffer.h:
 
 /usr/include/x86_64-linux-gnu/bits/byteswap.h:
-
-/usr/local/include/SerialPort.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/semaphore.h:
 

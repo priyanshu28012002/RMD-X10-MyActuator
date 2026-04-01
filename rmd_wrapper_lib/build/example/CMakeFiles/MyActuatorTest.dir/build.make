@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib
+CMAKE_SOURCE_DIR = /home/octobot/Github/RMD-X10-MyActuator/rmd_wrapper_lib
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build
+CMAKE_BINARY_DIR = /home/octobot/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build
 
 # Include any dependencies generated for this target.
 include example/CMakeFiles/MyActuatorTest.dir/depend.make
@@ -72,16 +72,16 @@ include example/CMakeFiles/MyActuatorTest.dir/flags.make
 example/CMakeFiles/MyActuatorTest.dir/src/MyActuatorTest.cpp.o: example/CMakeFiles/MyActuatorTest.dir/flags.make
 example/CMakeFiles/MyActuatorTest.dir/src/MyActuatorTest.cpp.o: ../example/src/MyActuatorTest.cpp
 example/CMakeFiles/MyActuatorTest.dir/src/MyActuatorTest.cpp.o: example/CMakeFiles/MyActuatorTest.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object example/CMakeFiles/MyActuatorTest.dir/src/MyActuatorTest.cpp.o"
-	cd /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build/example && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT example/CMakeFiles/MyActuatorTest.dir/src/MyActuatorTest.cpp.o -MF CMakeFiles/MyActuatorTest.dir/src/MyActuatorTest.cpp.o.d -o CMakeFiles/MyActuatorTest.dir/src/MyActuatorTest.cpp.o -c /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/example/src/MyActuatorTest.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/octobot/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object example/CMakeFiles/MyActuatorTest.dir/src/MyActuatorTest.cpp.o"
+	cd /home/octobot/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build/example && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT example/CMakeFiles/MyActuatorTest.dir/src/MyActuatorTest.cpp.o -MF CMakeFiles/MyActuatorTest.dir/src/MyActuatorTest.cpp.o.d -o CMakeFiles/MyActuatorTest.dir/src/MyActuatorTest.cpp.o -c /home/octobot/Github/RMD-X10-MyActuator/rmd_wrapper_lib/example/src/MyActuatorTest.cpp
 
 example/CMakeFiles/MyActuatorTest.dir/src/MyActuatorTest.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MyActuatorTest.dir/src/MyActuatorTest.cpp.i"
-	cd /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build/example && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/example/src/MyActuatorTest.cpp > CMakeFiles/MyActuatorTest.dir/src/MyActuatorTest.cpp.i
+	cd /home/octobot/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build/example && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/octobot/Github/RMD-X10-MyActuator/rmd_wrapper_lib/example/src/MyActuatorTest.cpp > CMakeFiles/MyActuatorTest.dir/src/MyActuatorTest.cpp.i
 
 example/CMakeFiles/MyActuatorTest.dir/src/MyActuatorTest.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MyActuatorTest.dir/src/MyActuatorTest.cpp.s"
-	cd /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build/example && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/example/src/MyActuatorTest.cpp -o CMakeFiles/MyActuatorTest.dir/src/MyActuatorTest.cpp.s
+	cd /home/octobot/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build/example && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/octobot/Github/RMD-X10-MyActuator/rmd_wrapper_lib/example/src/MyActuatorTest.cpp -o CMakeFiles/MyActuatorTest.dir/src/MyActuatorTest.cpp.s
 
 # Object files for target MyActuatorTest
 MyActuatorTest_OBJECTS = \
@@ -94,18 +94,18 @@ example/MyActuatorTest: example/CMakeFiles/MyActuatorTest.dir/src/MyActuatorTest
 example/MyActuatorTest: example/CMakeFiles/MyActuatorTest.dir/build.make
 example/MyActuatorTest: librmd.so.1.0.0
 example/MyActuatorTest: example/CMakeFiles/MyActuatorTest.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable MyActuatorTest"
-	cd /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build/example && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/MyActuatorTest.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/octobot/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable MyActuatorTest"
+	cd /home/octobot/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build/example && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/MyActuatorTest.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 example/CMakeFiles/MyActuatorTest.dir/build: example/MyActuatorTest
 .PHONY : example/CMakeFiles/MyActuatorTest.dir/build
 
 example/CMakeFiles/MyActuatorTest.dir/clean:
-	cd /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build/example && $(CMAKE_COMMAND) -P CMakeFiles/MyActuatorTest.dir/cmake_clean.cmake
+	cd /home/octobot/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build/example && $(CMAKE_COMMAND) -P CMakeFiles/MyActuatorTest.dir/cmake_clean.cmake
 .PHONY : example/CMakeFiles/MyActuatorTest.dir/clean
 
 example/CMakeFiles/MyActuatorTest.dir/depend:
-	cd /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/example /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build/example /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build/example/CMakeFiles/MyActuatorTest.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/octobot/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/octobot/Github/RMD-X10-MyActuator/rmd_wrapper_lib /home/octobot/Github/RMD-X10-MyActuator/rmd_wrapper_lib/example /home/octobot/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build /home/octobot/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build/example /home/octobot/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build/example/CMakeFiles/MyActuatorTest.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : example/CMakeFiles/MyActuatorTest.dir/depend
 

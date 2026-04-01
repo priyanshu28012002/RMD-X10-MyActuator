@@ -5,7 +5,8 @@ enum class CommandType
     SPEED,
     POSITION,
     STATUS,
-    EMERGENCY
+    EMERGENCY,
+    SETTING
 };
 
 struct MotorCommand
@@ -15,6 +16,6 @@ struct MotorCommand
 
     double speed = 0;
     double angle = 0;
-
     int priority = 0;
+    int position = 0;
 };

@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib
+CMAKE_SOURCE_DIR = /home/octobot/Github/RMD-X10-MyActuator/rmd_wrapper_lib
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build
+CMAKE_BINARY_DIR = /home/octobot/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,9 +132,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build/CMakeFiles /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/octobot/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build/CMakeFiles /home/octobot/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/octobot/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -279,30 +279,43 @@ myActuatorTest/fast:
 .PHONY : myActuatorTest/fast
 
 #=============================================================================
-# Target rules for targets named MyActuatorTest
+# Target rules for targets named testMotor
 
 # Build rule for target.
-MyActuatorTest: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MyActuatorTest
-.PHONY : MyActuatorTest
+testMotor: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 testMotor
+.PHONY : testMotor
 
 # fast build rule for target.
-MyActuatorTest/fast:
-	$(MAKE) $(MAKESILENT) -f example/CMakeFiles/MyActuatorTest.dir/build.make example/CMakeFiles/MyActuatorTest.dir/build
-.PHONY : MyActuatorTest/fast
+testMotor/fast:
+	$(MAKE) $(MAKESILENT) -f example/CMakeFiles/testMotor.dir/build.make example/CMakeFiles/testMotor.dir/build
+.PHONY : testMotor/fast
 
 #=============================================================================
-# Target rules for targets named test_motor
+# Target rules for targets named rawJoyTest
 
 # Build rule for target.
-test_motor: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_motor
-.PHONY : test_motor
+rawJoyTest: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rawJoyTest
+.PHONY : rawJoyTest
 
 # fast build rule for target.
-test_motor/fast:
-	$(MAKE) $(MAKESILENT) -f example/CMakeFiles/test_motor.dir/build.make example/CMakeFiles/test_motor.dir/build
-.PHONY : test_motor/fast
+rawJoyTest/fast:
+	$(MAKE) $(MAKESILENT) -f example/CMakeFiles/rawJoyTest.dir/build.make example/CMakeFiles/rawJoyTest.dir/build
+.PHONY : rawJoyTest/fast
+
+#=============================================================================
+# Target rules for targets named testRobot
+
+# Build rule for target.
+testRobot: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 testRobot
+.PHONY : testRobot
+
+# fast build rule for target.
+testRobot/fast:
+	$(MAKE) $(MAKESILENT) -f example/CMakeFiles/testRobot.dir/build.make example/CMakeFiles/testRobot.dir/build
+.PHONY : testRobot/fast
 
 #=============================================================================
 # Target rules for targets named joy_to_cmd_node
@@ -597,17 +610,18 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test_uninstall"
 	@echo "... uninstall"
-	@echo "... MyActuatorTest"
 	@echo "... actuator_controler_node"
 	@echo "... cmd_vel_to_motor_speed_node"
 	@echo "... crc16Test"
 	@echo "... joy_to_cmd_node"
 	@echo "... lowHighBitTest"
 	@echo "... myActuatorTest"
+	@echo "... rawJoyTest"
 	@echo "... rmd"
 	@echo "... serialCommTest"
 	@echo "... serialPortTest"
-	@echo "... test_motor"
+	@echo "... testMotor"
+	@echo "... testRobot"
 	@echo "... x10_apiTest"
 	@echo "... src/CommandExecuter.o"
 	@echo "... src/CommandExecuter.i"

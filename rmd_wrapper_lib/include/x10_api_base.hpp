@@ -7,7 +7,7 @@
 
 #include "x10_reg.hpp"
 #include "crc16.hpp"
-#include "SerialCom.hpp"
+#include "SerialComm.hpp"
 
 #include <stdint.h>
 #include <string>

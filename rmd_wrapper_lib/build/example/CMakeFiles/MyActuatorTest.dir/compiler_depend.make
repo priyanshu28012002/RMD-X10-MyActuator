@@ -284,8 +284,8 @@ example/CMakeFiles/MyActuatorTest.dir/src/MyActuatorTest.cpp.o: ../example/src/M
   ../include/x10_api_base.hpp \
   ../include/x10_reg.hpp \
   ../include/crc16.hpp \
-  /usr/local/include/SerialCom.hpp \
-  /usr/local/include/SerialPort.hpp \
+  ../include/SerialComm.hpp \
+  ../include/SerialPort.hpp \
   /usr/include/c++/11/fstream \
   /usr/include/c++/11/bits/codecvt.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
@@ -316,11 +316,9 @@ example/CMakeFiles/MyActuatorTest.dir/src/MyActuatorTest.cpp.o: ../example/src/M
   /usr/include/x86_64-linux-gnu/bits/stat.h \
   /usr/include/x86_64-linux-gnu/bits/struct_stat.h \
   /usr/include/c++/11/stdlib.h \
-  /usr/local/include/Exception.hpp \
+  ../include/Exception.hpp \
   ../include/CommandExecuter.hpp
 
-
-/usr/local/include/Exception.hpp:
 
 /usr/include/c++/11/stdlib.h:
 
@@ -358,9 +356,11 @@ example/CMakeFiles/MyActuatorTest.dir/src/MyActuatorTest.cpp.o: ../example/src/M
 
 /usr/include/c++/11/fstream:
 
-/usr/local/include/SerialCom.hpp:
+../include/SerialComm.hpp:
 
 ../include/crc16.hpp:
+
+../include/SerialPort.hpp:
 
 ../include/x10_api_base.hpp:
 
@@ -652,6 +652,8 @@ example/CMakeFiles/MyActuatorTest.dir/src/MyActuatorTest.cpp.o: ../example/src/M
 
 /usr/include/linux/limits.h:
 
+../include/Exception.hpp:
+
 /usr/include/x86_64-linux-gnu/bits/posix2_lim.h:
 
 /usr/include/c++/11/bits/exception_ptr.h:
@@ -729,8 +731,6 @@ example/CMakeFiles/MyActuatorTest.dir/src/MyActuatorTest.cpp.o: ../example/src/M
 /usr/include/c++/11/ext/aligned_buffer.h:
 
 /usr/include/x86_64-linux-gnu/bits/byteswap.h:
-
-/usr/local/include/SerialPort.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/semaphore.h:
 

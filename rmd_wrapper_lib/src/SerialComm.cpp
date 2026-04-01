@@ -1,4 +1,4 @@
-#include <SerialCom.hpp>
+#include <SerialComm.hpp>
 
 SerialComm::SerialComm()
 {

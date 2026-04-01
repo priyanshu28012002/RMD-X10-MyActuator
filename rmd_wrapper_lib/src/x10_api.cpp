@@ -31,7 +31,6 @@ void X10ApiSerial::rmdX10_shut_down()
     x10_api_base_.rmdX10_shut_down();
 }
 
-/****************Implemented***************/
 int8_t X10ApiSerial::Motor_read_pid(uint8_t id_, uint8_t *data_arr)
 {
     return x10_api_base_.Motor_read_pid(id_, data_arr);

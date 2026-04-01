@@ -168,13 +168,13 @@ example/CMakeFiles/myActuatorTest.dir/src/myActuatorTest.cpp.o: ../example/src/m
   ../include/x10_api_base.hpp \
   ../include/x10_reg.hpp \
   ../include/crc16.hpp \
-  /usr/local/include/SerialCom.hpp \
+  ../include/SerialComm.hpp \
   /usr/include/c++/11/vector \
   /usr/include/c++/11/bits/stl_uninitialized.h \
   /usr/include/c++/11/bits/stl_vector.h \
   /usr/include/c++/11/bits/stl_bvector.h \
   /usr/include/c++/11/bits/vector.tcc \
-  /usr/local/include/SerialPort.hpp \
+  ../include/SerialPort.hpp \
   /usr/include/c++/11/fstream \
   /usr/include/c++/11/istream \
   /usr/include/c++/11/ios \
@@ -233,7 +233,7 @@ example/CMakeFiles/myActuatorTest.dir/src/myActuatorTest.cpp.o: ../example/src/m
   /usr/include/x86_64-linux-gnu/bits/stat.h \
   /usr/include/x86_64-linux-gnu/bits/struct_stat.h \
   /usr/include/c++/11/stdlib.h \
-  /usr/local/include/Exception.hpp \
+  ../include/Exception.hpp \
   /usr/include/c++/11/iostream \
   /usr/include/c++/11/chrono \
   /usr/include/c++/11/ratio \
@@ -248,7 +248,7 @@ example/CMakeFiles/myActuatorTest.dir/src/myActuatorTest.cpp.o: ../example/src/m
 
 /usr/include/c++/11/ratio:
 
-/usr/local/include/Exception.hpp:
+../include/Exception.hpp:
 
 /usr/include/c++/11/stdlib.h:
 
@@ -318,7 +318,7 @@ example/CMakeFiles/myActuatorTest.dir/src/myActuatorTest.cpp.o: ../example/src/m
 
 /usr/include/c++/11/istream:
 
-/usr/local/include/SerialPort.hpp:
+../include/SerialPort.hpp:
 
 /usr/include/c++/11/bits/vector.tcc:
 
@@ -329,8 +329,6 @@ example/CMakeFiles/myActuatorTest.dir/src/myActuatorTest.cpp.o: ../example/src/m
 /usr/include/c++/11/bits/stl_vector.h:
 
 /usr/include/c++/11/bits/stl_uninitialized.h:
-
-/usr/local/include/SerialCom.hpp:
 
 /usr/include/c++/11/vector:
 
@@ -351,6 +349,8 @@ example/CMakeFiles/myActuatorTest.dir/src/myActuatorTest.cpp.o: ../example/src/m
 /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_base.h:
 
 /usr/include/wctype.h:
+
+../include/SerialComm.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/errno.h:
 

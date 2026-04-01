@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 #include <vector>
-#include "SerialCom.hpp"
+#include "SerialComm.hpp"
 
 int main()
 {

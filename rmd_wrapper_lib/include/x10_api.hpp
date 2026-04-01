@@ -55,11 +55,10 @@ public:
     void Motor_reset(uint8_t id);                                                                                                 // 2.26
     int8_t Motor_brake_release(uint8_t id);                                                                                       // 2.27
     int8_t Motor_brake_lock(uint8_t id);                                                                                          // 2.28
-
     int8_t Motor_runtime(uint8_t id, uint32_t &runTime);                                                                          // 2.29
     int8_t Motor_edition(uint8_t id, uint32_t &sysDate);                                                                          // 2.30
     int8_t Motor_comm_protect(uint8_t id, uint32_t commProtect);                                                                  // 2.31
-    void   Motor_baudrate(uint8_t id, uint8_t baudrate);                                                                            // 2.32
+    void   Motor_baudrate(uint8_t id, uint8_t baudrate);                                                                          // 2.32
     int8_t Motor_model(uint8_t id, uint8_t *data_arr);                                                                            // 2.33
     int8_t Motor_function(uint8_t id, uint8_t index, uint32_t Value);                                                             // 2.34
     int8_t set_Motor_id(uint8_t id, uint8_t newID);                                                                               // 7.0a

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib
+CMAKE_SOURCE_DIR = /home/octobot/Github/RMD-X10-MyActuator/rmd_wrapper_lib
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build
+CMAKE_BINARY_DIR = /home/octobot/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build
 
 # Include any dependencies generated for this target.
 include example/CMakeFiles/serialCommTest.dir/depend.make
@@ -72,16 +72,16 @@ include example/CMakeFiles/serialCommTest.dir/flags.make
 example/CMakeFiles/serialCommTest.dir/src/serialCommTest.cpp.o: example/CMakeFiles/serialCommTest.dir/flags.make
 example/CMakeFiles/serialCommTest.dir/src/serialCommTest.cpp.o: ../example/src/serialCommTest.cpp
 example/CMakeFiles/serialCommTest.dir/src/serialCommTest.cpp.o: example/CMakeFiles/serialCommTest.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object example/CMakeFiles/serialCommTest.dir/src/serialCommTest.cpp.o"
-	cd /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build/example && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT example/CMakeFiles/serialCommTest.dir/src/serialCommTest.cpp.o -MF CMakeFiles/serialCommTest.dir/src/serialCommTest.cpp.o.d -o CMakeFiles/serialCommTest.dir/src/serialCommTest.cpp.o -c /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/example/src/serialCommTest.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/octobot/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object example/CMakeFiles/serialCommTest.dir/src/serialCommTest.cpp.o"
+	cd /home/octobot/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build/example && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT example/CMakeFiles/serialCommTest.dir/src/serialCommTest.cpp.o -MF CMakeFiles/serialCommTest.dir/src/serialCommTest.cpp.o.d -o CMakeFiles/serialCommTest.dir/src/serialCommTest.cpp.o -c /home/octobot/Github/RMD-X10-MyActuator/rmd_wrapper_lib/example/src/serialCommTest.cpp
 
 example/CMakeFiles/serialCommTest.dir/src/serialCommTest.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/serialCommTest.dir/src/serialCommTest.cpp.i"
-	cd /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build/example && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/example/src/serialCommTest.cpp > CMakeFiles/serialCommTest.dir/src/serialCommTest.cpp.i
+	cd /home/octobot/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build/example && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/octobot/Github/RMD-X10-MyActuator/rmd_wrapper_lib/example/src/serialCommTest.cpp > CMakeFiles/serialCommTest.dir/src/serialCommTest.cpp.i
 
 example/CMakeFiles/serialCommTest.dir/src/serialCommTest.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/serialCommTest.dir/src/serialCommTest.cpp.s"
-	cd /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build/example && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/example/src/serialCommTest.cpp -o CMakeFiles/serialCommTest.dir/src/serialCommTest.cpp.s
+	cd /home/octobot/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build/example && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/octobot/Github/RMD-X10-MyActuator/rmd_wrapper_lib/example/src/serialCommTest.cpp -o CMakeFiles/serialCommTest.dir/src/serialCommTest.cpp.s
 
 # Object files for target serialCommTest
 serialCommTest_OBJECTS = \
@@ -94,18 +94,18 @@ example/serialCommTest: example/CMakeFiles/serialCommTest.dir/src/serialCommTest
 example/serialCommTest: example/CMakeFiles/serialCommTest.dir/build.make
 example/serialCommTest: librmd.so.1.0.0
 example/serialCommTest: example/CMakeFiles/serialCommTest.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable serialCommTest"
-	cd /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build/example && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/serialCommTest.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/octobot/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable serialCommTest"
+	cd /home/octobot/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build/example && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/serialCommTest.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 example/CMakeFiles/serialCommTest.dir/build: example/serialCommTest
 .PHONY : example/CMakeFiles/serialCommTest.dir/build
 
 example/CMakeFiles/serialCommTest.dir/clean:
-	cd /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build/example && $(CMAKE_COMMAND) -P CMakeFiles/serialCommTest.dir/cmake_clean.cmake
+	cd /home/octobot/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build/example && $(CMAKE_COMMAND) -P CMakeFiles/serialCommTest.dir/cmake_clean.cmake
 .PHONY : example/CMakeFiles/serialCommTest.dir/clean
 
 example/CMakeFiles/serialCommTest.dir/depend:
-	cd /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/example /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build/example /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build/example/CMakeFiles/serialCommTest.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/octobot/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/octobot/Github/RMD-X10-MyActuator/rmd_wrapper_lib /home/octobot/Github/RMD-X10-MyActuator/rmd_wrapper_lib/example /home/octobot/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build /home/octobot/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build/example /home/octobot/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build/example/CMakeFiles/serialCommTest.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : example/CMakeFiles/serialCommTest.dir/depend
 

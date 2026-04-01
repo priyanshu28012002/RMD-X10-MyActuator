@@ -1,11 +1,13 @@
 #include "CommandExecuter.hpp"
 
 CommandExecuter::CommandExecuter(X10ApiSerial *driver,
-                                 CommandScheduler *scheduler)
+                                 CommandScheduler *scheduler, MotorManager *motorManager)
     : driver_(driver),
       scheduler_(scheduler),
+      motorManager_(motorManager),
       running_(false)
 {
+    driver_->rmdX10_init();
 }
 
 CommandExecuter::~CommandExecuter()
@@ -47,7 +49,7 @@ void CommandExecuter::executeCommand(MotorCommand cmd)
     {
         std::cout << "SPEED Command" << std::endl;
 
-        // driver_->Motor_speed_control(cmd.motorId, cmd.speed);
+        driver_->speedControl(cmd.motorId, cmd.speed);
     }
 
     if (cmd.type == CommandType::POSITION)
@@ -59,6 +61,13 @@ void CommandExecuter::executeCommand(MotorCommand cmd)
 
     if (cmd.type == CommandType::STATUS)
     {
+        count++;
+
+        motorManager_->setAngle(cmd.motorId,count);
+        motorManager_->setCurrent(cmd.motorId,count);
+        motorManager_->setTemp(cmd.motorId,count);
+        motorManager_->setSpeed(cmd.motorId,count);
+
         std::cout << "STATUS Command" << std::endl;
 
         // driver_->Motor_speed_control(cmd.motorId, cmd.speed);

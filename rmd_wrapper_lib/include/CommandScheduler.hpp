@@ -30,12 +30,24 @@ private:
     std::atomic<bool> running_;
 
 public:
+
     CommandScheduler();
     void pushCommand(const MotorCommand &cmd);
     bool getNextCommand(MotorCommand &cmd);
-    void startSchedulling();
+    void startStatusUpdateLoop();
     void stopSchedulling();
-    void schedullingLoop();
+    void statusUpdateLoop();
+
+    void emergencyCommand(int id);
+
+    void stateCommand(int id);
+    void moveAtSpeed(int id,int value);
+    void moveToPosition(int id,int value);
+    void setAcc(int id,int value);
+
+    void setPid(int id,int value);
+    void setTourqe(int id,int value);
+
 
     bool empty();
 };

@@ -1,14 +1,40 @@
 #include "MotorManager.hpp"
 
-MotorManager::MotorManager(int motorCount, CommandScheduler* scheduler)
+MotorManager::MotorManager(int motorCount, CommandScheduler *scheduler)
 {
-    for(int i=1;i<=motorCount;i++)
+    for (int i = 1; i <= motorCount; i++)
     {
         motors_.push_back(std::make_unique<Motor>(i, scheduler));
     }
 }
 
-Motor* MotorManager::getMotor(int id)
+void MotorManager::setTemp(int id, double value)
 {
-    return motors_[id-1].get();
-} 
+    Motor *m = getMotor(id);
+    m->state_.temperature = value;
+}
+void MotorManager::setVoltage(int id, double value)
+{
+    Motor *m = getMotor(id);
+    m->state_.voltage = value;
+}
+void MotorManager::setCurrent(int id, double value)
+{
+    Motor *m = getMotor(id);
+    m->state_.current = value;
+}
+void MotorManager::setSpeed(int id, double value)
+{
+    Motor *m = getMotor(id);
+    m->state_.speed = value;
+}
+void MotorManager::setAngle(int id, double value)
+{
+    Motor *m = getMotor(id);
+    m->state_.angle = value;
+}
+
+Motor *MotorManager::getMotor(int id)
+{
+    return motors_[id - 1].get();
+}

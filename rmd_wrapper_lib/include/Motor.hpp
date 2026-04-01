@@ -57,10 +57,11 @@ class Motor
 {
 private:
     int id_;
-    MotorState state_;
     CommandScheduler* scheduler_;
 
 public:
+    MotorState state_;
+
     Motor(int id, CommandScheduler* scheduler);
 
     int getId() const;
@@ -69,4 +70,11 @@ public:
 
     void setSpeed(double speed);
     void moveToAngle(double angle, double speed);
+    void updateState();
+    
+    double getTemp();
+    double getVoltage();
+    double getCurrent();
+    double getAngle();
+    double getSpeed();
 };

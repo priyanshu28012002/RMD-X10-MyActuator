@@ -260,8 +260,8 @@ CMakeFiles/rmd.dir/src/CommandExecuter.cpp.o: ../src/CommandExecuter.cpp \
   ../include/x10_api_base.hpp \
   ../include/x10_reg.hpp \
   ../include/crc16.hpp \
-  /usr/local/include/SerialCom.hpp \
-  /usr/local/include/SerialPort.hpp \
+  ../include/SerialComm.hpp \
+  ../include/SerialPort.hpp \
   /usr/include/c++/11/fstream \
   /usr/include/c++/11/istream \
   /usr/include/c++/11/bits/istream.tcc \
@@ -294,8 +294,29 @@ CMakeFiles/rmd.dir/src/CommandExecuter.cpp.o: ../src/CommandExecuter.cpp \
   /usr/include/x86_64-linux-gnu/bits/stat.h \
   /usr/include/x86_64-linux-gnu/bits/struct_stat.h \
   /usr/include/c++/11/stdlib.h \
-  /usr/local/include/Exception.hpp \
-  /usr/include/c++/11/iostream
+  ../include/Exception.hpp \
+  /usr/include/c++/11/iostream \
+  ../include/MotorManager.hpp \
+  /usr/include/c++/11/memory \
+  /usr/include/c++/11/bits/stl_raw_storage_iter.h \
+  /usr/include/c++/11/bits/align.h \
+  /usr/include/c++/11/bit \
+  /usr/include/c++/11/bits/shared_ptr.h \
+  /usr/include/c++/11/bits/shared_ptr_base.h \
+  /usr/include/c++/11/bits/allocated_ptr.h \
+  /usr/include/c++/11/ext/aligned_buffer.h \
+  /usr/include/c++/11/ext/concurrence.h \
+  /usr/include/c++/11/bits/shared_ptr_atomic.h \
+  /usr/include/c++/11/backward/auto_ptr.h \
+  /usr/include/c++/11/bits/ranges_uninitialized.h \
+  /usr/include/c++/11/bits/ranges_algobase.h \
+  /usr/include/c++/11/iterator \
+  /usr/include/c++/11/bits/stream_iterator.h \
+  /usr/include/c++/11/bits/uses_allocator_args.h \
+  /usr/include/c++/11/pstl/glue_memory_defs.h \
+  /usr/include/c++/11/pstl/execution_defs.h \
+  ../include/Motor.hpp \
+  ../include/MotorState.hpp
 
 CMakeFiles/rmd.dir/src/CommandScheduler.cpp.o: ../src/CommandScheduler.cpp \
   /usr/include/stdc-predef.h \
@@ -555,8 +576,8 @@ CMakeFiles/rmd.dir/src/CommandScheduler.cpp.o: ../src/CommandScheduler.cpp \
   ../include/x10_api_base.hpp \
   ../include/x10_reg.hpp \
   ../include/crc16.hpp \
-  /usr/local/include/SerialCom.hpp \
-  /usr/local/include/SerialPort.hpp \
+  ../include/SerialComm.hpp \
+  ../include/SerialPort.hpp \
   /usr/include/c++/11/fstream \
   /usr/include/c++/11/istream \
   /usr/include/c++/11/bits/istream.tcc \
@@ -589,7 +610,7 @@ CMakeFiles/rmd.dir/src/CommandScheduler.cpp.o: ../src/CommandScheduler.cpp \
   /usr/include/x86_64-linux-gnu/bits/stat.h \
   /usr/include/x86_64-linux-gnu/bits/struct_stat.h \
   /usr/include/c++/11/stdlib.h \
-  /usr/local/include/Exception.hpp \
+  ../include/Exception.hpp \
   /usr/include/c++/11/iostream
 
 CMakeFiles/rmd.dir/src/Motor.cpp.o: ../src/Motor.cpp \
@@ -870,8 +891,8 @@ CMakeFiles/rmd.dir/src/Motor.cpp.o: ../src/Motor.cpp \
   ../include/x10_api_base.hpp \
   ../include/x10_reg.hpp \
   ../include/crc16.hpp \
-  /usr/local/include/SerialCom.hpp \
-  /usr/local/include/SerialPort.hpp \
+  ../include/SerialComm.hpp \
+  ../include/SerialPort.hpp \
   /usr/include/c++/11/fstream \
   /usr/include/c++/11/istream \
   /usr/include/c++/11/bits/istream.tcc \
@@ -904,7 +925,7 @@ CMakeFiles/rmd.dir/src/Motor.cpp.o: ../src/Motor.cpp \
   /usr/include/x86_64-linux-gnu/bits/stat.h \
   /usr/include/x86_64-linux-gnu/bits/struct_stat.h \
   /usr/include/c++/11/stdlib.h \
-  /usr/local/include/Exception.hpp \
+  ../include/Exception.hpp \
   /usr/include/c++/11/iostream
 
 CMakeFiles/rmd.dir/src/MotorManager.cpp.o: ../src/MotorManager.cpp \
@@ -1439,8 +1460,8 @@ CMakeFiles/rmd.dir/src/MyActuator.cpp.o: ../src/MyActuator.cpp \
   ../include/x10_api_base.hpp \
   ../include/x10_reg.hpp \
   ../include/crc16.hpp \
-  /usr/local/include/SerialCom.hpp \
-  /usr/local/include/SerialPort.hpp \
+  ../include/SerialComm.hpp \
+  ../include/SerialPort.hpp \
   /usr/include/c++/11/fstream \
   /usr/include/c++/11/istream \
   /usr/include/c++/11/bits/istream.tcc \
@@ -1473,13 +1494,13 @@ CMakeFiles/rmd.dir/src/MyActuator.cpp.o: ../src/MyActuator.cpp \
   /usr/include/x86_64-linux-gnu/bits/stat.h \
   /usr/include/x86_64-linux-gnu/bits/struct_stat.h \
   /usr/include/c++/11/stdlib.h \
-  /usr/local/include/Exception.hpp \
+  ../include/Exception.hpp \
   /usr/include/c++/11/iostream \
   ../include/CommandExecuter.hpp
 
 CMakeFiles/rmd.dir/src/SerialComm.cpp.o: ../src/SerialComm.cpp \
   /usr/include/stdc-predef.h \
-  /usr/local/include/SerialCom.hpp \
+  ../include/SerialComm.hpp \
   /usr/include/c++/11/string \
   /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -1646,7 +1667,7 @@ CMakeFiles/rmd.dir/src/SerialComm.cpp.o: ../src/SerialComm.cpp \
   /usr/include/c++/11/bits/stl_vector.h \
   /usr/include/c++/11/bits/stl_bvector.h \
   /usr/include/c++/11/bits/vector.tcc \
-  /usr/local/include/SerialPort.hpp \
+  ../include/SerialPort.hpp \
   /usr/include/c++/11/fstream \
   /usr/include/c++/11/istream \
   /usr/include/c++/11/ios \
@@ -1705,7 +1726,7 @@ CMakeFiles/rmd.dir/src/SerialComm.cpp.o: ../src/SerialComm.cpp \
   /usr/include/x86_64-linux-gnu/bits/stat.h \
   /usr/include/x86_64-linux-gnu/bits/struct_stat.h \
   /usr/include/c++/11/stdlib.h \
-  /usr/local/include/Exception.hpp \
+  ../include/Exception.hpp \
   /usr/include/c++/11/iostream
 
 CMakeFiles/rmd.dir/src/SerialPort.cpp.o: ../src/SerialPort.cpp \
@@ -2233,7 +2254,7 @@ CMakeFiles/rmd.dir/src/x10_api.cpp.o: ../src/x10_api.cpp \
   /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
   /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
   ../include/crc16.hpp \
-  /usr/local/include/SerialCom.hpp \
+  ../include/SerialComm.hpp \
   /usr/include/c++/11/string \
   /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -2383,7 +2404,7 @@ CMakeFiles/rmd.dir/src/x10_api.cpp.o: ../src/x10_api.cpp \
   /usr/include/c++/11/bits/stl_vector.h \
   /usr/include/c++/11/bits/stl_bvector.h \
   /usr/include/c++/11/bits/vector.tcc \
-  /usr/local/include/SerialPort.hpp \
+  ../include/SerialPort.hpp \
   /usr/include/c++/11/fstream \
   /usr/include/c++/11/istream \
   /usr/include/c++/11/ios \
@@ -2442,7 +2463,7 @@ CMakeFiles/rmd.dir/src/x10_api.cpp.o: ../src/x10_api.cpp \
   /usr/include/x86_64-linux-gnu/bits/stat.h \
   /usr/include/x86_64-linux-gnu/bits/struct_stat.h \
   /usr/include/c++/11/stdlib.h \
-  /usr/local/include/Exception.hpp \
+  ../include/Exception.hpp \
   /usr/include/c++/11/iostream
 
 CMakeFiles/rmd.dir/src/x10_api_base.cpp.o: ../src/x10_api_base.cpp \
@@ -2467,7 +2488,7 @@ CMakeFiles/rmd.dir/src/x10_api_base.cpp.o: ../src/x10_api_base.cpp \
   /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
   /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
   ../include/crc16.hpp \
-  /usr/local/include/SerialCom.hpp \
+  ../include/SerialComm.hpp \
   /usr/include/c++/11/string \
   /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -2617,7 +2638,7 @@ CMakeFiles/rmd.dir/src/x10_api_base.cpp.o: ../src/x10_api_base.cpp \
   /usr/include/c++/11/bits/stl_vector.h \
   /usr/include/c++/11/bits/stl_bvector.h \
   /usr/include/c++/11/bits/vector.tcc \
-  /usr/local/include/SerialPort.hpp \
+  ../include/SerialPort.hpp \
   /usr/include/c++/11/fstream \
   /usr/include/c++/11/istream \
   /usr/include/c++/11/ios \
@@ -2676,7 +2697,7 @@ CMakeFiles/rmd.dir/src/x10_api_base.cpp.o: ../src/x10_api_base.cpp \
   /usr/include/x86_64-linux-gnu/bits/stat.h \
   /usr/include/x86_64-linux-gnu/bits/struct_stat.h \
   /usr/include/c++/11/stdlib.h \
-  /usr/local/include/Exception.hpp \
+  ../include/Exception.hpp \
   /usr/include/c++/11/iostream
 
 
@@ -2702,7 +2723,9 @@ CMakeFiles/rmd.dir/src/x10_api_base.cpp.o: ../src/x10_api_base.cpp \
 
 ../src/MyActuator.cpp:
 
-../include/MotorManager.hpp:
+../src/Motor.cpp:
+
+../include/Motor.hpp:
 
 /usr/include/c++/11/pstl/glue_memory_defs.h:
 
@@ -2722,13 +2745,11 @@ CMakeFiles/rmd.dir/src/x10_api_base.cpp.o: ../src/x10_api_base.cpp \
 
 /usr/include/c++/11/memory:
 
-../include/Motor.hpp:
+../include/MotorManager.hpp:
 
 /usr/include/c++/11/bits/node_handle.h:
 
 /usr/include/c++/11/iostream:
-
-/usr/local/include/Exception.hpp:
 
 /usr/include/c++/11/stdlib.h:
 
@@ -2774,9 +2795,7 @@ CMakeFiles/rmd.dir/src/x10_api_base.cpp.o: ../src/x10_api_base.cpp \
 
 /usr/include/c++/11/fstream:
 
-../src/Motor.cpp:
-
-/usr/local/include/SerialCom.hpp:
+../include/SerialComm.hpp:
 
 ../include/crc16.hpp:
 
@@ -3159,8 +3178,6 @@ CMakeFiles/rmd.dir/src/x10_api_base.cpp.o: ../src/x10_api_base.cpp \
 /usr/include/c++/11/bits/concept_check.h:
 
 /usr/include/c++/11/bits/shared_ptr.h:
-
-/usr/local/include/SerialPort.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/semaphore.h:
 

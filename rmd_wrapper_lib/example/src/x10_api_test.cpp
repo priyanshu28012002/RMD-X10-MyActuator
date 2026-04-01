@@ -214,7 +214,7 @@ int main()
     xobj->get_port_address(port);
     xobj->rmdX10_init();
 
-    speedControl(xobj, 1,-500);
+    speedControl(xobj, 1, 5000);
 
     sleep(10);
 

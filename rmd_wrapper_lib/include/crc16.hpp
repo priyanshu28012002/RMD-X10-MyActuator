@@ -2,11 +2,7 @@
 #ifndef _COMMON_CRC16_H_
 #define _COMMON_CRC16_H_
 
-
-
 #include <stdint.h>
-
-
 /* Table of CRC values for high order byte */
 
 const uint8_t crc_table_hi[] = {

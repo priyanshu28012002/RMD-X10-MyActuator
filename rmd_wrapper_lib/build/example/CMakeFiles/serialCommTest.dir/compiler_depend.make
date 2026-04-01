@@ -198,8 +198,8 @@ example/CMakeFiles/serialCommTest.dir/src/serialCommTest.cpp.o: ../example/src/s
   /usr/include/c++/11/bits/stl_vector.h \
   /usr/include/c++/11/bits/stl_bvector.h \
   /usr/include/c++/11/bits/vector.tcc \
-  /usr/local/include/SerialCom.hpp \
-  /usr/local/include/SerialPort.hpp \
+  ../include/SerialComm.hpp \
+  ../include/SerialPort.hpp \
   /usr/include/c++/11/fstream \
   /usr/include/c++/11/bits/codecvt.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
@@ -230,10 +230,10 @@ example/CMakeFiles/serialCommTest.dir/src/serialCommTest.cpp.o: ../example/src/s
   /usr/include/x86_64-linux-gnu/bits/stat.h \
   /usr/include/x86_64-linux-gnu/bits/struct_stat.h \
   /usr/include/c++/11/stdlib.h \
-  /usr/local/include/Exception.hpp
+  ../include/Exception.hpp
 
 
-/usr/local/include/Exception.hpp:
+../include/Exception.hpp:
 
 /usr/include/c++/11/stdlib.h:
 
@@ -267,9 +267,7 @@ example/CMakeFiles/serialCommTest.dir/src/serialCommTest.cpp.o: ../example/src/s
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h:
 
-/usr/local/include/SerialPort.hpp:
-
-/usr/local/include/SerialCom.hpp:
+../include/SerialPort.hpp:
 
 /usr/include/c++/11/bits/vector.tcc:
 
@@ -316,6 +314,8 @@ example/CMakeFiles/serialCommTest.dir/src/serialCommTest.cpp.o: ../example/src/s
 /usr/include/x86_64-linux-gnu/bits/types/error_t.h:
 
 /usr/include/asm-generic/errno.h:
+
+../include/SerialComm.hpp:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_base.h:
 
