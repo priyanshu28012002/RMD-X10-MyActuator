@@ -123,7 +123,7 @@ int main()
                 lastAxis3 = state.axis[3];
             }
             else{
-                robot.stop();
+                robot.stop(1);
             }
 
             usleep(10000);

@@ -70,3 +70,11 @@ void MyActuator::setTourqe(int id, int value)
 {
     scheduler_->setTourqe(id, value);
 }
+
+void MyActuator::stop(int id)
+{
+    scheduler_->stop(id);
+}
+
+
+

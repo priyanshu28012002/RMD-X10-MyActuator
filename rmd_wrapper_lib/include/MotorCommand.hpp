@@ -6,7 +6,8 @@ enum class CommandType
     POSITION,
     STATUS,
     EMERGENCY,
-    SETTING
+    SETTING,
+    STOP
 };
 
 struct MotorCommand

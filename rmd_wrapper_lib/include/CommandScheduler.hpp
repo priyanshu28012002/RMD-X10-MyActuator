@@ -47,7 +47,7 @@ public:
 
     void setPid(int id,int value);
     void setTourqe(int id,int value);
-
+    void stop(int id);
 
     bool empty();
 };

@@ -28,7 +28,7 @@ public:
     void moveAtSpeed(int id,int value);
     void moveToPosition(int id,int value);
     void setAcc(int id,int value);
-    void stop(int id,int value);
+    void stop(int id);
     void setPid(int id,int value);
     void setTourqe(int id,int value);
 

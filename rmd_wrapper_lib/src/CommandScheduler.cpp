@@ -137,3 +137,13 @@ void CommandScheduler::setTourqe(int id,int value){
 
     pushCommand(cmd);
 }
+
+void CommandScheduler::stop(int id){
+    MotorCommand cmd;
+    cmd.motorId = id;
+    cmd.priority = 2;
+
+    cmd.type = CommandType::STOP;
+
+    pushCommand(cmd);
+}

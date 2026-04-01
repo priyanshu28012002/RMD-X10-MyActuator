@@ -79,4 +79,12 @@ void CommandExecuter::executeCommand(MotorCommand cmd)
 
         //  driver_->Motor_angle_control(cmd.motorId,cmd.angle,cmd.speed);
     }
+
+    if (cmd.type == CommandType::STOP)
+    {
+        driver_->Motor_stop(cmd.motorId);
+        std::cout << "Stop Command" << std::endl;
+
+        //  driver_->Motor_angle_control(cmd.motorId,cmd.angle,cmd.speed);
+    }
 }
