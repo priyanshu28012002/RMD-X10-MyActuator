@@ -61,6 +61,7 @@ int main()
     bool prev_button4 = false;
 
     int lastAxis3 = 0;
+    bool isMoterRunning = false;
     while (robotRunningState)
     {
         js.poll();
@@ -77,6 +78,7 @@ int main()
 
         if (curr_button4 && !prev_button4)
         {
+            robot.stop(1);
             isJoystick = !isJoystick;
             std::cout << "Joystick Enabled: " << isJoystick << std::endl;
         }
@@ -121,9 +123,11 @@ int main()
             {
                 robot.moveAtSpeed(1, state.axis[3]);
                 lastAxis3 = state.axis[3];
+                isMoterRunning = true;
             }
-            else{
+            else if(isMoterRunning && state.axis[3] == 0){
                 robot.stop(1);
+                isMoterRunning = false;
             }
 
             usleep(10000);
