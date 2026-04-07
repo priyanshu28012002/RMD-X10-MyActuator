@@ -35,6 +35,28 @@ void Motor_read_pid(X10ApiSerial *xobj, uint8_t id)
     }
 }
 
+void Motor_write_pid(X10ApiSerial *xobj, uint8_t id)
+{
+    // uint8_t buffer[8] = {0};
+
+    // int8_t result = xobj->Motor_read_pid(id, buffer);
+
+    // std::cout << "Motor_read_pid Result: " << (int)result << std::endl;
+
+    // if (result != 0)
+    // {
+    //     std::cout << "Read failed\n";
+    //     return;
+    // }
+
+    // for (int i = 0; i < 8; i++)
+    // {
+    //     std::cout << (int)buffer[i] << " " << std::endl;
+    // }
+    int8_t result = xobj->Write_pid_ROM(2, 100, 100, 100, 5, 100, 5);
+    std::cout << "Motor_read_pid Result: " << (int)result << std::endl;
+}
+
 // 2.4
 void Motor_read_accel(X10ApiSerial *xobj, uint8_t id)
 {
@@ -155,7 +177,7 @@ void torqueControl(X10ApiSerial *xobj, uint8_t id)
     std::cout << "torqueControl Result " << (int)x << std::endl;
 }
 // 2.20
-void speedControl(X10ApiSerial *xobj, uint8_t id,int speed)
+void speedControl(X10ApiSerial *xobj, uint8_t id, int speed)
 {
 
     int8_t x = xobj->speedControl(id, speed);
@@ -199,14 +221,24 @@ void set_Motor_id(X10ApiSerial *xobj, uint8_t newID)
     std::cout << "set_Motor_id Result" << x << std::endl;
 }
 
+// Test Function
+
+// void runBothMotor()
+// {
+//     speedControl(xobj, 1, 5000);
+//     speedControl(xobj, 2, 5000);
+//     sleep(10);
+//     speedControl(xobj, 1, 0);
+//     speedControl(xobj, 2, 0);
+//     Motor_stop(xobj, 2);
+//     Motor_stop(xobj, 1);
+// }
+
 int main()
 {
     int t1 = clock();
 
     std::cout << "start time: " << t1 << std::endl;
-    std::cout << "------------------------------------\n";
-    std::cout << "|   I am here in ex2_single.cpp!   |\n";
-    std::cout << "------------------------------------\n";
 
     X10ApiSerial *xobj;
     xobj = new X10ApiSerial();
@@ -214,11 +246,19 @@ int main()
     xobj->get_port_address(port);
     xobj->rmdX10_init();
 
-    speedControl(xobj, 1, 5000);
+    Motor_read_accel(xobj, 1);
+    sleep(1);
 
-    sleep(10);
+    Motor_read_accel(xobj, 2);
 
-    Motor_stop(xobj, 1);
+    sleep(1);
 
+    // Motor_write_pid(xobj, 2);
+
+    // sleep(1);
+    // Motor_read_pid(xobj, 1);
+    // sleep(1);
+
+    // Motor_read_pid(xobj, 2);
     return 0;
 }

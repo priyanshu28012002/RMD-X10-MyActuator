@@ -1,7 +1,7 @@
 #include "joystick.cpp"
 #include "MyActuator.hpp"
 
-constexpr int NUM_MOTORS = 1;
+constexpr int NUM_MOTORS = 2;
 
 bool robotRunningState = true;
 
@@ -62,6 +62,9 @@ int main()
 
     int lastAxis3 = 0;
     bool isMoterRunning = false;
+
+    int lastAxis0 = 0;
+    bool isMoter2Running = false;
     while (robotRunningState)
     {
         js.poll();
@@ -122,16 +125,35 @@ int main()
             if (lastAxis3 != state.axis[3])
             {
                 robot.moveAtSpeed(1, state.axis[3]);
+                robot.moveAtSpeed(2, state.axis[3]);
+
                 lastAxis3 = state.axis[3];
                 isMoterRunning = true;
             }
-            else if(isMoterRunning && state.axis[3] == 0){
+            else if (isMoterRunning && state.axis[3] == 0)
+            {
                 robot.stop(1);
+                robot.stop(2);
+
                 isMoterRunning = false;
+            }
+
+            // Motor 2
+
+            if (lastAxis0 != state.axis[0])
+            {
+                robot.moveAtSpeed(2, state.axis[0]);
+                lastAxis0 = state.axis[0];
+                isMoter2Running = true;
+            }
+            else if (isMoter2Running && state.axis[0] == 0)
+            {
+                robot.stop(2);
+                isMoter2Running = false;
             }
 
             usleep(10000);
         }
     }
-        return 0;
+    return 0;
 }
