@@ -1,10 +1,10 @@
 #include "MotorManager.hpp"
 
-MotorManager::MotorManager(int motorCount, CommandScheduler *scheduler)
+MotorManager::MotorManager(int motorCount)
 {
     for (int i = 1; i <= motorCount; i++)
     {
-        motors_.push_back(std::make_unique<Motor>(i, scheduler));
+        motors_.push_back(std::make_unique<Motor>(i));
     }
 }
 

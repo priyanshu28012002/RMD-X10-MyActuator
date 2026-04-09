@@ -23,26 +23,26 @@ class X10ApiSerial;
 // ─────────────────────────────────────────────
 struct MotorStatus
 {
-    uint8_t  id          = 0;
+    uint8_t id = 0;
 
     // State 1 (Motor_state1)
-    int8_t   temperature = 0;   // °C
-    int16_t  voltage     = 0;   // 0.1 V
-    uint8_t  errorState  = 0;   // bitmask
+    int8_t temperature = 0; // °C
+    int16_t voltage = 0;    // 0.1 V
+    uint8_t errorState = 0; // bitmask
 
     // State 2 (Motor_state2)
-    int8_t   temperature2 = 0;
-    int16_t  torqueCurrent = 0; // A·0.01
-    int16_t  speed         = 0; // dps
-    int16_t  encoder       = 0; // raw
+    int8_t temperature2 = 0;
+    int16_t torqueCurrent = 0; // A·0.01
+    int16_t speed = 0;         // dps
+    int16_t encoder = 0;       // raw
 
     // State 3 (Motor_state3)
-    int16_t  phaseA = 0;
-    int16_t  phaseB = 0;
-    int16_t  phaseC = 0;
+    int16_t phaseA = 0;
+    int16_t phaseB = 0;
+    int16_t phaseC = 0;
 
-    bool     online      = false;
-    uint64_t lastUpdated = 0;   // epoch ms
+    bool online = false;
+    uint64_t lastUpdated = 0; // epoch ms
 };
 
 // ─────────────────────────────────────────────
@@ -56,8 +56,6 @@ enum class CommandType : uint8_t
     SET_TORQUE,
     SET_ABS_POSITION,
     SET_INC_POSITION,
-    BRAKE_LOCK,
-    BRAKE_RELEASE,
     MOTOR_SHUTDOWN,
     MOTOR_RESET,
     READ_STATE1,
@@ -68,19 +66,18 @@ enum class CommandType : uint8_t
 struct MotorCommand
 {
     CommandType type;
-    uint8_t     motorId   = 0;       // 0 = broadcast / all
-    int32_t     param1    = 0;       // speed, torque, angle, etc.
-    int32_t     param2    = 0;       // maxSpeed for position cmds
-    bool        emergency = false;   // bypasses queue ordering
+    uint8_t motorId = 0;    // 0 = broadcast / all
+    int32_t param1 = 0;     // speed, torque, angle, etc.
+    int32_t param2 = 0;     // maxSpeed for position cmds
+    bool emergency = false; // bypasses queue ordering
 };
 
-
-struct MyActuatorState{
-IDEAL
-READY
-RUNNING
-}
-
+enum class MyActuatorState
+{
+    IDEAL,
+    READY,
+    RUNNING
+};
 
 // ─────────────────────────────────────────────
 //  MyActuator  — Real-Time Motor OS
@@ -98,12 +95,14 @@ public:
      * @param motorCount  Number of motors (IDs 1..motorCount)
      * @param port        Serial device, e.g. "/dev/ttyUSB0"
      */
-    explicit MyActuator(int motorCount, const std::string& port = "/dev/ttyUSB0");
+
+    std::vector<int> speeds;
+    explicit MyActuator(int motorCount, const std::string &port = "/dev/ttyUSB0");
     ~MyActuator();
 
     // Non-copyable, non-movable
-    MyActuator(const MyActuator&)            = delete;
-    MyActuator& operator=(const MyActuator&) = delete;
+    MyActuator(const MyActuator &) = delete;
+    MyActuator &operator=(const MyActuator &) = delete;
 
     // ── Lifecycle ─────────────────────────────
     /** Start the 50 Hz real-time scheduler thread. */
@@ -134,6 +133,8 @@ public:
      */
     void setSpeed(uint8_t motorId, int32_t speedDps);
 
+    void setSpeedAll(int32_t speedDps);
+    void executerLoop();
     /**
      * Set torque current control.
      * iqControl: raw current value per X10 protocol
@@ -184,7 +185,7 @@ public:
      * Register a callback fired every cycle with the fresh status of each motor.
      * Called from the RT thread — keep it short!
      */
-    using StatusCallback = std::function<void(const std::vector<MotorStatus>&)>;
+    using StatusCallback = std::function<void(const std::vector<MotorStatus> &)>;
     void setStatusCallback(StatusCallback cb);
 
     /**
@@ -199,15 +200,15 @@ public:
     uint64_t cycleCount() const;
 
     /** Returns worst-case cycle overrun in microseconds (ideal = 0). */
-    int64_t  worstOverrunUs() const;
+    int64_t worstOverrunUs() const;
 
 private:
     // ── Internal types ────────────────────────
     struct PrioritisedCommand
     {
-        bool         emergency;
+        bool emergency;
         MotorCommand cmd;
-        bool operator<(const PrioritisedCommand& o) const
+        bool operator<(const PrioritisedCommand &o) const
         {
             // higher priority = emergency first
             return !emergency && o.emergency;
@@ -220,49 +221,52 @@ private:
     // ── Per-cycle work ────────────────────────
     void dispatchPendingCommands();
     void pollMotorStates();
-    void executeCommand(const MotorCommand& cmd);
+    void executeCommand(const MotorCommand &cmd);
     void updateStatusTimestamp(uint8_t id);
 
     // ── Helpers ───────────────────────────────
-    MotorStatus&       statusRef(uint8_t id);
-    const MotorStatus& statusRef(uint8_t id) const;
-    bool               validId(uint8_t id) const;
-    uint64_t           nowMs() const;
+    MotorStatus &statusRef(uint8_t id);
+    const MotorStatus &statusRef(uint8_t id) const;
+    bool validId(uint8_t id) const;
+    uint64_t nowMs() const;
 
     // ── Configuration ─────────────────────────
-    static constexpr int    LOOP_HZ        = 50;
-    static constexpr int    LOOP_US        = 1'000'000 / LOOP_HZ; // 20 000 µs
-    static constexpr int    MAX_CMD_PER_CYCLE = 4; // max commands dispatched per 20 ms
+    static constexpr int LOOP_HZ = 50;
+    static constexpr int LOOP_US = 1'000'000 / LOOP_HZ; // 20 000 µs
+    static constexpr int MAX_CMD_PER_CYCLE = 4;         // max commands dispatched per 20 ms
 
     // ── Members ───────────────────────────────
-    int                                    motorCount_;
-    std::string                            port_;
-    std::unique_ptr<X10ApiSerial>          driver_;
+    int motorCount_;
+    std::string port_;
+    std::unique_ptr<X10ApiSerial> driver_;
 
     // RT thread
-    std::thread                            rtThread_;
-    std::atomic<bool>                      running_{false};
-    std::atomic<bool>                      stopRequested_{false};
+    std::thread rtThread_;
+
+    std::thread commandExecuter;
+
+    std::atomic<bool> running_{false};
+    std::atomic<bool> stopRequested_{false};
 
     // Motor state store (index 0 = motor ID 1)
-    std::vector<MotorStatus>               motorStatus_;
-    mutable std::mutex                     statusMutex_;
+    std::vector<MotorStatus> motorStatus_;
+    mutable std::mutex statusMutex_;
 
     // Command queue (priority: emergency first)
     std::priority_queue<PrioritisedCommand> cmdQueue_;
-    std::mutex                             cmdMutex_;
+    std::mutex cmdMutex_;
 
     // Callbacks
-    StatusCallback                         statusCb_;
-    FaultCallback                          faultCb_;
-    mutable std::mutex                     cbMutex_;
+    StatusCallback statusCb_;
+    FaultCallback faultCb_;
+    mutable std::mutex cbMutex_;
 
     // Diagnostics
-    std::atomic<uint64_t>                  cycleCount_{0};
-    std::atomic<int64_t>                   worstOverrunUs_{0};
+    std::atomic<uint64_t> cycleCount_{0};
+    std::atomic<int64_t> worstOverrunUs_{0};
 
     // Round-robin poll index (spread state queries across cycles)
-    uint8_t                                pollRoundRobin_{0};
+    uint8_t pollRoundRobin_{0};
 };
 
 #endif // MY_ACTUATOR_HPP

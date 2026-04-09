@@ -10,7 +10,7 @@ private:
     std::vector<std::unique_ptr<Motor>> motors_;
 
 public:
-    MotorManager(int motorCount, CommandScheduler *scheduler);
+    MotorManager(int motorCount);
     void setTemp(int id, double value);
     void setVoltage(int id, double value);
     void setCurrent(int id, double value);

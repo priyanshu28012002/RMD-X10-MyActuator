@@ -18,7 +18,7 @@ struct MotorStatus
     double torque = 0;
 };
 
-MyActuator actuator(NUM_MOTORS, MOTOR_PORT);
+MyActuator actuator(NUM_MOTORS, MOTOR_PORT); 
 actuator.init(); IDEAL -> READY
 actuator.validId(int id);
 actuator.start(); READY -> RUNNING

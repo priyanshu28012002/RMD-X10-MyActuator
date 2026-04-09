@@ -51,18 +51,16 @@
 #include "MotorCommand.hpp"
 #include <memory>
 
-class CommandScheduler;
 
 class Motor
 {
 private:
     int id_;
-    CommandScheduler* scheduler_;
 
 public:
     MotorState state_;
 
-    Motor(int id, CommandScheduler* scheduler);
+    Motor(int id);
 
     int getId() const;
 

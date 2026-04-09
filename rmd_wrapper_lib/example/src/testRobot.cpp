@@ -311,7 +311,8 @@ int main()
 
 
 
-            std::cout << js.axis[3] << std::endl;
+        actuator.setSpeedAll(js.axis[3] );
+        
         }
     }
 
