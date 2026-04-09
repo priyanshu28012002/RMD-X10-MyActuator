@@ -316,6 +316,20 @@ testRobot/fast:
 .PHONY : testRobot/fast
 
 # Convenience name for target.
+example/CMakeFiles/testMotorStatus.dir/rule:
+	cd /home/octobot/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 example/CMakeFiles/testMotorStatus.dir/rule
+.PHONY : example/CMakeFiles/testMotorStatus.dir/rule
+
+# Convenience name for target.
+testMotorStatus: example/CMakeFiles/testMotorStatus.dir/rule
+.PHONY : testMotorStatus
+
+# fast build rule for target.
+testMotorStatus/fast:
+	cd /home/octobot/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build && $(MAKE) $(MAKESILENT) -f example/CMakeFiles/testMotorStatus.dir/build.make example/CMakeFiles/testMotorStatus.dir/build
+.PHONY : testMotorStatus/fast
+
+# Convenience name for target.
 example/CMakeFiles/joy_to_cmd_node.dir/rule:
 	cd /home/octobot/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 example/CMakeFiles/joy_to_cmd_node.dir/rule
 .PHONY : example/CMakeFiles/joy_to_cmd_node.dir/rule
@@ -597,6 +611,30 @@ src/testMotor.cpp.s:
 	cd /home/octobot/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build && $(MAKE) $(MAKESILENT) -f example/CMakeFiles/testMotor.dir/build.make example/CMakeFiles/testMotor.dir/src/testMotor.cpp.s
 .PHONY : src/testMotor.cpp.s
 
+src/testMotorStatus.o: src/testMotorStatus.cpp.o
+.PHONY : src/testMotorStatus.o
+
+# target to build an object file
+src/testMotorStatus.cpp.o:
+	cd /home/octobot/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build && $(MAKE) $(MAKESILENT) -f example/CMakeFiles/testMotorStatus.dir/build.make example/CMakeFiles/testMotorStatus.dir/src/testMotorStatus.cpp.o
+.PHONY : src/testMotorStatus.cpp.o
+
+src/testMotorStatus.i: src/testMotorStatus.cpp.i
+.PHONY : src/testMotorStatus.i
+
+# target to preprocess a source file
+src/testMotorStatus.cpp.i:
+	cd /home/octobot/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build && $(MAKE) $(MAKESILENT) -f example/CMakeFiles/testMotorStatus.dir/build.make example/CMakeFiles/testMotorStatus.dir/src/testMotorStatus.cpp.i
+.PHONY : src/testMotorStatus.cpp.i
+
+src/testMotorStatus.s: src/testMotorStatus.cpp.s
+.PHONY : src/testMotorStatus.s
+
+# target to generate assembly for a file
+src/testMotorStatus.cpp.s:
+	cd /home/octobot/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build && $(MAKE) $(MAKESILENT) -f example/CMakeFiles/testMotorStatus.dir/build.make example/CMakeFiles/testMotorStatus.dir/src/testMotorStatus.cpp.s
+.PHONY : src/testMotorStatus.cpp.s
+
 src/testRobot.o: src/testRobot.cpp.o
 .PHONY : src/testRobot.o
 
@@ -669,6 +707,7 @@ help:
 	@echo "... serialCommTest"
 	@echo "... serialPortTest"
 	@echo "... testMotor"
+	@echo "... testMotorStatus"
 	@echo "... testRobot"
 	@echo "... x10_apiTest"
 	@echo "... src/crc16Test.o"
@@ -701,6 +740,9 @@ help:
 	@echo "... src/testMotor.o"
 	@echo "... src/testMotor.i"
 	@echo "... src/testMotor.s"
+	@echo "... src/testMotorStatus.o"
+	@echo "... src/testMotorStatus.i"
+	@echo "... src/testMotorStatus.s"
 	@echo "... src/testRobot.o"
 	@echo "... src/testRobot.i"
 	@echo "... src/testRobot.s"

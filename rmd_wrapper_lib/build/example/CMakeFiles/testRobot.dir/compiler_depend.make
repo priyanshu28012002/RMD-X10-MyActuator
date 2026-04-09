@@ -237,8 +237,12 @@ example/CMakeFiles/testRobot.dir/src/testRobot.cpp.o: ../example/src/testRobot.c
   /usr/include/string.h \
   /usr/include/strings.h \
   ../include/MyActuator.hpp \
-  /usr/include/c++/11/memory \
+  /usr/include/c++/11/vector \
   /usr/include/c++/11/bits/stl_uninitialized.h \
+  /usr/include/c++/11/bits/stl_vector.h \
+  /usr/include/c++/11/bits/stl_bvector.h \
+  /usr/include/c++/11/bits/vector.tcc \
+  /usr/include/c++/11/memory \
   /usr/include/c++/11/bits/stl_raw_storage_iter.h \
   /usr/include/c++/11/bits/align.h \
   /usr/include/c++/11/bit \
@@ -283,20 +287,7 @@ example/CMakeFiles/testRobot.dir/src/testRobot.cpp.o: ../example/src/testRobot.c
   /usr/include/c++/11/bits/uses_allocator_args.h \
   /usr/include/c++/11/pstl/glue_memory_defs.h \
   /usr/include/c++/11/pstl/execution_defs.h \
-  ../include/MotorManager.hpp \
-  /usr/include/c++/11/vector \
-  /usr/include/c++/11/bits/stl_vector.h \
-  /usr/include/c++/11/bits/stl_bvector.h \
-  /usr/include/c++/11/bits/vector.tcc \
-  ../include/Motor.hpp \
-  ../include/MotorState.hpp \
-  ../include/MotorCommand.hpp \
-  ../include/CommandScheduler.hpp \
-  /usr/include/c++/11/queue \
-  /usr/include/c++/11/deque \
-  /usr/include/c++/11/bits/stl_deque.h \
-  /usr/include/c++/11/bits/deque.tcc \
-  /usr/include/c++/11/bits/stl_queue.h \
+  /usr/include/c++/11/atomic \
   /usr/include/c++/11/mutex \
   /usr/include/c++/11/chrono \
   /usr/include/c++/11/ratio \
@@ -306,7 +297,6 @@ example/CMakeFiles/testRobot.dir/src/testRobot.cpp.o: ../example/src/testRobot.c
   /usr/include/c++/11/bits/unique_lock.h \
   /usr/include/c++/11/thread \
   /usr/include/c++/11/stop_token \
-  /usr/include/c++/11/atomic \
   /usr/include/c++/11/bits/std_thread.h \
   /usr/include/c++/11/semaphore \
   /usr/include/c++/11/bits/semaphore_base.h \
@@ -314,56 +304,119 @@ example/CMakeFiles/testRobot.dir/src/testRobot.cpp.o: ../example/src/testRobot.c
   /usr/include/c++/11/bits/this_thread_sleep.h \
   /usr/include/semaphore.h \
   /usr/include/x86_64-linux-gnu/bits/semaphore.h \
-  ../include/x10_api.hpp \
-  ../include/x10_api_base.hpp \
-  ../include/x10_reg.hpp \
-  ../include/crc16.hpp \
-  ../include/SerialComm.hpp \
-  ../include/SerialPort.hpp \
-  /usr/include/c++/11/fstream \
+  /usr/include/c++/11/condition_variable \
+  /usr/include/c++/11/functional \
+  /usr/include/c++/11/bits/std_function.h \
+  /usr/include/c++/11/unordered_map \
+  /usr/include/c++/11/bits/hashtable.h \
+  /usr/include/c++/11/bits/hashtable_policy.h \
+  /usr/include/c++/11/bits/enable_special_members.h \
+  /usr/include/c++/11/bits/node_handle.h \
+  /usr/include/c++/11/bits/unordered_map.h \
+  /usr/include/c++/11/bits/erase_if.h \
+  /usr/include/c++/11/queue \
+  /usr/include/c++/11/deque \
+  /usr/include/c++/11/bits/stl_deque.h \
+  /usr/include/c++/11/bits/deque.tcc \
+  /usr/include/c++/11/bits/stl_queue.h \
+  /usr/include/c++/11/csignal \
+  /usr/include/signal.h \
+  /usr/include/x86_64-linux-gnu/bits/signum-generic.h \
+  /usr/include/x86_64-linux-gnu/bits/signum-arch.h \
+  /usr/include/x86_64-linux-gnu/bits/types/sig_atomic_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/siginfo_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__sigval_t.h \
+  /usr/include/x86_64-linux-gnu/bits/siginfo-arch.h \
+  /usr/include/x86_64-linux-gnu/bits/siginfo-consts.h \
+  /usr/include/x86_64-linux-gnu/bits/siginfo-consts-arch.h \
+  /usr/include/x86_64-linux-gnu/bits/types/sigval_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/sigevent_t.h \
+  /usr/include/x86_64-linux-gnu/bits/sigevent-consts.h \
+  /usr/include/x86_64-linux-gnu/bits/sigaction.h \
+  /usr/include/x86_64-linux-gnu/bits/sigcontext.h \
+  /usr/include/x86_64-linux-gnu/bits/types/stack_t.h \
+  /usr/include/x86_64-linux-gnu/sys/ucontext.h \
+  /usr/include/x86_64-linux-gnu/bits/sigstack.h \
+  /usr/include/x86_64-linux-gnu/bits/sigstksz.h \
+  /usr/include/x86_64-linux-gnu/bits/ss_flags.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_sigstack.h \
+  /usr/include/x86_64-linux-gnu/bits/sigthread.h \
+  /usr/include/x86_64-linux-gnu/bits/signal_ext.h \
+  /usr/include/c++/11/iomanip \
+  /usr/include/c++/11/locale \
+  /usr/include/c++/11/bits/locale_facets_nonio.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/time_members.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/messages_members.h \
+  /usr/include/libintl.h \
   /usr/include/c++/11/bits/codecvt.h \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
-  /usr/include/c++/11/bits/fstream.tcc \
+  /usr/include/c++/11/bits/locale_facets_nonio.tcc \
+  /usr/include/c++/11/bits/locale_conv.h \
+  /usr/include/c++/11/bits/quoted_string.h \
   /usr/include/c++/11/sstream \
-  /usr/include/c++/11/bits/sstream.tcc \
-  /usr/include/x86_64-linux-gnu/asm/termbits.h \
-  /usr/include/asm-generic/termbits.h \
-  /usr/include/x86_64-linux-gnu/sys/file.h \
-  /usr/include/c++/11/stdlib.h \
-  ../include/Exception.hpp \
-  ../include/CommandExecuter.hpp
+  /usr/include/c++/11/bits/sstream.tcc
 
 
-/usr/include/c++/11/stdlib.h:
+/usr/include/c++/11/bits/locale_conv.h:
 
-/usr/include/asm-generic/termbits.h:
+/usr/include/c++/11/bits/locale_facets_nonio.tcc:
 
-/usr/include/x86_64-linux-gnu/asm/termbits.h:
+/usr/include/libintl.h:
 
-/usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h:
+/usr/include/x86_64-linux-gnu/c++/11/bits/messages_members.h:
 
-/usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h:
+/usr/include/x86_64-linux-gnu/c++/11/bits/time_members.h:
 
-/usr/include/c++/11/fstream:
+/usr/include/c++/11/bits/locale_facets_nonio.h:
 
-../include/SerialComm.hpp:
+/usr/include/x86_64-linux-gnu/bits/signal_ext.h:
 
-../include/crc16.hpp:
+/usr/include/x86_64-linux-gnu/bits/sigthread.h:
 
-../include/SerialPort.hpp:
+/usr/include/x86_64-linux-gnu/sys/ucontext.h:
 
-../include/x10_api_base.hpp:
+/usr/include/x86_64-linux-gnu/bits/types/stack_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/sigcontext.h:
+
+/usr/include/x86_64-linux-gnu/bits/sigaction.h:
+
+/usr/include/x86_64-linux-gnu/bits/sigevent-consts.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/sigevent_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/sigval_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/siginfo-consts-arch.h:
+
+/usr/include/x86_64-linux-gnu/bits/siginfo-consts.h:
+
+/usr/include/x86_64-linux-gnu/bits/siginfo-arch.h:
+
+/usr/include/x86_64-linux-gnu/bits/ss_flags.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/sig_atomic_t.h:
+
+/usr/include/c++/11/bits/quoted_string.h:
+
+/usr/include/x86_64-linux-gnu/bits/signum-generic.h:
+
+/usr/include/c++/11/bits/deque.tcc:
+
+/usr/include/c++/11/deque:
+
+/usr/include/c++/11/bits/unordered_map.h:
+
+/usr/include/c++/11/bits/hashtable_policy.h:
+
+/usr/include/c++/11/bits/hashtable.h:
+
+/usr/include/c++/11/unordered_map:
 
 /usr/include/c++/11/bits/atomic_timed_wait.h:
 
 /usr/include/c++/11/bits/semaphore_base.h:
 
-../include/x10_api.hpp:
-
 /usr/include/c++/11/semaphore:
-
-/usr/include/c++/11/atomic:
 
 /usr/include/c++/11/bits/parse_numbers.h:
 
@@ -371,27 +424,17 @@ example/CMakeFiles/testRobot.dir/src/testRobot.cpp.o: ../example/src/testRobot.c
 
 /usr/include/c++/11/limits:
 
+/usr/include/c++/11/condition_variable:
+
 /usr/include/c++/11/thread:
 
 /usr/include/c++/11/ratio:
 
 /usr/include/c++/11/mutex:
 
-/usr/include/c++/11/bits/deque.tcc:
+/usr/include/c++/11/atomic:
 
-/usr/include/c++/11/deque:
-
-../include/MotorCommand.hpp:
-
-../include/Motor.hpp:
-
-/usr/include/c++/11/bits/vector.tcc:
-
-/usr/include/c++/11/bits/stl_vector.h:
-
-/usr/include/c++/11/vector:
-
-../include/MotorManager.hpp:
+/usr/include/c++/11/csignal:
 
 /usr/include/c++/11/pstl/glue_memory_defs.h:
 
@@ -411,8 +454,6 @@ example/CMakeFiles/testRobot.dir/src/testRobot.cpp.o: ../example/src/testRobot.c
 
 /usr/include/x86_64-linux-gnu/bits/xopen_lim.h:
 
-../include/Exception.hpp:
-
 /usr/include/x86_64-linux-gnu/bits/posix2_lim.h:
 
 /usr/include/x86_64-linux-gnu/bits/local_lim.h:
@@ -422,6 +463,18 @@ example/CMakeFiles/testRobot.dir/src/testRobot.cpp.o: ../example/src/testRobot.c
 /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h:
 
 /usr/include/c++/11/bits/atomic_wait.h:
+
+/usr/include/c++/11/bits/atomic_lockfree_defines.h:
+
+/usr/include/c++/11/bits/atomic_base.h:
+
+/usr/include/c++/11/queue:
+
+/usr/include/c++/11/bits/shared_ptr_atomic.h:
+
+/usr/include/c++/11/ext/concurrence.h:
+
+/usr/include/c++/11/bits/node_handle.h:
 
 /usr/include/c++/11/iostream:
 
@@ -433,11 +486,11 @@ example/CMakeFiles/testRobot.dir/src/testRobot.cpp.o: ../example/src/testRobot.c
 
 /usr/include/c++/11/bits/locale_classes.h:
 
-/usr/include/x86_64-linux-gnu/sys/file.h:
-
 /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
+
+/usr/include/signal.h:
 
 /usr/include/strings.h:
 
@@ -453,12 +506,6 @@ example/CMakeFiles/testRobot.dir/src/testRobot.cpp.o: ../example/src/testRobot.c
 
 /usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
 
-/usr/include/c++/11/bits/stl_bvector.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
-
 /usr/include/x86_64-linux-gnu/bits/select.h:
 
 /usr/include/x86_64-linux-gnu/bits/time.h:
@@ -468,8 +515,6 @@ example/CMakeFiles/testRobot.dir/src/testRobot.cpp.o: ../example/src/testRobot.c
 /usr/include/pthread.h:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/gthr-default.h:
-
-/usr/include/c++/11/ext/concurrence.h:
 
 /usr/include/x86_64-linux-gnu/bits/endianness.h:
 
@@ -498,6 +543,8 @@ example/CMakeFiles/testRobot.dir/src/testRobot.cpp.o: ../example/src/testRobot.c
 /usr/include/c++/11/bits/localefwd.h:
 
 /usr/include/x86_64-linux-gnu/sys/select.h:
+
+/usr/include/c++/11/iomanip:
 
 /usr/include/x86_64-linux-gnu/asm/unistd.h:
 
@@ -531,6 +578,8 @@ example/CMakeFiles/testRobot.dir/src/testRobot.cpp.o: ../example/src/testRobot.c
 
 /usr/include/linux/close_range.h:
 
+/usr/include/c++/11/locale:
+
 /usr/include/ctype.h:
 
 /usr/include/c++/11/bits/std_thread.h:
@@ -541,9 +590,9 @@ example/CMakeFiles/testRobot.dir/src/testRobot.cpp.o: ../example/src/testRobot.c
 
 /usr/include/c++/11/bits/ranges_cmp.h:
 
-/usr/include/c++/11/clocale:
+/usr/include/x86_64-linux-gnu/bits/sigstack.h:
 
-../include/CommandExecuter.hpp:
+/usr/include/c++/11/clocale:
 
 /usr/include/c++/11/bits/ostream.tcc:
 
@@ -587,8 +636,6 @@ example/CMakeFiles/testRobot.dir/src/testRobot.cpp.o: ../example/src/testRobot.c
 
 ../example/src/testRobot.cpp:
 
-../include/MotorState.hpp:
-
 /usr/include/c++/11/cstdint:
 
 /usr/include/x86_64-linux-gnu/bits/waitstatus.h:
@@ -614,8 +661,6 @@ example/CMakeFiles/testRobot.dir/src/testRobot.cpp.o: ../example/src/testRobot.c
 /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h:
 
 /usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
-
-/usr/include/c++/11/bits/fstream.tcc:
 
 /usr/include/asm-generic/posix_types.h:
 
@@ -675,6 +720,8 @@ example/CMakeFiles/testRobot.dir/src/testRobot.cpp.o: ../example/src/testRobot.c
 
 /usr/include/asm-generic/errno-base.h:
 
+/usr/include/x86_64-linux-gnu/bits/types/struct_sigstack.h:
+
 /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
@@ -733,15 +780,17 @@ example/CMakeFiles/testRobot.dir/src/testRobot.cpp.o: ../example/src/testRobot.c
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/c++locale.h:
 
+/usr/include/x86_64-linux-gnu/bits/sigstksz.h:
+
 /usr/include/x86_64-linux-gnu/bits/stat.h:
 
 /usr/include/c++/11/ext/numeric_traits.h:
 
+/usr/include/x86_64-linux-gnu/bits/types/__sigval_t.h:
+
 /usr/include/c++/11/bits/functexcept.h:
 
 /usr/include/x86_64-linux-gnu/asm/ioctl.h:
-
-/usr/include/c++/11/bits/atomic_base.h:
 
 /usr/include/features.h:
 
@@ -754,6 +803,8 @@ example/CMakeFiles/testRobot.dir/src/testRobot.cpp.o: ../example/src/testRobot.c
 /usr/include/linux/input.h:
 
 /usr/include/x86_64-linux-gnu/bits/waitflags.h:
+
+/usr/include/c++/11/bits/erase_if.h:
 
 /usr/include/c++/11/bits/ptr_traits.h:
 
@@ -815,6 +866,8 @@ example/CMakeFiles/testRobot.dir/src/testRobot.cpp.o: ../example/src/testRobot.c
 
 /usr/include/errno.h:
 
+/usr/include/x86_64-linux-gnu/bits/signum-arch.h:
+
 /usr/include/x86_64-linux-gnu/bits/errno.h:
 
 /usr/include/sched.h:
@@ -837,6 +890,8 @@ example/CMakeFiles/testRobot.dir/src/testRobot.cpp.o: ../example/src/testRobot.c
 
 /usr/include/c++/11/system_error:
 
+/usr/include/c++/11/bits/stl_vector.h:
+
 /usr/include/c++/11/ios:
 
 /usr/include/c++/11/utility:
@@ -844,8 +899,6 @@ example/CMakeFiles/testRobot.dir/src/testRobot.cpp.o: ../example/src/testRobot.c
 /usr/include/x86_64-linux-gnu/c++/11/bits/error_constants.h:
 
 /usr/include/c++/11/stdexcept:
-
-/usr/include/c++/11/bits/atomic_lockfree_defines.h:
 
 /usr/include/c++/11/bits/uniform_int_dist.h:
 
@@ -870,6 +923,8 @@ example/CMakeFiles/testRobot.dir/src/testRobot.cpp.o: ../example/src/testRobot.c
 /usr/include/c++/11/bits/locale_facets.tcc:
 
 /usr/include/c++/11/bits/codecvt.h:
+
+/usr/include/c++/11/bits/enable_special_members.h:
 
 /usr/include/c++/11/bits/basic_ios.tcc:
 
@@ -913,6 +968,8 @@ example/CMakeFiles/testRobot.dir/src/testRobot.cpp.o: ../example/src/testRobot.c
 
 /usr/include/x86_64-linux-gnu/bits/getopt_core.h:
 
+/usr/include/c++/11/vector:
+
 /usr/include/c++/11/bits/max_size_type.h:
 
 /usr/include/c++/11/bits/align.h:
@@ -924,6 +981,8 @@ example/CMakeFiles/testRobot.dir/src/testRobot.cpp.o: ../example/src/testRobot.c
 /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_inline.h:
 
 /usr/include/linux/types.h:
+
+/usr/include/c++/11/bits/std_function.h:
 
 /usr/include/c++/11/bits/stl_tempbuf.h:
 
@@ -947,6 +1006,8 @@ example/CMakeFiles/testRobot.dir/src/testRobot.cpp.o: ../example/src/testRobot.c
 
 /usr/include/x86_64-linux-gnu/sys/ioctl.h:
 
+/usr/include/x86_64-linux-gnu/bits/types/siginfo_t.h:
+
 /usr/include/c++/11/bits/ios_base.h:
 
 /usr/include/x86_64-linux-gnu/bits/ioctls.h:
@@ -954,8 +1015,6 @@ example/CMakeFiles/testRobot.dir/src/testRobot.cpp.o: ../example/src/testRobot.c
 /usr/include/asm-generic/ioctls.h:
 
 /usr/include/x86_64-linux-gnu/bits/ioctl-types.h:
-
-../include/CommandScheduler.hpp:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h:
 
@@ -965,7 +1024,7 @@ example/CMakeFiles/testRobot.dir/src/testRobot.cpp.o: ../example/src/testRobot.c
 
 /usr/include/x86_64-linux-gnu/sys/ttydefaults.h:
 
-../include/x10_reg.hpp:
+/usr/include/c++/11/functional:
 
 /usr/include/linux/errno.h:
 
@@ -979,9 +1038,17 @@ example/CMakeFiles/testRobot.dir/src/testRobot.cpp.o: ../example/src/testRobot.c
 
 /usr/include/string.h:
 
-/usr/include/c++/11/memory:
-
 /usr/include/c++/11/bits/stl_uninitialized.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
+
+/usr/include/c++/11/bits/stl_bvector.h:
+
+/usr/include/c++/11/bits/vector.tcc:
+
+/usr/include/c++/11/memory:
 
 /usr/include/c++/11/bits/stl_raw_storage_iter.h:
 
@@ -994,7 +1061,3 @@ example/CMakeFiles/testRobot.dir/src/testRobot.cpp.o: ../example/src/testRobot.c
 /usr/include/linux/stddef.h:
 
 /usr/include/c++/11/bits/refwrap.h:
-
-/usr/include/c++/11/queue:
-
-/usr/include/c++/11/bits/shared_ptr_atomic.h:

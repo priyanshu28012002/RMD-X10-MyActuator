@@ -28,10 +28,20 @@ void MotorManager::setSpeed(int id, double value)
     Motor *m = getMotor(id);
     m->state_.speed = value;
 }
-void MotorManager::setAngle(int id, double value)
+void MotorManager::setPosition(int id, double value)
 {
     Motor *m = getMotor(id);
-    m->state_.angle = value;
+    m->state_.position = value;
+}
+void MotorManager::setTargetSpeed(int id, double value)
+{
+    Motor *m = getMotor(id);
+    m->state_.targetSpeed = value;
+}
+void MotorManager::setTorque(int id, double value)
+{
+    Motor *m = getMotor(id);
+    m->state_.torque = value;
 }
 
 Motor *MotorManager::getMotor(int id)

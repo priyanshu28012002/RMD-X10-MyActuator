@@ -67,35 +67,3 @@ int main()
 
     return 0;
 }
-
-/*
-
-//init
-MyActuator robot(3, "/dev/ttyUSB0");
-robot.motor(1)->inti();
-robot.motor(2)->inti();
-robot.motor(3)->inti();
-robot.motor()->inti(); // For all;
-
-//Emergency
-robot.motor(1)->stop()
-robot.motor(1)->applyBreak()
-robot.motor(1)->EmergencyStop() // deinit,applybreak,stop
-
-//Status
-robot.motor(1)->getTemp()
-robot.motor(1)->getVoltage()
-robot.motor(1)->getCurrent()
-robot.motor(1)->getPosition()
-robot.motor(1)->getAngle()
-
-//Command
-robot.motor(2)->moveToAngle(90,100);
-robot.motor(2)->moveToPosition(90,100);
-
-//Setting
-robot.motor(1)->setAcc(20)
-robot.motor(1)->setPid()
-robot.motor(1)->setTourqe()
-
-*/

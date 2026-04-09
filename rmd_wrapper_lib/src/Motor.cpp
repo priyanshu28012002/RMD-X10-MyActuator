@@ -28,14 +28,24 @@ double Motor::getCurrent()
 {
     return state_.current;
 }
-double Motor::getAngle()
-{
-    return state_.angle;
-}
 double Motor::getSpeed()
 {
     return state_.speed;
 }
+
+double Motor::getPosition()
+{
+    return state_.position;
+}
+double Motor::getTargetSpeed()
+{
+    return state_.targetSpeed;
+}
+double Motor::getTorque()
+{
+    return state_.torque;
+}
+
 
 void Motor::setSpeed(double speed)
 {
@@ -60,11 +70,11 @@ void Motor::moveToAngle(double angle, double speed)
     scheduler_->pushCommand(cmd);
 }
 
-void Motor::updateState()
-{
-    state_.temperature++;
-    state_.voltage++;
-    state_.current++;
-    state_.angle++;
-    state_.speed++;
-}
+// void Motor::updateState()
+// {
+//     state_.temperature++;
+//     state_.voltage++;
+//     state_.current++;
+//     state_.angle++;
+//     state_.speed++;
+// }

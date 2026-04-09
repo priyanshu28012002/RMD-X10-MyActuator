@@ -75,6 +75,8 @@ public:
     double getTemp();
     double getVoltage();
     double getCurrent();
-    double getAngle();
     double getSpeed();
+    double getPosition();
+    double getTargetSpeed();
+    double getTorque();
 };

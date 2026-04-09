@@ -5,6 +5,7 @@
 #include <unistd.h>
 #include <cstdio>
 #include <stdio.h>
+#include <unistd.h>
 
 #define MOTOR_ID (2)
 #define PORT_ADDR "/dev/ttyUSB0"
@@ -221,19 +222,6 @@ void set_Motor_id(X10ApiSerial *xobj, uint8_t newID)
     std::cout << "set_Motor_id Result" << x << std::endl;
 }
 
-// Test Function
-
-// void runBothMotor()
-// {
-//     speedControl(xobj, 1, 5000);
-//     speedControl(xobj, 2, 5000);
-//     sleep(10);
-//     speedControl(xobj, 1, 0);
-//     speedControl(xobj, 2, 0);
-//     Motor_stop(xobj, 2);
-//     Motor_stop(xobj, 1);
-// }
-
 int main()
 {
     int t1 = clock();
@@ -245,20 +233,13 @@ int main()
 
     xobj->get_port_address(port);
     xobj->rmdX10_init();
-
-    Motor_read_accel(xobj, 1);
-    sleep(1);
-
-    Motor_read_accel(xobj, 2);
-
-    sleep(1);
-
-    // Motor_write_pid(xobj, 2);
-
-    // sleep(1);
-    // Motor_read_pid(xobj, 1);
-    // sleep(1);
-
-    // Motor_read_pid(xobj, 2);
+    Motor_state1(xobj, 1);
+    Motor_state2(xobj, 1);
+    
+    Motor_state3(xobj, 1);
+    Motor_state1(xobj, 2);
+    Motor_state2(xobj, 2);
+    
+    Motor_state3(xobj, 2);
     return 0;
 }

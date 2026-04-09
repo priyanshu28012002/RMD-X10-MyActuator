@@ -15,6 +15,9 @@ add_executable( myActuatorTest src/myActuatorTest.cpp)
 add_executable( testMotor src/testMotor.cpp)
 add_executable( rawJoyTest src/rawJoyTest.cpp)
 add_executable( testRobot src/testRobot.cpp)
+add_executable( testMotorStatus src/testMotorStatus.cpp)
+
+
 
 
 
@@ -27,6 +30,8 @@ target_link_libraries(x10_apiTest PRIVATE rmd)
 target_link_libraries(testMotor PRIVATE rmd)
 target_link_libraries(rawJoyTest PRIVATE rmd)
 target_link_libraries(testRobot PRIVATE rmd)
+target_link_libraries(testMotorStatus PRIVATE rmd)
+
 
 
 

@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/testMotorStatus.dir/src/testMotorStatus.cpp.o -o testMotorStatus  -Wl,-rpath,/home/octobot/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build ../librmd.so.1.0.0 

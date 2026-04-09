@@ -318,6 +318,19 @@ testRobot/fast:
 .PHONY : testRobot/fast
 
 #=============================================================================
+# Target rules for targets named testMotorStatus
+
+# Build rule for target.
+testMotorStatus: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 testMotorStatus
+.PHONY : testMotorStatus
+
+# fast build rule for target.
+testMotorStatus/fast:
+	$(MAKE) $(MAKESILENT) -f example/CMakeFiles/testMotorStatus.dir/build.make example/CMakeFiles/testMotorStatus.dir/build
+.PHONY : testMotorStatus/fast
+
+#=============================================================================
 # Target rules for targets named joy_to_cmd_node
 
 # Build rule for target.
@@ -621,6 +634,7 @@ help:
 	@echo "... serialCommTest"
 	@echo "... serialPortTest"
 	@echo "... testMotor"
+	@echo "... testMotorStatus"
 	@echo "... testRobot"
 	@echo "... x10_apiTest"
 	@echo "... src/CommandExecuter.o"

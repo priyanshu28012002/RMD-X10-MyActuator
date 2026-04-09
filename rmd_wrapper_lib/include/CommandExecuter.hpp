@@ -34,4 +34,7 @@ public:
     void startExecution();
     void stopExecution();
     int count = 0;
+    void parseMoterState1(int16_t* buffer);
+    void parseMoterState2(int16_t* buffer);
+    void parseMoterState3(int16_t* buffer);
 };

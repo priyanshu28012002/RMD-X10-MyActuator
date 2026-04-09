@@ -53,6 +53,11 @@ void CommandScheduler::statusUpdateLoop()
         cmd.type = CommandType::STATUS;
         pushCommand(cmd);
         std::this_thread::sleep_for(std::chrono::seconds(1));
+        cmd.motorId = 2;
+        cmd.priority = 2;
+        cmd.type = CommandType::STATUS;
+        pushCommand(cmd);
+        std::this_thread::sleep_for(std::chrono::seconds(1));
     }
 }
 

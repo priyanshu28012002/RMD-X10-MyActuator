@@ -642,6 +642,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "example/CMakeFiles/testMotor.dir/DependInfo.cmake"
   "example/CMakeFiles/rawJoyTest.dir/DependInfo.cmake"
   "example/CMakeFiles/testRobot.dir/DependInfo.cmake"
+  "example/CMakeFiles/testMotorStatus.dir/DependInfo.cmake"
   "example/CMakeFiles/joy_to_cmd_node.dir/DependInfo.cmake"
   "example/CMakeFiles/cmd_vel_to_motor_speed_node.dir/DependInfo.cmake"
   "example/CMakeFiles/actuator_controler_node.dir/DependInfo.cmake"
