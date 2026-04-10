@@ -1,6 +1,5 @@
 #include "MyActuator.hpp"
 #include "x10_api.hpp"
-
 #include <chrono>
 #include <cstring>
 #include <iostream>
@@ -26,14 +25,17 @@ MyActuator::MyActuator(int motorCount, const std::string &port)
         motorStatus_[i].id = static_cast<uint8_t>(i + 1);
     }
     speeds.resize(motorCount);
+    wheelDimeter.resize(motorCount);
+
     for (int i = 0; i < motorCount; i++)
     {
         speeds[i] = 0;
+        wheelDimeter[i] = 160;
     }
 
     driver_->rmdX10_init();
 
-    commandExecuter = std::thread(&MyActuator::executerLoop, this);
+    commandExecuter = std::thread(&MyActuator::speedControlExecuterLoop, this);
 }
 
 MyActuator::~MyActuator()
@@ -63,30 +65,24 @@ void MyActuator::stop()
 
     running_.store(false);
 }
-
 bool MyActuator::isRunning() const
 {
     return running_.load();
 }
-
-void MyActuator::executerLoop()
+void MyActuator::speedControlExecuterLoop()
 {
 
-    int lastSpeed = 0;
+    // ← remove: mode = MyActuatorMode::SPEED;
     while (true)
     {
-
-       
-            auto result = driver_->speedControl(1, speeds[0]);
-            if (result == 1)
+        if (mode_ == MyActuatorMode::SPEED && speeds[0] != lastSpeed)
+        {
+            // only execute if still in SPEED mode
+            int8_t result = driver_->speedControl(1, speeds[0]);
+            if (result == 0)
                 lastSpeed = speeds[0];
-
-            // if(result)
-
-            std::cout << "Result -> " << (int)result << std::endl;
-       
-
-        // std::this_thread::sleep_for(std::chrono::milliseconds(20));
+        }
+        std::this_thread::sleep_for(std::chrono::milliseconds(20));
     }
 }
 void MyActuator::rtLoop()
@@ -149,7 +145,6 @@ void MyActuator::rtLoop()
         nextWake += period;
     }
 }
-
 void MyActuator::dispatchPendingCommands()
 {
     std::unique_lock<std::mutex> lk(cmdMutex_);
@@ -474,4 +469,70 @@ bool MyActuator::validId(uint8_t id) const
 uint64_t MyActuator::nowMs() const
 {
     return epochMs();
+}
+bool MyActuator::setMaxSpeed(int newSpeed)
+{
+    maxSpeed = newSpeed;
+    return 0;
+}
+bool MyActuator::setMinSpeed(int newSpeed)
+{
+
+    minSpeed = newSpeed;
+    return 0;
+}
+
+bool MyActuator::checkMode(MyActuatorMode required)
+{
+    if (mode_ == MyActuatorMode::NONE)
+    {
+        std::cerr << "[MyActuator] ERROR: Mode is NONE. Call setMode() first.\n";
+        return false;
+    }
+    if (mode_ != required)
+    {
+        std::cout << "[MyActuator] ERROR: Wrong mode. Current="
+                  << modeToString(mode_) << " Required="
+                  << modeToString(required) << "\n";
+        return false;
+    }
+    return true;
+}
+std::string MyActuator::modeToString(MyActuatorMode m)
+{
+    switch (m)
+    {
+    case MyActuatorMode::NONE:
+        return "NONE";
+    case MyActuatorMode::SPEED:
+        return "SPEED";
+    case MyActuatorMode::ANGLE:
+        return "ANGLE";
+    case MyActuatorMode::SETTING:
+        return "SETTING";
+    }
+    return "UNKNOWN";
+}
+
+void MyActuator::setMode(MyActuatorMode newMode)
+{
+    // If switching away from SPEED mode, zero out all speeds safely
+    if (mode_ == MyActuatorMode::SPEED && newMode != MyActuatorMode::SPEED)
+    {
+        for (auto &s : speeds)
+            s = 0;
+        std::cout << "[MyActuator] Zeroing all speeds before mode switch.\n";
+    }
+
+    mode_ = newMode;
+    std::cout << "[MyActuator] Mode set to: " << modeToString(mode_) << "\n";
+}
+
+MyActuatorMode MyActuator::getMode()
+{
+    return mode_;
+}
+
+bool MyActuator::setAngle(int angle){
+    return driver_->increment_control(1,500,angle*100);
 }
