@@ -369,102 +369,6 @@ actuator_controler_node/fast:
 	$(MAKE) $(MAKESILENT) -f example/CMakeFiles/actuator_controler_node.dir/build.make example/CMakeFiles/actuator_controler_node.dir/build
 .PHONY : actuator_controler_node/fast
 
-src/CommandExecuter.o: src/CommandExecuter.cpp.o
-.PHONY : src/CommandExecuter.o
-
-# target to build an object file
-src/CommandExecuter.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rmd.dir/build.make CMakeFiles/rmd.dir/src/CommandExecuter.cpp.o
-.PHONY : src/CommandExecuter.cpp.o
-
-src/CommandExecuter.i: src/CommandExecuter.cpp.i
-.PHONY : src/CommandExecuter.i
-
-# target to preprocess a source file
-src/CommandExecuter.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rmd.dir/build.make CMakeFiles/rmd.dir/src/CommandExecuter.cpp.i
-.PHONY : src/CommandExecuter.cpp.i
-
-src/CommandExecuter.s: src/CommandExecuter.cpp.s
-.PHONY : src/CommandExecuter.s
-
-# target to generate assembly for a file
-src/CommandExecuter.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rmd.dir/build.make CMakeFiles/rmd.dir/src/CommandExecuter.cpp.s
-.PHONY : src/CommandExecuter.cpp.s
-
-src/CommandScheduler.o: src/CommandScheduler.cpp.o
-.PHONY : src/CommandScheduler.o
-
-# target to build an object file
-src/CommandScheduler.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rmd.dir/build.make CMakeFiles/rmd.dir/src/CommandScheduler.cpp.o
-.PHONY : src/CommandScheduler.cpp.o
-
-src/CommandScheduler.i: src/CommandScheduler.cpp.i
-.PHONY : src/CommandScheduler.i
-
-# target to preprocess a source file
-src/CommandScheduler.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rmd.dir/build.make CMakeFiles/rmd.dir/src/CommandScheduler.cpp.i
-.PHONY : src/CommandScheduler.cpp.i
-
-src/CommandScheduler.s: src/CommandScheduler.cpp.s
-.PHONY : src/CommandScheduler.s
-
-# target to generate assembly for a file
-src/CommandScheduler.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rmd.dir/build.make CMakeFiles/rmd.dir/src/CommandScheduler.cpp.s
-.PHONY : src/CommandScheduler.cpp.s
-
-src/Motor.o: src/Motor.cpp.o
-.PHONY : src/Motor.o
-
-# target to build an object file
-src/Motor.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rmd.dir/build.make CMakeFiles/rmd.dir/src/Motor.cpp.o
-.PHONY : src/Motor.cpp.o
-
-src/Motor.i: src/Motor.cpp.i
-.PHONY : src/Motor.i
-
-# target to preprocess a source file
-src/Motor.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rmd.dir/build.make CMakeFiles/rmd.dir/src/Motor.cpp.i
-.PHONY : src/Motor.cpp.i
-
-src/Motor.s: src/Motor.cpp.s
-.PHONY : src/Motor.s
-
-# target to generate assembly for a file
-src/Motor.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rmd.dir/build.make CMakeFiles/rmd.dir/src/Motor.cpp.s
-.PHONY : src/Motor.cpp.s
-
-src/MotorManager.o: src/MotorManager.cpp.o
-.PHONY : src/MotorManager.o
-
-# target to build an object file
-src/MotorManager.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rmd.dir/build.make CMakeFiles/rmd.dir/src/MotorManager.cpp.o
-.PHONY : src/MotorManager.cpp.o
-
-src/MotorManager.i: src/MotorManager.cpp.i
-.PHONY : src/MotorManager.i
-
-# target to preprocess a source file
-src/MotorManager.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rmd.dir/build.make CMakeFiles/rmd.dir/src/MotorManager.cpp.i
-.PHONY : src/MotorManager.cpp.i
-
-src/MotorManager.s: src/MotorManager.cpp.s
-.PHONY : src/MotorManager.s
-
-# target to generate assembly for a file
-src/MotorManager.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rmd.dir/build.make CMakeFiles/rmd.dir/src/MotorManager.cpp.s
-.PHONY : src/MotorManager.cpp.s
-
 src/MyActuator.o: src/MyActuator.cpp.o
 .PHONY : src/MyActuator.o
 
@@ -536,30 +440,6 @@ src/SerialPort.s: src/SerialPort.cpp.s
 src/SerialPort.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rmd.dir/build.make CMakeFiles/rmd.dir/src/SerialPort.cpp.s
 .PHONY : src/SerialPort.cpp.s
-
-src/config.o: src/config.cpp.o
-.PHONY : src/config.o
-
-# target to build an object file
-src/config.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rmd.dir/build.make CMakeFiles/rmd.dir/src/config.cpp.o
-.PHONY : src/config.cpp.o
-
-src/config.i: src/config.cpp.i
-.PHONY : src/config.i
-
-# target to preprocess a source file
-src/config.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rmd.dir/build.make CMakeFiles/rmd.dir/src/config.cpp.i
-.PHONY : src/config.cpp.i
-
-src/config.s: src/config.cpp.s
-.PHONY : src/config.s
-
-# target to generate assembly for a file
-src/config.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rmd.dir/build.make CMakeFiles/rmd.dir/src/config.cpp.s
-.PHONY : src/config.cpp.s
 
 src/x10_api.o: src/x10_api.cpp.o
 .PHONY : src/x10_api.o
@@ -637,18 +517,6 @@ help:
 	@echo "... testMotorStatus"
 	@echo "... testRobot"
 	@echo "... x10_apiTest"
-	@echo "... src/CommandExecuter.o"
-	@echo "... src/CommandExecuter.i"
-	@echo "... src/CommandExecuter.s"
-	@echo "... src/CommandScheduler.o"
-	@echo "... src/CommandScheduler.i"
-	@echo "... src/CommandScheduler.s"
-	@echo "... src/Motor.o"
-	@echo "... src/Motor.i"
-	@echo "... src/Motor.s"
-	@echo "... src/MotorManager.o"
-	@echo "... src/MotorManager.i"
-	@echo "... src/MotorManager.s"
 	@echo "... src/MyActuator.o"
 	@echo "... src/MyActuator.i"
 	@echo "... src/MyActuator.s"
@@ -658,9 +526,6 @@ help:
 	@echo "... src/SerialPort.o"
 	@echo "... src/SerialPort.i"
 	@echo "... src/SerialPort.s"
-	@echo "... src/config.o"
-	@echo "... src/config.i"
-	@echo "... src/config.s"
 	@echo "... src/x10_api.o"
 	@echo "... src/x10_api.i"
 	@echo "... src/x10_api.s"

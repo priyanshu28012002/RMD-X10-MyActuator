@@ -10,12 +10,8 @@ add_library(rmd SHARED
     src/SerialComm.cpp
     src/x10_api_base.cpp
     src/x10_api.cpp
-    src/config.cpp
     src/MyActuator.cpp
-    src/Motor.cpp
-    src/CommandScheduler.cpp
-    src/MotorManager.cpp
-    src/CommandExecuter.cpp
+   
 )
 
 target_include_directories(rmd

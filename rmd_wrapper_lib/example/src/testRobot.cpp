@@ -9,7 +9,7 @@
 #include <iostream>
 #include <thread>
 
-constexpr int NUM_MOTORS = 2;
+constexpr int NUM_MOTORS = 2; // Motor id 1 and 2 1 for the left and 2 right
 constexpr const char *MOTOR_PORT = "/dev/ttyUSB0";
 constexpr const char *JOYSTICK_DEV = "/dev/input/js0";
 
@@ -40,6 +40,8 @@ int main()
     }
 
     MyActuator actuator(NUM_MOTORS, MOTOR_PORT);
+actuator.init();
+
 
     bool speedMode = true;
     bool prevBtn[12] = {};
@@ -49,10 +51,10 @@ int main()
     bool isJoystickActive = false;
     bool isMotorInit = false;
 
-    // Angle mode variables
     float targetAngle = 0.0f;
-    const float ANGLE_INCREMENT = 360.0f; // Increment by 360 degrees each press
+    const float ANGLE_INCREMENT = 360.0f;
 
+    int count = 0;
     while (!g_shutdown.load())
     {
         joy.poll();
@@ -77,16 +79,13 @@ int main()
             std::cout << "[INFO] Joystick " << status << std::endl;
         }
 
-        // Button 5: Stop and exit
         if (risingEdge(cur[5], prevBtn[5]))
         {
-            actuator.stop();
             g_shutdown.store(true);
             std::cout << "[INFO] Stopping motors and exiting...\n";
             exit(0);
         }
 
-        // Button 1: Speed mode
         if (risingEdge(cur[1], prevBtn[1]))
         {
             actuator.setMode(MyActuatorMode::SPEED);
@@ -94,42 +93,44 @@ int main()
             std::cout << "[INFO] Switched to SPEED mode\n";
         }
 
-        // Button 0: Angle mode with angle increment
         if (risingEdge(cur[0], prevBtn[0]) && isJoystickActive)
         {
             actuator.setMode(MyActuatorMode::ANGLE);
             speedMode = false;
 
-            // Increment target angle by 360 degrees
             targetAngle = ANGLE_INCREMENT;
 
-            // Optional: Keep angle within 0-360 range or allow continuous
-            // targetAngle = fmod(targetAngle, 360.0f);
 
-            actuator.setAngle(targetAngle);
+            actuator.setAngle(2,360*4);
             std::cout << "[INFO] Switched to ANGLE mode, target angle: " << targetAngle << " degrees\n";
         }
 
-        // Handle joystick control based on current mode
+        if (risingEdge(cur[2], prevBtn[2]) && isJoystickActive) 
+        {
+            actuator.resetMotor();
+        }
+
         if (isJoystickActive)
         {
             if (speedMode)
             {
                 float speed = js.axis[3];
-                actuator.setSpeedAll(speed);
-                // std::cout << "[SPEED] Axis 3 value: " << speed << "\n";
+                actuator.setSpeed(2,speed);
+
+                // if (speed == 0)
+                // {
+                //     count++;
+                //     std::cout << "[SPEED] Axis 3 value: " << count << "\n";
+                // }
             }
             else
             {
-                
             }
         }
 
-        // Copy current button states to prev for next iteration
         for (int i = 0; i < 12; ++i)
             prevBtn[i] = cur[i];
 
-        // Add small delay to prevent excessive CPU usage
         std::this_thread::sleep_for(std::chrono::milliseconds(10));
     }
 
@@ -141,7 +142,7 @@ int main()
 //     isMotorInit = !isMotorInit;
 
 //     std::cout << "Init " << isMotorInit << "\n";
-// }
+// }actuator
 
 // if (risingEdge(cur[2], prevBtn[2]))
 // {
