@@ -5,9 +5,9 @@ X10ApiSerial::X10ApiSerial()
     std::cout << "Constructor X10ApiSerial\n";
 }
 
-X10ApiSerial::X10ApiSerial(std::string port):port_(port)
+X10ApiSerial::X10ApiSerial(std::string port) : port_(port)
 {
-    std::cout << "Constructor X10ApiSerial "<<port<<"\n";
+    std::cout << "Constructor X10ApiSerial " << port << "\n";
 }
 
 X10ApiSerial::~X10ApiSerial()
@@ -162,6 +162,19 @@ void X10ApiSerial::Motor_reset(uint8_t id)
 {
     x10_api_base_.Motor_reset(id);
 }
+
+// 2.26
+int8_t  X10ApiSerial::Motor_brake_release(uint8_t id)
+{
+    x10_api_base_.Motor_brake_release(id);
+} // 2.27
+// 2.27
+int8_t  X10ApiSerial::Motor_brake_lock(uint8_t id)
+{
+    x10_api_base_.Motor_brake_lock(id);
+}
+
+// 2.28
 
 int8_t X10ApiSerial::Motor_runtime(uint8_t id, uint32_t &runTime) // 2.29
 {

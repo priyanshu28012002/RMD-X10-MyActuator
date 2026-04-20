@@ -233,13 +233,22 @@ int main()
 
     xobj->get_port_address(port);
     xobj->rmdX10_init();
-    Motor_state1(xobj, 1);
-    Motor_state2(xobj, 1);
-    
-    Motor_state3(xobj, 1);
-    Motor_state1(xobj, 2);
-    Motor_state2(xobj, 2);
-    
-    Motor_state3(xobj, 2);
+
+    // Motor_state1(xobj, 1);
+
+    // sleep(10);
+    // Motor_state2(xobj, 1);
+    // sleep(10);
+
+    // Motor_state3(xobj, 1);
+
+    set_Motor_id(xobj, 1);
+    speedControl(xobj, 1, 5000); // Motor_state1(xobj, 2);
+    sleep(10);
+        speedControl(xobj, 1, 0); // Motor_state1(xobj, 2);
+
+    // Motor_state2(xobj, 2);
+
+    // Motor_state3(xobj, 2);
     return 0;
 }

@@ -361,6 +361,7 @@ int8_t X10ApiBase::Motor_state3(uint8_t id, int16_t *data_arr)
     data_arr[1] = (int16_t)((receive_data_serial_[5]) | (receive_data_serial_[6] << 8));  // Phase A current
     data_arr[2] = (int16_t)((receive_data_serial_[7]) | (receive_data_serial_[8] << 8));  // Phase B current
     data_arr[3] = (int16_t)((receive_data_serial_[9]) | (receive_data_serial_[10] << 8)); // Phase C current
+    
     return error_check();
 }
 

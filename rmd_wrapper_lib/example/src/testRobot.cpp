@@ -40,8 +40,7 @@ int main()
     }
 
     MyActuator actuator(NUM_MOTORS, MOTOR_PORT);
-actuator.init();
-
+    // actuator.init();
 
     bool speedMode = true;
     bool prevBtn[12] = {};
@@ -100,12 +99,11 @@ actuator.init();
 
             targetAngle = ANGLE_INCREMENT;
 
-
-            actuator.setAngle(2,360*4);
+            actuator.setAngle(1, 360 * 4);
             std::cout << "[INFO] Switched to ANGLE mode, target angle: " << targetAngle << " degrees\n";
         }
 
-        if (risingEdge(cur[2], prevBtn[2]) && isJoystickActive) 
+        if (risingEdge(cur[2], prevBtn[2]) && isJoystickActive)
         {
             actuator.resetMotor();
         }
@@ -115,7 +113,7 @@ actuator.init();
             if (speedMode)
             {
                 float speed = js.axis[3];
-                actuator.setSpeed(2,speed);
+                actuator.setSpeed(1, speed);
 
                 // if (speed == 0)
                 // {
@@ -133,6 +131,8 @@ actuator.init();
 
         std::this_thread::sleep_for(std::chrono::milliseconds(10));
     }
+    actuator.fini();
+    std::cout << "Shutdown " << std::endl;
 
     return 0;
 }

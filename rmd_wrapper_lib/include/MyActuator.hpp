@@ -102,6 +102,9 @@ public:
     bool setAngle(uint8_t motorId, int angle);
     // Finalization
     bool fini();
+     void status1();
+      void status2();
+    void status3();
     int maxSpeed = 200;
     int minSpeed = -200;
     MyActuator(const MyActuator &) = delete;
@@ -110,6 +113,12 @@ public:
     void parseMoterState1(int16_t *buffer);
     void parseMoterState2(int16_t *buffer);
     void parseMoterState3(int16_t *buffer);
+
+    void statusLoop();
+
+    bool statusLoopRunningStatu = false;
+    bool speedLoopRunningStatu = false;
+    int counter = 0;
 
 private:
     MyActuatorMode mode_;
@@ -123,6 +132,7 @@ private:
     uint64_t nowMs() const;
     void speedControlExecuterLoop();
     std::thread commandExecuter;
+    std::thread statusLoopThread;
 };
 
 #endif // MY_ACTUATOR_HPP
