@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/octobot/Github/RMD-X10-MyActuator/rmd_wrapper_lib
+CMAKE_SOURCE_DIR = /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/octobot/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build
+CMAKE_BINARY_DIR = /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build
 
 # Include any dependencies generated for this target.
 include example/CMakeFiles/serialPortTest.dir/depend.make
@@ -72,16 +72,16 @@ include example/CMakeFiles/serialPortTest.dir/flags.make
 example/CMakeFiles/serialPortTest.dir/src/serialPortTest.cpp.o: example/CMakeFiles/serialPortTest.dir/flags.make
 example/CMakeFiles/serialPortTest.dir/src/serialPortTest.cpp.o: ../example/src/serialPortTest.cpp
 example/CMakeFiles/serialPortTest.dir/src/serialPortTest.cpp.o: example/CMakeFiles/serialPortTest.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/octobot/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object example/CMakeFiles/serialPortTest.dir/src/serialPortTest.cpp.o"
-	cd /home/octobot/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build/example && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT example/CMakeFiles/serialPortTest.dir/src/serialPortTest.cpp.o -MF CMakeFiles/serialPortTest.dir/src/serialPortTest.cpp.o.d -o CMakeFiles/serialPortTest.dir/src/serialPortTest.cpp.o -c /home/octobot/Github/RMD-X10-MyActuator/rmd_wrapper_lib/example/src/serialPortTest.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object example/CMakeFiles/serialPortTest.dir/src/serialPortTest.cpp.o"
+	cd /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build/example && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT example/CMakeFiles/serialPortTest.dir/src/serialPortTest.cpp.o -MF CMakeFiles/serialPortTest.dir/src/serialPortTest.cpp.o.d -o CMakeFiles/serialPortTest.dir/src/serialPortTest.cpp.o -c /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/example/src/serialPortTest.cpp
 
 example/CMakeFiles/serialPortTest.dir/src/serialPortTest.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/serialPortTest.dir/src/serialPortTest.cpp.i"
-	cd /home/octobot/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build/example && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/octobot/Github/RMD-X10-MyActuator/rmd_wrapper_lib/example/src/serialPortTest.cpp > CMakeFiles/serialPortTest.dir/src/serialPortTest.cpp.i
+	cd /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build/example && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/example/src/serialPortTest.cpp > CMakeFiles/serialPortTest.dir/src/serialPortTest.cpp.i
 
 example/CMakeFiles/serialPortTest.dir/src/serialPortTest.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/serialPortTest.dir/src/serialPortTest.cpp.s"
-	cd /home/octobot/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build/example && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/octobot/Github/RMD-X10-MyActuator/rmd_wrapper_lib/example/src/serialPortTest.cpp -o CMakeFiles/serialPortTest.dir/src/serialPortTest.cpp.s
+	cd /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build/example && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/example/src/serialPortTest.cpp -o CMakeFiles/serialPortTest.dir/src/serialPortTest.cpp.s
 
 # Object files for target serialPortTest
 serialPortTest_OBJECTS = \
@@ -94,18 +94,18 @@ example/serialPortTest: example/CMakeFiles/serialPortTest.dir/src/serialPortTest
 example/serialPortTest: example/CMakeFiles/serialPortTest.dir/build.make
 example/serialPortTest: librmd.so.1.0.0
 example/serialPortTest: example/CMakeFiles/serialPortTest.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/octobot/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable serialPortTest"
-	cd /home/octobot/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build/example && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/serialPortTest.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable serialPortTest"
+	cd /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build/example && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/serialPortTest.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 example/CMakeFiles/serialPortTest.dir/build: example/serialPortTest
 .PHONY : example/CMakeFiles/serialPortTest.dir/build
 
 example/CMakeFiles/serialPortTest.dir/clean:
-	cd /home/octobot/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build/example && $(CMAKE_COMMAND) -P CMakeFiles/serialPortTest.dir/cmake_clean.cmake
+	cd /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build/example && $(CMAKE_COMMAND) -P CMakeFiles/serialPortTest.dir/cmake_clean.cmake
 .PHONY : example/CMakeFiles/serialPortTest.dir/clean
 
 example/CMakeFiles/serialPortTest.dir/depend:
-	cd /home/octobot/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/octobot/Github/RMD-X10-MyActuator/rmd_wrapper_lib /home/octobot/Github/RMD-X10-MyActuator/rmd_wrapper_lib/example /home/octobot/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build /home/octobot/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build/example /home/octobot/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build/example/CMakeFiles/serialPortTest.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/example /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build/example /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build/example/CMakeFiles/serialPortTest.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : example/CMakeFiles/serialPortTest.dir/depend
 

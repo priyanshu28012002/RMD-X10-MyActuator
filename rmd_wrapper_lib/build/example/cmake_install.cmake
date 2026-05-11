@@ -1,4 +1,4 @@
-# Install script for directory: /home/octobot/Github/RMD-X10-MyActuator/rmd_wrapper_lib/example
+# Install script for directory: /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/example
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

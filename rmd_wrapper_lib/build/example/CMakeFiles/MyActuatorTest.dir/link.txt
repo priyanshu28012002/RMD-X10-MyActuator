@@ -1,1 +1,0 @@
-/usr/bin/c++ CMakeFiles/MyActuatorTest.dir/src/MyActuatorTest.cpp.o -o MyActuatorTest  -Wl,-rpath,/home/octobot/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build ../librmd.so.1.0.0 

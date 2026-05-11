@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/octobot/Github/RMD-X10-MyActuator/rmd_wrapper_lib
+CMAKE_SOURCE_DIR = /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/octobot/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build
+CMAKE_BINARY_DIR = /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/rmd.dir/depend.make
@@ -72,72 +72,72 @@ include CMakeFiles/rmd.dir/flags.make
 CMakeFiles/rmd.dir/src/SerialPort.cpp.o: CMakeFiles/rmd.dir/flags.make
 CMakeFiles/rmd.dir/src/SerialPort.cpp.o: ../src/SerialPort.cpp
 CMakeFiles/rmd.dir/src/SerialPort.cpp.o: CMakeFiles/rmd.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/octobot/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/rmd.dir/src/SerialPort.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/rmd.dir/src/SerialPort.cpp.o -MF CMakeFiles/rmd.dir/src/SerialPort.cpp.o.d -o CMakeFiles/rmd.dir/src/SerialPort.cpp.o -c /home/octobot/Github/RMD-X10-MyActuator/rmd_wrapper_lib/src/SerialPort.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/rmd.dir/src/SerialPort.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/rmd.dir/src/SerialPort.cpp.o -MF CMakeFiles/rmd.dir/src/SerialPort.cpp.o.d -o CMakeFiles/rmd.dir/src/SerialPort.cpp.o -c /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/src/SerialPort.cpp
 
 CMakeFiles/rmd.dir/src/SerialPort.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rmd.dir/src/SerialPort.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/octobot/Github/RMD-X10-MyActuator/rmd_wrapper_lib/src/SerialPort.cpp > CMakeFiles/rmd.dir/src/SerialPort.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/src/SerialPort.cpp > CMakeFiles/rmd.dir/src/SerialPort.cpp.i
 
 CMakeFiles/rmd.dir/src/SerialPort.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rmd.dir/src/SerialPort.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/octobot/Github/RMD-X10-MyActuator/rmd_wrapper_lib/src/SerialPort.cpp -o CMakeFiles/rmd.dir/src/SerialPort.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/src/SerialPort.cpp -o CMakeFiles/rmd.dir/src/SerialPort.cpp.s
 
 CMakeFiles/rmd.dir/src/SerialComm.cpp.o: CMakeFiles/rmd.dir/flags.make
 CMakeFiles/rmd.dir/src/SerialComm.cpp.o: ../src/SerialComm.cpp
 CMakeFiles/rmd.dir/src/SerialComm.cpp.o: CMakeFiles/rmd.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/octobot/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/rmd.dir/src/SerialComm.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/rmd.dir/src/SerialComm.cpp.o -MF CMakeFiles/rmd.dir/src/SerialComm.cpp.o.d -o CMakeFiles/rmd.dir/src/SerialComm.cpp.o -c /home/octobot/Github/RMD-X10-MyActuator/rmd_wrapper_lib/src/SerialComm.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/rmd.dir/src/SerialComm.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/rmd.dir/src/SerialComm.cpp.o -MF CMakeFiles/rmd.dir/src/SerialComm.cpp.o.d -o CMakeFiles/rmd.dir/src/SerialComm.cpp.o -c /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/src/SerialComm.cpp
 
 CMakeFiles/rmd.dir/src/SerialComm.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rmd.dir/src/SerialComm.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/octobot/Github/RMD-X10-MyActuator/rmd_wrapper_lib/src/SerialComm.cpp > CMakeFiles/rmd.dir/src/SerialComm.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/src/SerialComm.cpp > CMakeFiles/rmd.dir/src/SerialComm.cpp.i
 
 CMakeFiles/rmd.dir/src/SerialComm.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rmd.dir/src/SerialComm.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/octobot/Github/RMD-X10-MyActuator/rmd_wrapper_lib/src/SerialComm.cpp -o CMakeFiles/rmd.dir/src/SerialComm.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/src/SerialComm.cpp -o CMakeFiles/rmd.dir/src/SerialComm.cpp.s
 
 CMakeFiles/rmd.dir/src/x10_api_base.cpp.o: CMakeFiles/rmd.dir/flags.make
 CMakeFiles/rmd.dir/src/x10_api_base.cpp.o: ../src/x10_api_base.cpp
 CMakeFiles/rmd.dir/src/x10_api_base.cpp.o: CMakeFiles/rmd.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/octobot/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/rmd.dir/src/x10_api_base.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/rmd.dir/src/x10_api_base.cpp.o -MF CMakeFiles/rmd.dir/src/x10_api_base.cpp.o.d -o CMakeFiles/rmd.dir/src/x10_api_base.cpp.o -c /home/octobot/Github/RMD-X10-MyActuator/rmd_wrapper_lib/src/x10_api_base.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/rmd.dir/src/x10_api_base.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/rmd.dir/src/x10_api_base.cpp.o -MF CMakeFiles/rmd.dir/src/x10_api_base.cpp.o.d -o CMakeFiles/rmd.dir/src/x10_api_base.cpp.o -c /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/src/x10_api_base.cpp
 
 CMakeFiles/rmd.dir/src/x10_api_base.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rmd.dir/src/x10_api_base.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/octobot/Github/RMD-X10-MyActuator/rmd_wrapper_lib/src/x10_api_base.cpp > CMakeFiles/rmd.dir/src/x10_api_base.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/src/x10_api_base.cpp > CMakeFiles/rmd.dir/src/x10_api_base.cpp.i
 
 CMakeFiles/rmd.dir/src/x10_api_base.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rmd.dir/src/x10_api_base.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/octobot/Github/RMD-X10-MyActuator/rmd_wrapper_lib/src/x10_api_base.cpp -o CMakeFiles/rmd.dir/src/x10_api_base.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/src/x10_api_base.cpp -o CMakeFiles/rmd.dir/src/x10_api_base.cpp.s
 
 CMakeFiles/rmd.dir/src/x10_api.cpp.o: CMakeFiles/rmd.dir/flags.make
 CMakeFiles/rmd.dir/src/x10_api.cpp.o: ../src/x10_api.cpp
 CMakeFiles/rmd.dir/src/x10_api.cpp.o: CMakeFiles/rmd.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/octobot/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/rmd.dir/src/x10_api.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/rmd.dir/src/x10_api.cpp.o -MF CMakeFiles/rmd.dir/src/x10_api.cpp.o.d -o CMakeFiles/rmd.dir/src/x10_api.cpp.o -c /home/octobot/Github/RMD-X10-MyActuator/rmd_wrapper_lib/src/x10_api.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/rmd.dir/src/x10_api.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/rmd.dir/src/x10_api.cpp.o -MF CMakeFiles/rmd.dir/src/x10_api.cpp.o.d -o CMakeFiles/rmd.dir/src/x10_api.cpp.o -c /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/src/x10_api.cpp
 
 CMakeFiles/rmd.dir/src/x10_api.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rmd.dir/src/x10_api.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/octobot/Github/RMD-X10-MyActuator/rmd_wrapper_lib/src/x10_api.cpp > CMakeFiles/rmd.dir/src/x10_api.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/src/x10_api.cpp > CMakeFiles/rmd.dir/src/x10_api.cpp.i
 
 CMakeFiles/rmd.dir/src/x10_api.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rmd.dir/src/x10_api.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/octobot/Github/RMD-X10-MyActuator/rmd_wrapper_lib/src/x10_api.cpp -o CMakeFiles/rmd.dir/src/x10_api.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/src/x10_api.cpp -o CMakeFiles/rmd.dir/src/x10_api.cpp.s
 
 CMakeFiles/rmd.dir/src/MyActuator.cpp.o: CMakeFiles/rmd.dir/flags.make
 CMakeFiles/rmd.dir/src/MyActuator.cpp.o: ../src/MyActuator.cpp
 CMakeFiles/rmd.dir/src/MyActuator.cpp.o: CMakeFiles/rmd.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/octobot/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/rmd.dir/src/MyActuator.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/rmd.dir/src/MyActuator.cpp.o -MF CMakeFiles/rmd.dir/src/MyActuator.cpp.o.d -o CMakeFiles/rmd.dir/src/MyActuator.cpp.o -c /home/octobot/Github/RMD-X10-MyActuator/rmd_wrapper_lib/src/MyActuator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/rmd.dir/src/MyActuator.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/rmd.dir/src/MyActuator.cpp.o -MF CMakeFiles/rmd.dir/src/MyActuator.cpp.o.d -o CMakeFiles/rmd.dir/src/MyActuator.cpp.o -c /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/src/MyActuator.cpp
 
 CMakeFiles/rmd.dir/src/MyActuator.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rmd.dir/src/MyActuator.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/octobot/Github/RMD-X10-MyActuator/rmd_wrapper_lib/src/MyActuator.cpp > CMakeFiles/rmd.dir/src/MyActuator.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/src/MyActuator.cpp > CMakeFiles/rmd.dir/src/MyActuator.cpp.i
 
 CMakeFiles/rmd.dir/src/MyActuator.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rmd.dir/src/MyActuator.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/octobot/Github/RMD-X10-MyActuator/rmd_wrapper_lib/src/MyActuator.cpp -o CMakeFiles/rmd.dir/src/MyActuator.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/src/MyActuator.cpp -o CMakeFiles/rmd.dir/src/MyActuator.cpp.s
 
 # Object files for target rmd
 rmd_OBJECTS = \
@@ -157,7 +157,7 @@ librmd.so.1.0.0: CMakeFiles/rmd.dir/src/x10_api.cpp.o
 librmd.so.1.0.0: CMakeFiles/rmd.dir/src/MyActuator.cpp.o
 librmd.so.1.0.0: CMakeFiles/rmd.dir/build.make
 librmd.so.1.0.0: CMakeFiles/rmd.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/octobot/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX shared library librmd.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX shared library librmd.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/rmd.dir/link.txt --verbose=$(VERBOSE)
 	$(CMAKE_COMMAND) -E cmake_symlink_library librmd.so.1.0.0 librmd.so.1 librmd.so
 
@@ -176,6 +176,6 @@ CMakeFiles/rmd.dir/clean:
 .PHONY : CMakeFiles/rmd.dir/clean
 
 CMakeFiles/rmd.dir/depend:
-	cd /home/octobot/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/octobot/Github/RMD-X10-MyActuator/rmd_wrapper_lib /home/octobot/Github/RMD-X10-MyActuator/rmd_wrapper_lib /home/octobot/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build /home/octobot/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build /home/octobot/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build/CMakeFiles/rmd.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build /home/octo/Github/RMD-X10-MyActuator/rmd_wrapper_lib/build/CMakeFiles/rmd.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/rmd.dir/depend
 
